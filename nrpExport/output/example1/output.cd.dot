@@ -1,0 +1,35 @@
+digraph hierarchy {
+	size="5,5"
+	node[shape=record,style=filled,fillcolor="#ffffcc",color="#990033"]
+	edge[dir=back, arrowtail=empty, color="#990033"]
+
+	RunExampleOne[label = "{RunExampleOne|...|+ Constructor() : void\l+ printHeader() : void\l+ printFooter() : void\l+ main() : void\l}"]
+	Zoo[label = "{Zoo|# selvageAnimals : java.util.List\l# domesticAnimals : java.util.List\l|+ Constructor() : void\l+ getSelvageAnimals() : java.util.List\l+ setSelvageAnimals() : void\l+ getDomesticAnimals() : java.util.List\l+ setDomesticAnimals() : void\l+ makeNoise() : void\l+ moveAnimals() : void\l+ getName() : java.lang.String\l}"]
+	Owl[label = "{Owl|...|+ Constructor() : void\l+ getSound() : java.lang.String\l+ move() : java.lang.String\l+ getFood() : java.lang.String\l}"]
+	Dog[label = "{Dog|...|+ Constructor() : void\l+ getSound() : java.lang.String\l+ makeNoise() : java.lang.String\l+ move() : java.lang.String\l+ getFood() : java.lang.String\l}"]
+	Parrot[label = "{Parrot|...|+ Constructor() : void\l+ getSound() : java.lang.String\l+ move() : java.lang.String\l+ getFood() : java.lang.String\l}"]
+	Cat[label = "{Cat|...|+ Constructor() : void\l+ getSound() : java.lang.String\l+ move() : java.lang.String\l+ getFood() : java.lang.String\l}"]
+	IZooName[label = "{\<\<interface\>\>\nIZooName|...|+ getName() : java.lang.String\l}"]
+	Animal[label = "{Animal|# gender : java.lang.String\l|+ Constructor() : void\l+ getGender() : java.lang.String\l+ setGender() : void\l+ makeNoise() : java.lang.String\l+ getSound() : java.lang.String\l}"]
+	Bird[label = "{Bird|...|+ Constructor() : void\l+ makeNoise() : java.lang.String\l}"]
+	Mammal[label = "{Mammal|# name : java.lang.String\l|+ Constructor() : void\l+ getName() : java.lang.String\l+ setName() : void\l+ makeNoise() : java.lang.String\l}"]
+	IAction[label = "{\<\<interface\>\>\nIAction|...|+ move() : java.lang.String\l}"]
+	IFood[label = "{\<\<interface\>\>\nIFood|...|+ getFood() : java.lang.String\l}"]
+
+
+IZooName -> Zoo[arrowtail=onormal, style=dashed]
+Zoo -> Animal[arrowtail=diamond]
+
+Bird -> Owl
+Mammal -> Dog
+Bird -> Parrot
+Mammal -> Cat
+
+IAction -> Animal[arrowtail=onormal, style=dashed]
+IFood -> Animal[arrowtail=onormal, style=dashed]
+
+Animal -> Bird
+Animal -> Mammal
+
+
+}
