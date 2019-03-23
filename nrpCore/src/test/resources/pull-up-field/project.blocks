@@ -1,0 +1,27 @@
+StartClass 1
+Class(Class_A,N,N,Public);
+Attribute(Attribute_1,java.lang.String,Public,N,N,);
+EndClass 1
+StartClass 2
+Class(Class_B,N,N,Public);
+Attribute(Attribute_2,java.lang.String,Public,N,N,);
+Method(Method_1,void,Public,N,N);
+Generalization(Class_A);
+EndClass 2
+StartClass 3
+Class(Class_C,N,N,Public);
+Attribute(Attribute_2,java.lang.String,Public,N,N,);
+Method(Method_2,void,Public,N,N);
+Generalization(Class_A);
+Call(ATTRIBUTE,Class_C,Method_2 --> Attribute_2,Class_C,WRITE);
+EndClass 3
+StartClass 4
+Class(Class_D,N,N,Public);
+Method(Method_3,void,Public,N,N);
+Call(ATTRIBUTE,Class_D,Method_3 --> Attribute_2,Class_B,WRITE);
+EndClass 4
+StartClass 5
+Class(Class_E,N,N,Public);
+Method(Method_4,void,Public,N,N);
+Call(ATTRIBUTE,Class_E,Method_4 --> Attribute_2,Class_C,WRITE);
+EndClass 5
