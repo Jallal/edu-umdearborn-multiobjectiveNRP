@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public abstract class Refactoring implements Serializable {
+public abstract class NrpBase implements Serializable {
 
-    protected static final Logger LOGGER = Logger.getLogger(Refactoring.class);
+    protected static final Logger LOGGER = Logger.getLogger(NrpBase.class);
 
     protected String class1;
 
@@ -33,18 +33,18 @@ public abstract class Refactoring implements Serializable {
 
     protected Map<Object, Object> properties;
 
-    public Refactoring() {
+    public NrpBase() {
         this.mustDefineActors = true;
         this.methods = new ArrayList<>();
         this.attributes = new ArrayList<>();
         this.properties = new HashMap<>();
     }
 
-    public Refactoring(String class1, String class2, String attributeName, String methodName) {
+    public NrpBase(String class1, String class2, String attributeName, String methodName) {
         this(class1, class2, Arrays.asList(attributeName), Arrays.asList(methodName));
     }
 
-    public Refactoring(String class1, String class2, List<String> attributes, List<String> methods) {
+    public NrpBase(String class1, String class2, List<String> attributes, List<String> methods) {
         this.class1 = class1;
         this.class2 = class2;
         this.attributes = attributes;
@@ -53,15 +53,15 @@ public abstract class Refactoring implements Serializable {
         this.properties = new HashMap<>();
     }
 
-    public Refactoring(Refactoring refactoring) {
-        this.class1 = refactoring.getClass1();
-        this.class2 = refactoring.getClass2();
-        this.attributes = new ArrayList<>(refactoring.getAttributes());
-        this.methods = new ArrayList<>(refactoring.getMethods());
-        this.mustDefineActors = refactoring.isMustDefineActors();
+    public NrpBase(NrpBase nrp) {
+        this.class1 = nrp.getClass1();
+        this.class2 = nrp.getClass2();
+        this.attributes = new ArrayList<>(nrp.getAttributes());
+        this.methods = new ArrayList<>(nrp.getMethods());
+        this.mustDefineActors = nrp.isMustDefineActors();
 
         // Copy the properties
-        this.properties = new HashMap<>(refactoring.getProperties());
+        this.properties = new HashMap<>(nrp.getProperties());
     }
 
     public static Condition NOT(Condition condition) {
@@ -253,7 +253,7 @@ public abstract class Refactoring implements Serializable {
 
     public abstract String getName();
 
-    public abstract Refactoring copy();
+    public abstract NrpBase copy();
 
 
     //VAHID July 25 2018
