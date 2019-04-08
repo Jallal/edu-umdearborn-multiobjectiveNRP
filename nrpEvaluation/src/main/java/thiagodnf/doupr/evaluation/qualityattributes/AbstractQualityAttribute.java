@@ -1,7 +1,7 @@
 package thiagodnf.doupr.evaluation.qualityattributes;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 
@@ -17,7 +17,7 @@ public abstract class AbstractQualityAttribute extends Objective {
         super(objective);
     }
 
-    public double calculate(ProjectObject original, ProjectObject refactored, List<Refactoring> appliedRefactorings) {
+    public double calculate(ProjectObject original, ProjectObject refactored, List<NrpBase> appliedRefactorings) {
 
         double newValue = getDiff(original, refactored);
 

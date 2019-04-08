@@ -3,7 +3,6 @@ package thiagodnf.doupr.core.refactoring;
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.AttributeObject;
 import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ElementObject.Visibility;
 import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.condition.DefineCondition;
@@ -12,22 +11,15 @@ import thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition;
 import thiagodnf.doupr.core.refactoring.condition.IsClassCondition;
 import thiagodnf.doupr.core.refactoring.condition.IsFieldCondition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
-import thiagodnf.doupr.core.refactoring.defineactor.DefineActorsForIncreaseOrDecreaseFieldSecurity;
+import thiagodnf.doupr.core.refactoring.defineactor.DefineTasksForAssigingToDeveloper;
 import thiagodnf.doupr.core.util.AttributeObjectUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import static thiagodnf.doupr.core.refactoring.NrpBase.NOT;
+public class InputTasks extends NrpBase {
 
-/**
- * @author Thiago N. Ferreira
- * @version 1.0.0
- * @since 2017-08-13
- */
-public class DecreaseFieldSecurity extends Refactoring {
 
     protected static final Logger LOGGER = Logger.getLogger(DecreaseFieldSecurity.class);
 
@@ -35,27 +27,15 @@ public class DecreaseFieldSecurity extends Refactoring {
 
     protected AttributeObject attr;
 
-    public DecreaseFieldSecurity() {
-        super();
-    }
-
-    public DecreaseFieldSecurity(DecreaseFieldSecurity encapsulateField) {
-        super(encapsulateField);
-    }
-
-    public DecreaseFieldSecurity(String className, String attributeName) {
-        super(className, null, Arrays.asList(attributeName), new ArrayList<>());
-    }
-
     @Override
     public void loadActors(ProjectObject project) {
         this.sourceCls = ProjectObjectUtils.findByName(project, this.class1);
         this.attr = AttributeObjectUtils.findByName(sourceCls, this.attributes.get(0));
+
     }
 
     @Override
     public List<Condition> getPreConditions(ProjectObject project) {
-
         List<thiagodnf.doupr.core.refactoring.condition.Condition> conditions = new ArrayList<>();
 
         conditions.add(new ExistCondition(sourceCls, class1));
@@ -69,8 +49,7 @@ public class DecreaseFieldSecurity extends Refactoring {
     }
 
     @Override
-    public List<thiagodnf.doupr.core.refactoring.condition.Condition> getPostConditions(ProjectObject project) {
-
+    public List<Condition> getPostConditions(ProjectObject project) {
         List<thiagodnf.doupr.core.refactoring.condition.Condition> conditions = new ArrayList<>();
 
         conditions.add(new ExistCondition(sourceCls, class1));
@@ -83,8 +62,7 @@ public class DecreaseFieldSecurity extends Refactoring {
     }
 
     @Override
-    public void execute(ProjectObject project) {
-
+    public void execute(ProjectObject project) throws Exception {
         if (LOGGER.isDebugEnabled()) LOGGER.debug("Executing " + toString());
 
         // ========================================================================
@@ -96,30 +74,31 @@ public class DecreaseFieldSecurity extends Refactoring {
         } else if (attr.isProtected()) {
             attr.setVisibility(Visibility.PUBLIC);
         }
-    }
 
-    @Override
-    public Refactoring copy() {
-        return new DecreaseFieldSecurity(this);
-    }
-
-    @Override
-    public ClassObject getSourceCls() {
-        return sourceCls;
-    }
-
-    @Override
-    public ClassObject getTargetCls() {
-        return null;
     }
 
     @Override
     public DefineActors getDefineActors() {
-        return new DefineActorsForIncreaseOrDecreaseFieldSecurity();
+        return new DefineTasksForAssigingToDeveloper();
     }
 
     @Override
     public String getName() {
         return "Decrease Field Security";
+    }
+
+    @Override
+    public NrpBase copy() {
+        return new InputTasks(this);
+    }
+
+    @Override
+    public ClassObject getSourceCls() {
+        return null;
+    }
+
+    @Override
+    public ClassObject getTargetCls() {
+        return null;
     }
 }

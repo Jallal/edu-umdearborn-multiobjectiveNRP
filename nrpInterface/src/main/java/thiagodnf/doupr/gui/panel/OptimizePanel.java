@@ -25,7 +25,7 @@ import thiagodnf.doupr.evaluation.factory.ObjectiveFactory;
 import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
 import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
 import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
-import thiagodnf.doupr.evaluation.qualityattributes.NumberOfRefactorings;
+import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
@@ -223,7 +223,7 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 
 		groupForOthers = new JCheckBoxGroup("Others", 3);
 
-		groupForOthers.add(new NumberOfRefactorings().toString(), false);
+		groupForOthers.add(new NumberOfNRPOptimization().toString(), false);
 
 		JPanel p = new JOpaquePanel(new GridBagLayout());
 

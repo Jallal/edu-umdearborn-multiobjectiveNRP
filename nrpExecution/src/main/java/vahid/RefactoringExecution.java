@@ -95,7 +95,7 @@ public class RefactoringExecution {
 //        objectives.add(new Coupling());
 //        objectives.add(new Cohesion());
 //        objectives.add(new Complexity());
-//        objectives.add(new NumberOfRefactorings());
+//        objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
 		List<Refactoring> selectedRefactorings = new ArrayList<>();

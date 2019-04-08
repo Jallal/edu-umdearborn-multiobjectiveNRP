@@ -1,18 +1,18 @@
 package thiagodnf.doupr.evaluation.qualityattributes;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 
 import java.util.List;
 
-public class NumberOfRefactorings extends Objective {
+public class NumberOfNRPOptimization extends Objective {
 
-    public NumberOfRefactorings() {
+    public NumberOfNRPOptimization() {
 
     }
 
-    public NumberOfRefactorings(NumberOfRefactorings objective) {
+    public NumberOfNRPOptimization(NumberOfNRPOptimization objective) {
         super(objective);
     }
 
@@ -26,7 +26,7 @@ public class NumberOfRefactorings extends Objective {
         return 0;
     }
 
-    public double calculate(ProjectObject original, ProjectObject refactored, List<Refactoring> appliedRefactorings) {
+    public double calculate(ProjectObject original, ProjectObject refactored, List<NrpBase> appliedRefactorings) {
 
         if (isMinimize()) {
             return (appliedRefactorings.size());
@@ -47,6 +47,6 @@ public class NumberOfRefactorings extends Objective {
 
     @Override
     public Objective copy() {
-        return new NumberOfRefactorings(this);
+        return new NumberOfNRPOptimization(this);
     }
 }

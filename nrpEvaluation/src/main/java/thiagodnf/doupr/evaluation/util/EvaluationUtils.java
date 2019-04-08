@@ -4,6 +4,7 @@ import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.designmetrics.AbstractDesignMetric;
 import thiagodnf.doupr.evaluation.designmetrics.QMOODAverageNumberOfAncestors;
 import thiagodnf.doupr.evaluation.designmetrics.QMOODClassInterfaceSize;
+import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFunctionality;
@@ -45,6 +46,6 @@ public class EvaluationUtils {
         OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Coupling());
         OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Cohesion());
         OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Complexity());
-        OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.NumberOfRefactorings());
+        OBJECTIVES.add(new NumberOfNRPOptimization());
     }
 }

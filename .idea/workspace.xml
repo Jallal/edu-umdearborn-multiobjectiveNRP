@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bce763-019f-418d-b632-5c460eb2ec9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/Refactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/RefactoringVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/NrpVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseFieldSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseFieldSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/factory/ObjectiveFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/factory/ObjectiveFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfRefactorings.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfNRPOptimization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/EvaluationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/EvaluationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/nrpOptimization/target/" />
@@ -24,133 +39,7 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-              <folding>
-                <element signature="e#3700#3701#0" expanded="true" />
-                <element signature="e#3729#3730#0" expanded="true" />
-                <element signature="e#3773#3774#0" expanded="true" />
-                <element signature="e#3809#3810#0" expanded="true" />
-                <element signature="e#3842#3843#0" expanded="true" />
-                <element signature="e#3871#3872#0" expanded="true" />
-                <element signature="e#3915#3916#0" expanded="true" />
-                <element signature="e#3951#3952#0" expanded="true" />
-                <element signature="e#4206#4207#0" expanded="true" />
-                <element signature="e#4236#4237#0" expanded="true" />
-                <element signature="e#4288#4289#0" expanded="true" />
-                <element signature="e#4326#4327#0" expanded="true" />
-                <element signature="e#4369#4370#0" expanded="true" />
-                <element signature="e#4402#4403#0" expanded="true" />
-                <element signature="e#4460#4461#0" expanded="true" />
-                <element signature="e#4504#4505#0" expanded="true" />
-                <element signature="e#6313#6314#0" expanded="true" />
-                <element signature="e#6352#6353#0" expanded="true" />
-                <element signature="e#6417#6418#0" expanded="true" />
-                <element signature="e#6473#6474#0" expanded="true" />
-                <element signature="e#6523#6524#0" expanded="true" />
-                <element signature="e#6556#6557#0" expanded="true" />
-                <element signature="e#6621#6622#0" expanded="true" />
-                <element signature="e#6665#6666#0" expanded="true" />
-                <element signature="e#6917#6918#0" expanded="true" />
-                <element signature="e#6976#6977#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/AbstractAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/NrpVariable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/Variable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/MoveMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,15 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/ExtractSuperClass.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/IncreaseFieldSecurity.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/IncreaseMethodSecurity.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/MoveField.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/MoveMethod.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpMethod.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownField.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownMethod.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/PrintHelper.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/HashUtil.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/Math/Stats.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/vahid/ML/test2.java" />
@@ -228,9 +108,18 @@
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java" />
         <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/nrp.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" />
         <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/RefactoringVariable.java" />
         <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/NrpVariable.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseFieldSecurity.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DefineTasksForIncreaseOrDecreaseFieldSecurity.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" />
+        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java" />
+        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfNRPOptimization.java" />
+        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java" />
       </list>
     </option>
   </component>
@@ -247,10 +136,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="720" />
-    <option name="height" value="825" />
+    <option name="width" value="1440" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -309,12 +198,148 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="formatter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="condition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="defineactor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vahid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
               <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="qualityattributes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="panel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
@@ -350,6 +375,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="optimization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="nrpOptimization" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="optimization" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
@@ -371,7 +406,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553364564640" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554659537433" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -400,7 +435,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExploreGUI">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="ExploreConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thiagodnf.doupr.execution.ExploreConsole" />
       <module name="nrpExecution" />
@@ -460,9 +495,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.ExploreGUI" />
         <item itemvalue="Application.ExploreConsole" />
-        <item itemvalue="Application.Launcher" />
         <item itemvalue="JUnit.thiagodnf.doupr.core in nrpCore" />
       </list>
     </recent_temporary>
@@ -479,25 +514,24 @@
       <updated>1552752914218</updated>
       <workItem from="1552752921434" duration="750000" />
       <workItem from="1552753765341" duration="3991000" />
-      <workItem from="1552757953029" duration="14102000" />
+      <workItem from="1552757953029" duration="24410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18843000" />
+    <option name="totallyTimeSpent" value="29151000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26895565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.369814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.1042524" />
+      <window_info anchor="bottom" id="Messages" weight="0.115068495" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.60490465" />
@@ -508,7 +542,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12995896" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13013698" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -525,135 +559,80 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewStatsWindow.java">
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToPMFilesVAHID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/MacOSManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/PreferencesManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/NormalizationConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/PreferencesConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/UserFeedbackConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorizeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/GridBagUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ImageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/LookAndFeelUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/OSUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/CSVUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/javax/swing/JTable.java">
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorizeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="221" column="13" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java">
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-95">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java">
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/PreferencesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/MacOSManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/renderer/RecentFilesCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AboutPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/BarChartPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddFilterAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="480">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -662,267 +641,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/window/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="108" column="46" selection-start-line="108" selection-start-column="46" selection-end-line="108" selection-end-column="46" />
+        <state relative-caret-position="-1320">
+          <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/problem/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/PreferencesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1535">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="27" selection-start-line="27" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenFileAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/EncapsulateField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseFieldSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseMethodSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/ExtractClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/ExtractSubClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/ExtractSuperClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/IncreaseFieldSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/IncreaseMethodSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/MoveField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/MoveMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-          <folding>
-            <element signature="e#3700#3701#0" expanded="true" />
-            <element signature="e#3729#3730#0" expanded="true" />
-            <element signature="e#3773#3774#0" expanded="true" />
-            <element signature="e#3809#3810#0" expanded="true" />
-            <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#3871#3872#0" expanded="true" />
-            <element signature="e#3915#3916#0" expanded="true" />
-            <element signature="e#3951#3952#0" expanded="true" />
-            <element signature="e#4206#4207#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
-            <element signature="e#4326#4327#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-            <element signature="e#4402#4403#0" expanded="true" />
-            <element signature="e#4460#4461#0" expanded="true" />
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#6313#6314#0" expanded="true" />
-            <element signature="e#6352#6353#0" expanded="true" />
-            <element signature="e#6417#6418#0" expanded="true" />
-            <element signature="e#6473#6474#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6556#6557#0" expanded="true" />
-            <element signature="e#6621#6622#0" expanded="true" />
-            <element signature="e#6665#6666#0" expanded="true" />
-            <element signature="e#6917#6918#0" expanded="true" />
-            <element signature="e#6976#6977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/AbstractAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -935,15 +662,302 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/variables/NrpVariable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
             <element signature="e#1092#1093#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseMethodSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/ExtractClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PullUpField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/problem/RefactoringProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1055">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/IncreaseMethodSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/EncapsulateField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="186" column="5" selection-start-line="45" selection-start-column="3" selection-end-line="186" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDevelopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DefineTasksForIncreaseOrDecreaseFieldSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForIncreaseOrDecreaseFieldSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/DecreaseFieldSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-661">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#3738#3739#0" expanded="true" />
+            <element signature="e#3792#3793#0" expanded="true" />
+            <element signature="e#4140#4141#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForEncapsulateField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="40" column="27" selection-start-line="11" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="151" column="39" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5135#5136#0" expanded="true" />
+            <element signature="e#5184#5185#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5271#5272#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
+            <element signature="e#5412#5413#0" expanded="true" />
+            <element signature="e#5472#5473#0" expanded="true" />
+            <element signature="e#5517#5518#0" expanded="true" />
+            <element signature="e#5559#5560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPushDownMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPullUpMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPullUpField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForIncreaseOrDecreaseMethodSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#4293#4294#0" expanded="true" />
+            <element signature="e#4326#4327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfNRPOptimization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODEffectiveness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/ObjectiveUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/EvaluationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/DesignMetricsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/PushDownMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/AreClassesCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/GreaterOrEqualsThanCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasPolymorphismCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
         </state>
       </provider>
     </entry>

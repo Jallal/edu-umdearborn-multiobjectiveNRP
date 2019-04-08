@@ -1,7 +1,7 @@
 package thiagodnf.doupr.evaluation;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -32,7 +32,7 @@ public abstract class Objective implements Serializable {
 
     public abstract double getDiff(ProjectObject original, ProjectObject refactored);
 
-    public abstract double calculate(ProjectObject original, ProjectObject refactored, List<Refactoring> appliedRefactorings);
+    public abstract double calculate(ProjectObject original, ProjectObject refactored, List<NrpBase> appliedRefactorings);
 
     public abstract boolean isMinimize();
 

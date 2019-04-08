@@ -1,6 +1,6 @@
 package thiagodnf.doupr.core.formatter;
 
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.util.StringUtils;
 
 import java.util.Collections;
@@ -14,7 +14,7 @@ public class RefactoringFormatter extends Formatter {
     @Override
     public String toString() {
 
-        Refactoring refactoring = (Refactoring) object;
+        NrpBase refactoring = (NrpBase) object;
 
         StringBuilder builder = new StringBuilder();
 
@@ -49,7 +49,7 @@ public class RefactoringFormatter extends Formatter {
     @Override
     public String toSimpleString() {
 
-        Refactoring refactoring = (Refactoring) object;
+        NrpBase refactoring = (NrpBase) object;
 
         StringBuilder builder = new StringBuilder();
 

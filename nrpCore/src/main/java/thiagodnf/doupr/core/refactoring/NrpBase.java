@@ -67,7 +67,6 @@ public abstract class NrpBase implements Serializable {
     public static Condition NOT(Condition condition) {
 
         condition.setNegate(true);
-
         return condition;
     }
 
@@ -144,6 +143,7 @@ public abstract class NrpBase implements Serializable {
     }
 
     public void setMethods(List<String> methods) {
+
         this.methods = methods;
     }
 
@@ -152,6 +152,7 @@ public abstract class NrpBase implements Serializable {
     }
 
     public void setAttributes(List<String> attributes) {
+
         this.attributes = attributes;
     }
 

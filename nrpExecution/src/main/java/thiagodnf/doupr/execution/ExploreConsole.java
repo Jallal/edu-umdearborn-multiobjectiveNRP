@@ -17,7 +17,7 @@ import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
 import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
 import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
-import thiagodnf.doupr.evaluation.qualityattributes.NumberOfRefactorings;
+import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
@@ -86,7 +86,7 @@ public class ExploreConsole {
         objectives.add(new Coupling());
         objectives.add(new Cohesion());
         objectives.add(new Complexity());
-        objectives.add(new NumberOfRefactorings());
+        objectives.add(new NumberOfNRPOptimization());
 
         List<Refactoring> selectedRefactorings = new ArrayList<>();
 
