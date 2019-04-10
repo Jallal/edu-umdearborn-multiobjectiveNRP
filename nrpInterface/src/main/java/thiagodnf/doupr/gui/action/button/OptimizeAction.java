@@ -14,7 +14,6 @@ import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
 import thiagodnf.doupr.gui.window.MainWindow;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

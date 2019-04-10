@@ -6,8 +6,8 @@ import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.core.base.MethodObject;
 import thiagodnf.doupr.core.base.PackageObject;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.factory.RefactoringFactory;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import vahid.ML.Clustering;
 
 import java.util.ArrayList;
@@ -101,16 +101,16 @@ public class RandomUtils {
 		return (ClassObject) getRandomElement(pkgSource.getClasses());
 	}
 
-	public static Refactoring getRandomRefactoring(List<Refactoring> possibleRefactorings) {
+	public static NrpBase getRandomRefactoring(List<NrpBase> possibleRefactorings) {
 
 		if (Clustering.instanceCL == null) {
 
-			return ((Refactoring) getRandomElement(possibleRefactorings)).copy();
+			return getRandomElement(possibleRefactorings).copy();
 
 		} else {
 
 			String randomRefactoringName = vahid.util.HashUtil.getRandomElementFromDist(Clustering.instanceCL.operationsProbHash);
-			return RefactoringFactory.getRefactoring(randomRefactoringName);
+			return NrpFactory.getNrpOptimization(randomRefactoringName);
 
 		}
 	}

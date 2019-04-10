@@ -1,7 +1,7 @@
 package thiagodnf.doupr.core.util;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,22 +14,22 @@ import java.util.List;
  * @version 1.0.0
  * @since 2017-06-09
  */
-public class RefactoringUtils {
+public class NrpUtils {
 
-    public static ProjectObject apply(ProjectObject project, List<Refactoring> refactorings) throws Exception {
+    public static ProjectObject apply(ProjectObject project, List<NrpBase> refactorings) throws Exception {
 
         UUIDUtils.restart();
 
         ProjectObject copy = ProjectObjectUtils.copy(project);
 
-        for (Refactoring refactoring : refactorings) {
+        for (NrpBase refactoring : refactorings) {
             apply(copy, refactoring);
         }
 
         return copy;
     }
 
-    public static void apply(ProjectObject project, Refactoring refactoring) throws Exception {
+    public static void apply(ProjectObject project, NrpBase refactoring) throws Exception {
 
         refactoring.defineActors(project);
 
@@ -42,16 +42,16 @@ public class RefactoringUtils {
         refactoring.verifyPostCondition(project);
     }
 
-    public static List<Refactoring> getValids(ProjectObject project, List<Refactoring> refactorings) {
+    public static List<NrpBase> getValids(ProjectObject project, List<NrpBase> refactorings) {
 
-        List<Refactoring> valids = new ArrayList<>();
+        List<NrpBase> valids = new ArrayList<>();
 
-        for (Refactoring refactoring : refactorings) {
+        for (NrpBase refactoring : refactorings) {
 
-            Refactoring copyRefactoring = refactoring.copy();
+            NrpBase copyRefactoring = refactoring.copy();
 
             try {
-                RefactoringUtils.apply(project, copyRefactoring);
+                NrpUtils.apply(project, copyRefactoring);
                 valids.add(copyRefactoring);
             } catch (Exception ex) { /*If the exception was thrown, we have to ignore it*/ }
         }

@@ -3,8 +3,6 @@ package thiagodnf.doupr.optimization.algorithm;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
-import thiagodnf.doupr.optimization.solution.RefactoringSolution;
 
 import java.util.List;
 

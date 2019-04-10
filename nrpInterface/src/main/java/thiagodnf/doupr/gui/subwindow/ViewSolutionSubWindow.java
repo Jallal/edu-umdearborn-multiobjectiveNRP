@@ -3,8 +3,8 @@ package thiagodnf.doupr.gui.subwindow;
 import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.core.sys.LOGGER;
+import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.core.util.RefactoringUtils;
 import thiagodnf.doupr.core.util.UUIDUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.action.button.AddRefactoringAction;
@@ -27,7 +27,6 @@ import thiagodnf.doupr.gui.panel.SummaryPanel;
 import thiagodnf.doupr.gui.util.ImageUtils;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.variables.RefactoringVariable;
 
@@ -173,7 +172,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 	public void applyRefactorings() {
 		try {
-			this.refactored = RefactoringUtils.apply(((RefactoringProblem) problem).getProject(), getRefactorings());
+			this.refactored = NrpUtils.apply(((RefactoringProblem) problem).getProject(), getRefactorings());
 			this.refactored.setDesignMetrics(DesignMetricsUtil.calculate(this.refactored));
 		} catch (Exception ex) {
 			MessageBox.error(ex);
@@ -201,7 +200,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		ProjectObject copy = ProjectObjectUtils.copy(((RefactoringProblem) problem).getProject());
 
 		// After remove it, some refactoring can be invalid. So, we have to remove all invalid ones
-		setRefactorings(RefactoringUtils.getValids(copy, getRefactorings()));
+		setRefactorings(NrpUtils.getValids(copy, getRefactorings()));
 
 		// Next we apply the valid refactoring again and we calculate again the design metrics
 		applyRefactorings();

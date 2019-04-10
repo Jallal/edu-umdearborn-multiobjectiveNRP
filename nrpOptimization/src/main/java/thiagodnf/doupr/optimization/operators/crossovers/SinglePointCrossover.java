@@ -3,7 +3,6 @@ package thiagodnf.doupr.optimization.operators.crossovers;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import thiagodnf.doupr.core.refactoring.Refactoring;
-import thiagodnf.doupr.optimization.solution.RefactoringSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.variables.RefactoringVariable;
 

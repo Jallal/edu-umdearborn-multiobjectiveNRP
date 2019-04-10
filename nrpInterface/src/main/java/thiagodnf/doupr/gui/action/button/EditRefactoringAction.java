@@ -3,11 +3,10 @@ package thiagodnf.doupr.gui.action.button;
 import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.core.util.RefactoringUtils;
+import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -50,7 +49,7 @@ public class EditRefactoringAction extends AddRefactoringAction implements Actio
         ProjectObject copy = ProjectObjectUtils.copy(((RefactoringProblem) window.getProblem()).getProject());
 
         try {
-            ProjectObject refactored = RefactoringUtils.apply(copy, refactoringsAppliedBefore);
+            ProjectObject refactored = NrpUtils.apply(copy, refactoringsAppliedBefore);
             refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
 
             if (showDialog(refactored, selectedRefactoring) == JOptionPane.OK_OPTION) {

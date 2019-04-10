@@ -5,8 +5,6 @@ import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
-import thiagodnf.doupr.optimization.solution.RefactoringSolution;
 import thiagodnf.doupr.optimization.variables.RefactoringVariable;
 
 import java.awt.event.ActionEvent;

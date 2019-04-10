@@ -6,7 +6,6 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
 import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 
 import java.util.List;

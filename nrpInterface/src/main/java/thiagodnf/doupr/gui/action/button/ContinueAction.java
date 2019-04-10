@@ -10,8 +10,6 @@ import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
-import thiagodnf.doupr.optimization.solution.RefactoringSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.util.NormalizerUtils;
 import thiagodnf.doupr.optimization.util.SolutionListUtils;

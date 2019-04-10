@@ -11,7 +11,6 @@ import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.factory.RefactoringFactory;
 import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
@@ -31,8 +30,6 @@ import thiagodnf.doupr.optimization.algorithm.builder.BuilderCustomNSGAIII;
 import thiagodnf.doupr.optimization.operators.crossovers.SinglePointCrossover;
 import thiagodnf.doupr.optimization.operators.mutations.BitFlipMutation;
 import thiagodnf.doupr.optimization.operators.selections.BinaryTournamentSelection;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
-import thiagodnf.doupr.optimization.solution.RefactoringSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.variables.RefactoringVariable;
 
@@ -167,7 +164,7 @@ public class ExploreConsole {
 
             List<Refactoring> refactorings = ((RefactoringVariable) solution.getVariableValue(0)).getRefactorings();
 
-//			ProjectObject refactored = RefactoringUtils.applyRefactorings(originalProject, refactorings);
+//			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
 //			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
 
 //			problem.calculateFitnessFunction(solution, refactored);

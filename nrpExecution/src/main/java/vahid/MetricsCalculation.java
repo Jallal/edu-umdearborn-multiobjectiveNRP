@@ -9,7 +9,6 @@ package main.java.vahid;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.factory.RefactoringFactory;
 import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
@@ -22,7 +21,6 @@ import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFunctionality;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODUnderstandability;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 
 import java.io.File;
 import java.util.ArrayList;

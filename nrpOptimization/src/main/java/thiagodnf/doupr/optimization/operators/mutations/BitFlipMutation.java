@@ -4,7 +4,6 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.core.util.RandomUtils;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.variables.RefactoringVariable;
 

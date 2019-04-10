@@ -20,7 +20,6 @@ import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.window.MainWindow;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
 import thiagodnf.doupr.optimization.filter.Filter;
-import thiagodnf.doupr.optimization.problem.RefactoringProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.util.FilterUtils;
 import thiagodnf.doupr.optimization.util.NormalizerUtils;

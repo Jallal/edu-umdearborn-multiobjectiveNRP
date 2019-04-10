@@ -11,8 +11,8 @@ import org.apache.commons.io.Charsets;
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.Block;
 import thiagodnf.doupr.core.callgraph.CallGraph;
-import thiagodnf.doupr.core.factory.RefactoringFactory;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.io.File;
 import java.io.IOException;
@@ -145,9 +145,9 @@ public class FileReaderUtils {
 		return project;
 	}
 
-	public static List<Refactoring> readRefactorings(File file) throws IOException {
+	public static List<NrpBase> readRefactorings(File file) throws IOException {
 
-		List<Refactoring> refactorings = new ArrayList<>();
+		List<NrpBase> refactorings = new ArrayList<>();
 
 		List<String> lines = Files.readLines(file, Charsets.UTF_8);
 
@@ -170,7 +170,7 @@ public class FileReaderUtils {
 					String[] attributes = m.group(4).isEmpty() ? new String[0] : m.group(4).split("\\|");
 					String[] methods = m.group(5).isEmpty() ? new String[0] : m.group(5).split("\\|");
 
-					Refactoring refactoring = RefactoringFactory.getRefactoring(name);
+					NrpBase refactoring = NrpFactory.getNrpOptimization(name);
 
 					refactoring.setClass1(class1);
 					refactoring.setClass2(class2);

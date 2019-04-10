@@ -1,13 +1,12 @@
 package thiagodnf.doupr.optimization.solution;
 
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.util.List;
 
-public class RefactoringSolution extends Solution {
-
+public class NrpSolution extends Solution{
     private static final long serialVersionUID = -146503776791357509L;
 
     /**
@@ -15,7 +14,7 @@ public class RefactoringSolution extends Solution {
      *
      * @param problem the problem that this solution is part of
      */
-    public RefactoringSolution(Problem problem) {
+    public NrpSolution(Problem problem) {
         super(problem);
     }
 
@@ -24,7 +23,7 @@ public class RefactoringSolution extends Solution {
      *
      * @param solution The solution to be cloned
      */
-    public RefactoringSolution(RefactoringSolution solution) {
+    public NrpSolution(NrpSolution solution) {
         super(solution);
     }
 
@@ -32,8 +31,8 @@ public class RefactoringSolution extends Solution {
         return getVariableValue(index).toString();
     }
 
-    public RefactoringSolution copy() {
-        return new RefactoringSolution(this);
+    public NrpSolution copy() {
+        return new NrpSolution(this);
     }
 
     @Override
@@ -65,7 +64,7 @@ public class RefactoringSolution extends Solution {
     @Override
     public double getUserFeedback() {
 
-        List<Refactoring> refactorings = ((RefactoringVariable) getVariableValue(0)).getRefactorings();
+        List<NrpBase> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
 
         if (refactorings.isEmpty()) {
             return 0.0;
@@ -73,8 +72,8 @@ public class RefactoringSolution extends Solution {
 
         double userFeedback = 0.0;
 
-        for (Refactoring refactoring : refactorings) {
-            userFeedback += refactoring.getUserFeedback();
+        for (NrpBase nrpBase : refactorings) {
+            userFeedback += nrpBase.getUserFeedback();
         }
 
         return userFeedback / (double) refactorings.size();
@@ -84,10 +83,10 @@ public class RefactoringSolution extends Solution {
     public void clearAttributes() {
         super.clearAttributes();
 
-        List<Refactoring> refactorings = ((RefactoringVariable) getVariableValue(0)).getRefactorings();
+        List<NrpBase> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
 
-        for (Refactoring refactoring : refactorings) {
-            refactoring.getProperties().clear();
+        for (NrpBase nrpBase : refactorings) {
+            nrpBase.getProperties().clear();
         }
     }
 }

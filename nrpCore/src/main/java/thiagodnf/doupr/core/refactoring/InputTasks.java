@@ -21,7 +21,7 @@ import java.util.List;
 public class InputTasks extends NrpBase {
 
 
-    protected static final Logger LOGGER = Logger.getLogger(DecreaseFieldSecurity.class);
+    protected static final Logger LOGGER = Logger.getLogger(InputTasks.class);
 
     protected ClassObject sourceCls;
 
