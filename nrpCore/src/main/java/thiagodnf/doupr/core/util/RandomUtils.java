@@ -9,6 +9,7 @@ import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.factory.NrpFactory;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import vahid.ML.Clustering;
+import vahid.util.HashUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,11 +106,12 @@ public class RandomUtils {
 
 		if (Clustering.instanceCL == null) {
 
-			return getRandomElement(possibleRefactorings).copy();
+			//return getRandomElement(possibleRefactorings).copy();
+			return null;
 
 		} else {
 
-			String randomRefactoringName = vahid.util.HashUtil.getRandomElementFromDist(Clustering.instanceCL.operationsProbHash);
+			String randomRefactoringName = HashUtil.getRandomElementFromDist(Clustering.instanceCL.operationsProbHash);
 			return NrpFactory.getNrpOptimization(randomRefactoringName);
 
 		}

@@ -6,6 +6,7 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
 import thiagodnf.doupr.evaluation.Objective;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 
 import java.util.List;
@@ -22,7 +23,7 @@ public abstract class Builder {
 
     protected SelectionOperator<List<Solution>, Solution> selection;
 
-    protected RefactoringProblem problem;
+    protected NrpProblem problem;
 
     protected List<Solution> initialPopulation;
 
@@ -58,11 +59,11 @@ public abstract class Builder {
         this.selection = selection;
     }
 
-    public RefactoringProblem getProblem() {
+    public NrpProblem getProblem() {
         return problem;
     }
 
-    public void setProblem(RefactoringProblem problem) {
+    public void setProblem(NrpProblem problem) {
         this.problem = problem;
     }
 

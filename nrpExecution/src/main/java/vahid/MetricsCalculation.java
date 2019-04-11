@@ -4,16 +4,14 @@
  * Email: alizadeh@umich.edu
  */
 
-package main.java.vahid;
+package vahid;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
-import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
-import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
 import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
@@ -21,6 +19,7 @@ import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFunctionality;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODUnderstandability;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -51,7 +50,7 @@ public class MetricsCalculation {
 
 	public String instanceFile;
 
-	public RefactoringProblem problem;
+	public NrpProblem problem;
 
 	public MetricsCalculation(String BlockFile) {
 		this.instanceFile = BlockFile;
@@ -69,15 +68,15 @@ public class MetricsCalculation {
 		objectives.add(new QMOODFunctionality());
 		objectives.add(new QMOODReusability());
 		objectives.add(new QMOODUnderstandability());
-		objectives.add(new Coupling());
-		objectives.add(new Cohesion());
-		objectives.add(new Complexity());
+		//objectives.add(new Coupling());
+		//objectives.add(new Cohesion());
+		//objectives.add(new Complexity());
 		objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<Refactoring> selectedRefactorings = new ArrayList<>();
+		List<NrpBase> selectedRefactorings = new ArrayList<>();
 
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
+		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Extract Class"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Push Down Field"));
@@ -90,11 +89,14 @@ public class MetricsCalculation {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Method Security"));
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));
+		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
+
+		selectedRefactorings.add(NrpFactory.getNrpOptimization("Optimizing the NRP"));
+
 
 		LOGGER.info("calculating the metrics....");
 		// Initiate the problem
-		this.problem = new RefactoringProblem(file, objectives, selectedRefactorings);
+		this.problem = new NrpProblem(file, objectives, selectedRefactorings);
 
 	}
 

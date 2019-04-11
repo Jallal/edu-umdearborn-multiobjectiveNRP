@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.gui.panel.FormRefactoringPanel;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
@@ -27,7 +27,7 @@ public class AddRefactoringAction implements ActionListener {
         this.window = window;
     }
 
-    protected int showDialog(ProjectObject refactored, Refactoring ref) {
+    protected int showDialog(ProjectObject refactored, NrpBase ref) {
 
         this.panel = new FormRefactoringPanel(refactored, ref);
 
@@ -56,7 +56,7 @@ public class AddRefactoringAction implements ActionListener {
 
             if (LOGGER.isInfoEnabled()) LOGGER.info("The user pushed the OK button. Validaing the refactoring");
 
-            Refactoring refactoring = panel.getRefactoring();
+            NrpBase refactoring = panel.getRefactoring();
 
             if (LOGGER.isInfoEnabled()) LOGGER.info(refactoring);
 

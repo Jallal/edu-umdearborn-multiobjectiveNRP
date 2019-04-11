@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.model.table.DesignMetricsForClassTableModel;
 
 import javax.swing.*;
@@ -29,7 +29,7 @@ public class DesignMetricsForClassPanel extends AbstractPanel {
     }
 
     @Override
-    public void load(ProjectObject refactored, List<Refactoring> refactorings) {
+    public void load(ProjectObject refactored, List<NrpBase> refactorings) {
         // Not used
     }
 }

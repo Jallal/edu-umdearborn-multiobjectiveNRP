@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.panel;
 
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.action.table.OpenSolutionAction;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;
 import thiagodnf.doupr.gui.model.table.ClusterCenterTableModel;
@@ -56,7 +56,7 @@ public class ClustersCenterPanel extends JPanelForTabbedPane {
     }
 
     @Override
-    public void load(ProjectObject project, List<Refactoring> refactorings) {
+    public void load(ProjectObject project, List<NrpBase> refactorings) {
 
     }
 

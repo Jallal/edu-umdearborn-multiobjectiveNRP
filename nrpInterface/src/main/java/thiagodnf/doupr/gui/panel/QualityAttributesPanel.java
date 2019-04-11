@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;
 import thiagodnf.doupr.gui.model.table.QualityAttributesTableModel;
 
@@ -35,7 +35,7 @@ public class QualityAttributesPanel extends JPanelForTabbedPane {
     }
 
     @Override
-    public void load(ProjectObject refactored, List<Refactoring> refactorings) {
+    public void load(ProjectObject refactored, List<NrpBase> refactorings) {
         model.setRefactored(refactored);
         model.updateRows();
     }

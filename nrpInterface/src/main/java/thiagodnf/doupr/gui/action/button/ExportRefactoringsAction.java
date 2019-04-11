@@ -7,7 +7,7 @@ import thiagodnf.doupr.gui.component.JExportAsChooser.JExportAsChooserListener;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,7 +42,7 @@ public class ExportRefactoringsAction implements ActionListener, JExportAsChoose
 
         Solution solution = window.getSolution();
 
-        if (((RefactoringVariable) solution.getVariableValue(0)).getRefactorings().isEmpty()) {
+        if (((NrpVariable) solution.getVariableValue(0)).getRefactorings().isEmpty()) {
             MessageBox.warning("The refactoring list cannot be empty. You must add some refactorings before save them");
             return;
         }

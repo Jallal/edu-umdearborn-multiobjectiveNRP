@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.subwindow.SubWindow;
 
 import javax.swing.*;
@@ -30,7 +30,7 @@ public abstract class AbstractPanel extends JPanel {
     }
 
 
-    public abstract void load(ProjectObject project, List<Refactoring> refactorings);
+    public abstract void load(ProjectObject project, List<NrpBase> refactorings);
 
     public void update(Object... objects) throws IOException {
 

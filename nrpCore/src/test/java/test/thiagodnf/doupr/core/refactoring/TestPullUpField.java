@@ -3,10 +3,7 @@ package test.java.test.thiagodnf.doupr.core.refactoring;
 import org.junit.Before;
 import org.junit.Test;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
 import thiagodnf.doupr.core.util.FileReaderUtils;
-import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.core.util.NrpUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,13 +24,13 @@ public class TestPullUpField {
 
         ProjectObject expected = FileReaderUtils.read(new File("src/test/resources/pull-up-field/test-1-expected.blocks"));
 
-        Refactoring refactoring = new PullUpField("Class_B", "Class_A", "Attribute_2");
+       /* NrpBase refactoring = new NrpBase("Class_B", "Class_A", "Attribute_2");
 
         ProjectObject copy = ProjectObjectUtils.copy(project);
 
         NrpUtils.apply(copy, refactoring);
 
-        System.out.println(copy);
+        System.out.println(copy);*/
 
         assertEquals(1, 1);
 

@@ -20,6 +20,7 @@ import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.window.MainWindow;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
 import thiagodnf.doupr.optimization.filter.Filter;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.util.FilterUtils;
 import thiagodnf.doupr.optimization.util.NormalizerUtils;
@@ -46,7 +47,7 @@ public class ViewParetoFrontSubWindow extends SubWindow implements ChangeListene
 
 	protected List<Solution> paretoFront;
 
-	protected RefactoringProblem problem;
+	protected NrpProblem problem;
 
 	protected Builder builder;
 
@@ -163,11 +164,11 @@ public class ViewParetoFrontSubWindow extends SubWindow implements ChangeListene
 		this.paretoFront = paretoFront;
 	}
 
-	public RefactoringProblem getProblem() {
+	public NrpProblem getProblem() {
 		return problem;
 	}
 
-	public void setProblem(RefactoringProblem problem) {
+	public void setProblem(NrpProblem problem) {
 		this.problem = problem;
 	}
 

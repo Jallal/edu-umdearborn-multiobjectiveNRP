@@ -6,6 +6,7 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.problem.Problem;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
 
 import java.util.List;
@@ -40,7 +41,7 @@ public class CustomNSGAII extends NSGAII<Solution> {
         } else {
             int needToFill = getMaxPopulationSize() - initialPopulation.size();
             for (int i = 0; i < needToFill; i++) {
-                RefactoringSolution newIndividual = (RefactoringSolution) getProblem().createSolution();
+                NrpSolution newIndividual = (NrpSolution) getProblem().createSolution();
                 initialPopulation.add(newIndividual);
             }
 

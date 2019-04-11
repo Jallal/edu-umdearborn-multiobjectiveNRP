@@ -1,11 +1,13 @@
 package thiagodnf.doupr.gui.action.button;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -32,14 +34,14 @@ public class ApplyRefactoringsAction implements ActionListener {
         objectives.add(new QMOODReusability());
         objectives.add(new QMOODFlexibility());
 
-        List<Refactoring> selectedRefactorings = new ArrayList<>();
+        List<NrpBase> selectedRefactorings = new ArrayList<>();
 
-        RefactoringProblem problem = new RefactoringProblem(new File(fileName), project, objectives, selectedRefactorings);
+        NrpProblem problem = new NrpProblem(new File(fileName), project, objectives, selectedRefactorings);
 
-        RefactoringSolution solution = new RefactoringSolution(problem);
+        NrpSolution solution = new NrpSolution(problem);
 
         // Create a refactoring variable for saving the list of refactorings
-        RefactoringVariable variable = new RefactoringVariable();
+        NrpVariable variable = new NrpVariable();
 
         // Save the variable (list of refactorings) in the solution
         solution.setVariableValue(0, variable);

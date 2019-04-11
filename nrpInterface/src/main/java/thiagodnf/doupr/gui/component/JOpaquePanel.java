@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.component;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.panel.AbstractPanel;
 
 import java.awt.*;
@@ -22,7 +22,7 @@ public class JOpaquePanel extends AbstractPanel {
     }
 
     @Override
-    public void load(ProjectObject project, List<Refactoring> refactorings) {
+    public void load(ProjectObject project, List<NrpBase> refactorings) {
         // TODO Auto-generated method stub
 
     }

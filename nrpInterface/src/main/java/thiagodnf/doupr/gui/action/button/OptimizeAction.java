@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.gui.asynctask.AsyncTask;
 import thiagodnf.doupr.gui.asynctask.OptimizeAsyncTask;
@@ -14,6 +14,7 @@ import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
 import thiagodnf.doupr.gui.window.MainWindow;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -52,10 +53,10 @@ public class OptimizeAction implements ActionListener {
                 // The list of objectives used to optimize the problem
                 List<Objective> objectives = panel.getObjectives();
 
-                List<Refactoring> refactorings = panel.getRefactorings();
+                List<NrpBase> refactorings = panel.getRefactorings();
 
                 // Initiate the problem
-                RefactoringProblem problem = new RefactoringProblem(selectedFile, project, objectives, refactorings);
+                NrpProblem problem = new NrpProblem(selectedFile, project, objectives, refactorings);
 
                 problem.setMinSolutionSize(panel.getMinRefactorings());
                 problem.setMaxSolutionSize(panel.getMaxRefactorings());

@@ -7,7 +7,6 @@ import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.condition.DefineCondition;
 import thiagodnf.doupr.core.refactoring.condition.ExistCondition;
-import thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition;
 import thiagodnf.doupr.core.refactoring.condition.IsClassCondition;
 import thiagodnf.doupr.core.refactoring.condition.IsFieldCondition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
@@ -27,6 +26,10 @@ public class InputTasks extends NrpBase {
 
     protected AttributeObject attr;
 
+    public InputTasks(InputTasks inputTasks) {
+    }
+
+
     @Override
     public void loadActors(ProjectObject project) {
         this.sourceCls = ProjectObjectUtils.findByName(project, this.class1);
@@ -43,7 +46,7 @@ public class InputTasks extends NrpBase {
         conditions.add(new IsClassCondition(sourceCls));
         conditions.add(new IsFieldCondition(attr));
         conditions.add(new DefineCondition(sourceCls, attr));
-        conditions.add(NOT(new HasVisibilityCondition(attr, Visibility.PUBLIC)));
+      //  conditions.add(NOT(new HasVisibilityCondition(attr, Visibility.PUBLIC)));
 
         return conditions;
     }
@@ -70,9 +73,9 @@ public class InputTasks extends NrpBase {
         // ========================================================================
 
         if (attr.isPrivate()) {
-            attr.setVisibility(Visibility.PROTECTED);
+           // attr.setVisibility(Visibility.PROTECTED);
         } else if (attr.isProtected()) {
-            attr.setVisibility(Visibility.PUBLIC);
+           // attr.setVisibility(Visibility.PUBLIC);
         }
 
     }

@@ -1,12 +1,13 @@
 package thiagodnf.doupr.gui.action.button;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
-import thiagodnf.doupr.core.util.ProjectObjectUtils;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.util.NrpUtils;
+import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -38,15 +39,15 @@ public class EditRefactoringAction extends AddRefactoringAction implements Actio
             return;
         }
 
-        Refactoring selectedRefactoring = window.getRefactorings().get(selectedRows[0]);
+        NrpBase selectedRefactoring = window.getRefactorings().get(selectedRows[0]);
 
-        List<Refactoring> refactoringsAppliedBefore = new ArrayList<>();
+        List<NrpBase> refactoringsAppliedBefore = new ArrayList<>();
 
         for (int i = 0; i < selectedRows[0]; i++) {
             refactoringsAppliedBefore.add(window.getRefactorings().get(i));
         }
 
-        ProjectObject copy = ProjectObjectUtils.copy(((RefactoringProblem) window.getProblem()).getProject());
+        ProjectObject copy = ProjectObjectUtils.copy(((NrpProblem) window.getProblem()).getProject());
 
         try {
             ProjectObject refactored = NrpUtils.apply(copy, refactoringsAppliedBefore);

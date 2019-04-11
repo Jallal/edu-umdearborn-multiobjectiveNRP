@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.action.button.AddFilterAction;
 import thiagodnf.doupr.gui.action.button.ChooseColorizeAction;
 import thiagodnf.doupr.gui.action.button.RemoveFilterAction;
@@ -82,7 +82,7 @@ public class SettingsForParetoFrontPanel extends JPanelForTabbedPane {
 	}
 
 	@Override
-	public void load(ProjectObject project, List<Refactoring> refactorings) {
+	public void load(ProjectObject project, List<NrpBase> refactorings) {
 		// TODO Auto-generated method stub
 
 	}

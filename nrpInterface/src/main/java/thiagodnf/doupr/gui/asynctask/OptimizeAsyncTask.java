@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.util.SolutionListUtils;
 
@@ -27,7 +28,7 @@ public class OptimizeAsyncTask extends AsyncTask<Builder> {
 
         AbstractEvolutionaryAlgorithm<Solution, List<Solution>> algorithm = builder.build();
 
-        builder.getProblem().addEvolutionListener(new EvolutionListener() {
+        builder.getProblem().addEvolutionListener(new NrpProblem.EvolutionListener() {
 
             @Override
             public void evaluated() {

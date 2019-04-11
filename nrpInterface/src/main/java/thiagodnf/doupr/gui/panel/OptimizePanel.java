@@ -3,13 +3,12 @@ package thiagodnf.doupr.gui.panel;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.AssignTaskToDeveloper;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.sys.LOGGER;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.factory.ObjectiveFactory;
-import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
-import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
-import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
 import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
@@ -201,10 +200,12 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 		groupForQMood.add(new QMOODUnderstandability().toString(), true);
 
 		groupForStandard = new JCheckBoxGroup("Standard", 2);
+		groupForStandard.add(new AssignTaskToDeveloper().toString(), true);
 
-		groupForStandard.add(new Coupling().toString(), true);
+
+		/*groupForStandard.add(new Coupling().toString(), true);
 		groupForStandard.add(new Cohesion().toString(), true);
-		groupForStandard.add(new Complexity().toString(), true);
+		groupForStandard.add(new Complexity().toString(), true);*/
 
 		groupForOthers = new JCheckBoxGroup("Others", 3);
 
@@ -226,8 +227,10 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 	protected JPanel getPanelForRefactoringsSettings() {
 
 		groupForMovingFeatures = new JCheckBoxGroup("Moving Features between Objects", 2);
+		groupForMovingFeatures.add(new AssignTaskToDeveloper().getName(), true);
 
-		groupForMovingFeatures.add(new MoveMethod().getName(), true);
+
+		/*groupForMovingFeatures.add(new MoveMethod().getName(), true);
 		groupForMovingFeatures.add(new MoveField().getName(), true);
 		groupForMovingFeatures.add(new ExtractClass().getName(), true);
 
@@ -249,7 +252,7 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 		groupForDealingWithGeneralisation.add(new PushDownField().getName(), true);
 		groupForDealingWithGeneralisation.add(new PushDownMethod().getName(), true);
 		groupForDealingWithGeneralisation.add(new ExtractSuperClass().getName(), true);
-		groupForDealingWithGeneralisation.add(new ExtractSubClass().getName(), true);
+		groupForDealingWithGeneralisation.add(new ExtractSubClass().getName(), true);*/
 
 		JPanel p = new JOpaquePanel(new GridBagLayout());
 
@@ -287,12 +290,12 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 		return selectedObjectives;
 	}
 
-	public List<Refactoring> getRefactorings() {
+	public List<NrpBase> getRefactorings() {
 
-		List<Refactoring> refactorings = new ArrayList<>();
+		List<NrpBase> refactorings = new ArrayList<>();
 
 		for (String selected : getSelectedRefactorings()) {
-			refactorings.add(RefactoringFactory.getRefactoring(selected));
+			refactorings.add(NrpFactory.getNrpOptimization(selected));
 		}
 
 		return refactorings;

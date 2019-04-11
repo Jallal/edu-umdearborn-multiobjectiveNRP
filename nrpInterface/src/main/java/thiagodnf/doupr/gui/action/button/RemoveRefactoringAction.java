@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 
@@ -37,13 +37,13 @@ public class RemoveRefactoringAction implements ActionListener {
             return;
         }
 
-        List<Refactoring> refactorings = window.getRefactorings();
+        List<NrpBase> refactorings = window.getRefactorings();
 
         if (!MessageBox.confirm("Warning", "Do you want to delete " + selectedRows.length + " refactorings?")) {
             return;
         }
 
-        List<Refactoring> refactoringsToRemove = new ArrayList<>();
+        List<NrpBase> refactoringsToRemove = new ArrayList<>();
 
         for (int i = 0; i < selectedRows.length; i++) {
             refactoringsToRemove.add(refactorings.get(selectedRows[i]));
@@ -53,7 +53,7 @@ public class RemoveRefactoringAction implements ActionListener {
 
             LOGGER.info("Refactorings removed");
 
-            for (Refactoring r : refactoringsToRemove) {
+            for (NrpBase r : refactoringsToRemove) {
                 LOGGER.info(r);
             }
         }

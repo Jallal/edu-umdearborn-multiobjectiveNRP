@@ -3,7 +3,9 @@ package thiagodnf.doupr.gui.panel;
 import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.core.base.ElementObject;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.AssignTaskToDeveloper;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.util.ClassObjectUtils;
 import thiagodnf.doupr.gui.component.JFilterComboBox;
 import thiagodnf.doupr.gui.component.JSortedComboBox;
@@ -33,9 +35,9 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 
 	protected List<ClassObject> classes;
 
-	protected Refactoring refactoring;
+	protected NrpBase refactoring;
 
-	public FormRefactoringPanel(ProjectObject refactored, Refactoring refactoring) {
+	public FormRefactoringPanel(ProjectObject refactored, NrpBase refactoring) {
 
 		this.refactoring = refactoring;
 		this.classes = refactored.getClasses();
@@ -158,7 +160,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 	protected void loadRefactoringTypesComboBox() {
 
 		// Add the all possible refactorings the users can choose
-		this.refactoringTypesComboBox.addItem(new DecreaseFieldSecurity().getName());
+		/*this.refactoringTypesComboBox.addItem(new DecreaseFieldSecurity().getName());
 		this.refactoringTypesComboBox.addItem(new DecreaseMethodSecurity().getName());
 		this.refactoringTypesComboBox.addItem(new EncapsulateField().getName());
 		this.refactoringTypesComboBox.addItem(new ExtractClass().getName());
@@ -171,7 +173,8 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		this.refactoringTypesComboBox.addItem(new PullUpField().getName());
 		this.refactoringTypesComboBox.addItem(new PullUpMethod().getName());
 		this.refactoringTypesComboBox.addItem(new PushDownField().getName());
-		this.refactoringTypesComboBox.addItem(new PushDownMethod().getName());
+		this.refactoringTypesComboBox.addItem(new PushDownMethod().getName());*/
+		this.refactoringTypesComboBox.addItem(new AssignTaskToDeveloper().getName());
 
 		// We always select the first index in the Combobox component
 		this.refactoringTypesComboBox.setSelectedIndex(9);
@@ -205,7 +208,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		}
 	}
 
-	public Refactoring getRefactoring() {
+	public NrpBase getRefactoring() {
 
 		ClassObject sourceClass = getSelectedSourceClass();
 		ClassObject targetClass = getSelectedTargetClass();
@@ -213,7 +216,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		String class1 = sourceClass == null ? null : sourceClass.getName();
 		String class2 = targetClass == null ? null : targetClass.getName();
 
-		Refactoring refactoring = getSelectedRefactoring();
+		NrpBase refactoring = getSelectedRefactoring();
 
 		refactoring.setClass1(class1);
 		refactoring.setClass2(class2);
@@ -224,8 +227,8 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		return refactoring;
 	}
 
-	protected Refactoring getSelectedRefactoring() {
-		return RefactoringFactory.getRefactoring((String) refactoringTypesComboBox.getSelectedItem());
+	protected NrpBase getSelectedRefactoring() {
+		return NrpFactory.getNrpOptimization((String) refactoringTypesComboBox.getSelectedItem());
 	}
 
 	protected ClassObject getSelectedSourceClass() {
@@ -246,14 +249,15 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 
 		List<String> refactorings = new ArrayList<>();
 
-		refactorings.add(new EncapsulateField().getName());
+		/*refactorings.add(new EncapsulateField().getName());
 		refactorings.add(new IncreaseFieldSecurity().getName());
 		refactorings.add(new IncreaseMethodSecurity().getName());
 		refactorings.add(new DecreaseFieldSecurity().getName());
 		refactorings.add(new DecreaseMethodSecurity().getName());
 		refactorings.add(new ExtractClass().getName());
 		refactorings.add(new ExtractSubClass().getName());
-		refactorings.add(new ExtractSuperClass().getName());
+		refactorings.add(new ExtractSuperClass().getName());*/
+		refactorings.add(new AssignTaskToDeveloper().getName());
 
 		if (refactorings.contains(refactoringName)) {
 			this.targetClassComboBox.setEnabled(false);

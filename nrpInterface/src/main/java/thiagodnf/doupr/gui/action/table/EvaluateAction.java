@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.action.table;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.component.JHorizontalSlider;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
@@ -48,7 +48,7 @@ public class EvaluateAction extends MouseAdapter implements ActionListener {
                 return;
             }
 
-            Refactoring refactoring = window.getRefactorings().get(selectedRow);
+            NrpBase refactoring = window.getRefactorings().get(selectedRow);
 
             slider.setNormalizedValue(refactoring.getUserFeedback());
 

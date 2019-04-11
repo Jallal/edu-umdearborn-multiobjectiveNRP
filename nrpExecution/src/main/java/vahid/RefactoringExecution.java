@@ -4,13 +4,13 @@
  * Email: alizadeh@umich.edu
  */
 
-package main.java.vahid;
+package vahid;
 
 import org.apache.log4j.Logger;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
@@ -24,7 +24,9 @@ import thiagodnf.doupr.optimization.algorithm.builder.BuilderCustomNSGAIII;
 import thiagodnf.doupr.optimization.operators.crossovers.SinglePointCrossover;
 import thiagodnf.doupr.optimization.operators.mutations.BitFlipMutation;
 import thiagodnf.doupr.optimization.operators.selections.BinaryTournamentSelection;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
+import vahid.util.ParetoObjectCRUD;
 
 import java.io.File;
 import java.io.IOException;
@@ -96,9 +98,9 @@ public class RefactoringExecution {
 //        objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<Refactoring> selectedRefactorings = new ArrayList<>();
+		List<NrpBase> selectedRefactorings = new ArrayList<>();
 
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
+		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Extract Class"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Push Down Field"));
@@ -111,10 +113,10 @@ public class RefactoringExecution {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Method Security"));
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));
+		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
 
 		// Initiate the problem
-		RefactoringProblem problem = new RefactoringProblem(file, objectives, selectedRefactorings);
+		NrpProblem problem = new NrpProblem(file, objectives, selectedRefactorings);
 
 		problem.setMinSolutionSize(minRefatorings);
 		problem.setMaxSolutionSize(maxRefatorings);
@@ -158,7 +160,7 @@ public class RefactoringExecution {
 
 		//Writing pareto front object to a file
 		if (saveResult) {
-			main.java.vahid.util.ParetoObjectCRUD paretoObjectCRUD = new main.java.vahid.util.ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
+			ParetoObjectCRUD paretoObjectCRUD = new ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
 			objectPath = paretoObjectCRUD.saveParetoObject(paretoFront);
 		}
 		LOGGER.info("Refactoring process is Done");

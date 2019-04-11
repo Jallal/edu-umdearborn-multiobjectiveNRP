@@ -14,7 +14,7 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.util.ShapeUtilities;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.gui.action.table.OpenSolutionAction;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;
@@ -287,7 +287,7 @@ public class ClusterChartPanel extends JPanelForTabbedPane implements ChartMouse
     }
 
     @Override
-    public void load(ProjectObject project, List<Refactoring> refactorings) {
+    public void load(ProjectObject project, List<NrpBase> refactorings) {
         updateChart();
     }
 

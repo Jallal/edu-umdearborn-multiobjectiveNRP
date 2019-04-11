@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.subwindow;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.sys.LOGGER;
 import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
@@ -26,9 +26,10 @@ import thiagodnf.doupr.gui.panel.RefactoringsPanel;
 import thiagodnf.doupr.gui.panel.SummaryPanel;
 import thiagodnf.doupr.gui.util.ImageUtils;
 import thiagodnf.doupr.gui.util.MessageBox;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.problem.Problem;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -88,8 +89,8 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 		tabbedPane.addTab("Refactorings", null, refactoringsPanel);
 		tabbedPane.addTab("Summary", null, new SummaryPanel());
-		tabbedPane.addTab("Design Metrics", null, new DesignMetricsForProjectPanel(((RefactoringProblem) problem).getProject()));
-		tabbedPane.addTab("Quality Attributes", null, new QualityAttributesPanel(((RefactoringProblem) problem).getProject()));
+		tabbedPane.addTab("Design Metrics", null, new DesignMetricsForProjectPanel(((NrpProblem) problem).getProject()));
+		tabbedPane.addTab("Quality Attributes", null, new QualityAttributesPanel(((NrpProblem) problem).getProject()));
 
 		List<Solution> singleSolutionInList = new ArrayList<>(Arrays.asList(solution));
 		tabbedPane.addTab("Refactoring Frequency", ImageUtils.getImageIcon(this, "analytics3.png"), new FrequencyByOperationPanel(singleSolutionInList));
@@ -158,12 +159,12 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		return refactoringsPanel;
 	}
 
-	public List<Refactoring> getRefactorings() {
-		return ((RefactoringVariable) solution.getVariableValue(0)).getRefactorings();
+	public List<NrpBase> getRefactorings() {
+		return ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
 	}
 
-	public void setRefactorings(List<Refactoring> refactorings) {
-		((RefactoringVariable) solution.getVariableValue(0)).setRefatorings(refactorings);
+	public void setRefactorings(List<NrpBase> refactorings) {
+		((NrpVariable) solution.getVariableValue(0)).setRefatorings(refactorings);
 	}
 
 	public Solution getSolution() {
@@ -172,14 +173,14 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 	public void applyRefactorings() {
 		try {
-			this.refactored = NrpUtils.apply(((RefactoringProblem) problem).getProject(), getRefactorings());
+			this.refactored = NrpUtils.apply(((NrpProblem) problem).getProject(), getRefactorings());
 			this.refactored.setDesignMetrics(DesignMetricsUtil.calculate(this.refactored));
 		} catch (Exception ex) {
 			MessageBox.error(ex);
 		}
 	}
 
-	public void addRefactoring(Refactoring refactoring) {
+	public void addRefactoring(NrpBase refactoring) {
 
 		getRefactorings().add(refactoring);
 
@@ -188,16 +189,16 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		refactoringsPanel.load(refactored, getRefactorings());
 	}
 
-	public void removeRefactoring(List<Refactoring> refactoringsToRemove) {
+	public void removeRefactoring(List<NrpBase> refactoringsToRemove) {
 
 		// First we have to remove the selected refactoring into refactoring list
-		for (Refactoring refactoring : refactoringsToRemove) {
+		for (NrpBase refactoring : refactoringsToRemove) {
 			getRefactorings().remove(refactoring);
 		}
 
 		UUIDUtils.restart();
 
-		ProjectObject copy = ProjectObjectUtils.copy(((RefactoringProblem) problem).getProject());
+		ProjectObject copy = ProjectObjectUtils.copy(((NrpProblem) problem).getProject());
 
 		// After remove it, some refactoring can be invalid. So, we have to remove all invalid ones
 		setRefactorings(NrpUtils.getValids(copy, getRefactorings()));
@@ -215,7 +216,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		getRefactorings().clear();
 
 		// The refactored project turns back to the original one
-		this.refactored = ((RefactoringProblem) problem).getProject();
+		this.refactored = ((NrpProblem) problem).getProject();
 
 		// Load the result in the panel
 		this.refactoringsPanel.load(refactored, getRefactorings());
@@ -229,7 +230,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		return this.problem;
 	}
 
-	public void editRefactoring(int index, Refactoring refactoring) {
+	public void editRefactoring(int index, NrpBase refactoring) {
 
 		getRefactorings().set(index, refactoring);
 

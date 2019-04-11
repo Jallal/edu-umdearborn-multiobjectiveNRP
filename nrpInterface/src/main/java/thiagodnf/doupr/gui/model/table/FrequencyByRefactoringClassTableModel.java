@@ -1,9 +1,9 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.util.StringUtils;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.util.HashMap;
 import java.util.List;
@@ -25,9 +25,9 @@ public class FrequencyByRefactoringClassTableModel extends TableModel {
 
         for (Solution solution : paretoFront) {
 
-            List<Refactoring> refactorings = ((RefactoringVariable) solution.getVariableValue(0)).getRefactorings();
+            List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
 
-            for (Refactoring refactoring : refactorings) {
+            for (NrpBase refactoring : refactorings) {
 
                 String key = refactoring.getClass().getSimpleName() + " and " + StringUtils.getSimpleName(refactoring.getClass1());
 

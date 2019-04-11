@@ -3,6 +3,8 @@ package thiagodnf.doupr.optimization.algorithm;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
 
 import java.util.List;
 
@@ -12,43 +14,43 @@ public abstract class AbstractAlgorithm {
 
     protected int populationSize;
 
-    protected CrossoverOperator<RefactoringSolution> crossover;
+    protected CrossoverOperator<NrpSolution> crossover;
 
-    protected MutationOperator<RefactoringSolution> mutation;
+    protected MutationOperator<NrpSolution> mutation;
 
-    protected SelectionOperator<List<RefactoringSolution>, RefactoringSolution> selection;
+    protected SelectionOperator<List<NrpSolution>, NrpSolution> selection;
 
-    protected RefactoringProblem problem;
+    protected NrpProblem problem;
 
-    public CrossoverOperator<RefactoringSolution> getCrossover() {
+    public CrossoverOperator<NrpSolution> getCrossover() {
         return crossover;
     }
 
-    public void setCrossover(CrossoverOperator<RefactoringSolution> crossover) {
+    public void setCrossover(CrossoverOperator<NrpSolution> crossover) {
         this.crossover = crossover;
     }
 
-    public MutationOperator<RefactoringSolution> getMutation() {
+    public MutationOperator<NrpSolution> getMutation() {
         return mutation;
     }
 
-    public void setMutation(MutationOperator<RefactoringSolution> mutation) {
+    public void setMutation(MutationOperator<NrpSolution> mutation) {
         this.mutation = mutation;
     }
 
-    public SelectionOperator<List<RefactoringSolution>, RefactoringSolution> getSelection() {
+    public SelectionOperator<List<NrpSolution>, NrpSolution> getSelection() {
         return selection;
     }
 
-    public void setSelection(SelectionOperator<List<RefactoringSolution>, RefactoringSolution> selection) {
+    public void setSelection(SelectionOperator<List<NrpSolution>, NrpSolution> selection) {
         this.selection = selection;
     }
 
-    public RefactoringProblem getProblem() {
+    public NrpProblem getProblem() {
         return problem;
     }
 
-    public void setProblem(RefactoringProblem problem) {
+    public void setProblem(NrpProblem problem) {
         this.problem = problem;
     }
 
@@ -68,5 +70,5 @@ public abstract class AbstractAlgorithm {
         this.populationSize = populationSize;
     }
 
-    public abstract List<RefactoringSolution> execute();
+    public abstract List<NrpSolution> execute();
 }

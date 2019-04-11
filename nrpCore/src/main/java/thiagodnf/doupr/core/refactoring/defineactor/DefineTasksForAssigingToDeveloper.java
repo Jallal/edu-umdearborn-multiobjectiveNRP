@@ -9,7 +9,7 @@ import thiagodnf.doupr.core.util.RandomUtils;
 
 public class DefineTasksForAssigingToDeveloper extends DefineActors{
 
-    protected static final Logger LOGGER = Logger.getLogger(DefineActorsForEncapsulateField.class);
+    protected static final Logger LOGGER = Logger.getLogger(DefineTasksForAssigingToDeveloper .class);
 
     public Candidate execute(ProjectObject project) {
 

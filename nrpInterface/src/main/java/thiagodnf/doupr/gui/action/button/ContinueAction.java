@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.gui.panel.ContinuePanel;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
@@ -10,6 +10,8 @@ import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
 import thiagodnf.doupr.optimization.algorithm.builder.Builder;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
 import thiagodnf.doupr.optimization.util.NormalizerUtils;
 import thiagodnf.doupr.optimization.util.SolutionListUtils;
@@ -135,7 +137,7 @@ public class ContinueAction implements ActionListener {
                     }
                 }
 
-                RefactoringProblem problemWithSubSet = getANewProblemWith(allObjectives);
+                NrpProblem problemWithSubSet = getANewProblemWith(allObjectives);
                 problemWithSubSet.setMaxSolutionSize(window.getProblem().getMaxSolutionSize());
                 problemWithSubSet.setMinSolutionSize(window.getProblem().getMinSolutionSize());
 
@@ -146,7 +148,7 @@ public class ContinueAction implements ActionListener {
                     solClusterLabel = Integer.parseInt(clustering.clusterLabels.get(idx)[1]);
                     Solution solution = paretoFront.get(idx);
                     if (selectedClusters.contains(solClusterLabel)) {
-                        RefactoringSolution newSolution = new RefactoringSolution(problemWithSubSet);
+                        NrpSolution newSolution = new NrpSolution(problemWithSubSet);
                         newSolution.setAttributes(new HashMap<>(solution.getAttributes()));
                         newSolution.setVariableValue(0, solution.getVariableValue(0).copy());
                         newParetoFront.add(newSolution);
@@ -177,15 +179,15 @@ public class ContinueAction implements ActionListener {
         });
     }
 
-    protected RefactoringProblem getANewProblemWith(List<Objective> objectives) {
+    protected NrpProblem getANewProblemWith(List<Objective> objectives) {
 
-        RefactoringProblem problem = window.getProblem();
+        NrpProblem problem = window.getProblem();
 
         ProjectObject project = problem.getProject();
 
-        List<Refactoring> refactorings = problem.getSelectedRefactorings();
+        List<NrpBase> refactorings = problem.getSelectedRefactorings();
 
-        return new RefactoringProblem(problem.getFile(), project, objectives, refactorings);
+        return new NrpProblem(problem.getFile(), project, objectives, refactorings);
     }
 
     protected double[] mean(double[] array, double size) {

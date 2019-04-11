@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -37,7 +37,7 @@ public class ShowImagePanel extends AbstractPanel {
 
 
     @Override
-    public void load(ProjectObject project, List<Refactoring> refactorings) {
+    public void load(ProjectObject project, List<NrpBase> refactorings) {
         // Not implemented
     }
 }

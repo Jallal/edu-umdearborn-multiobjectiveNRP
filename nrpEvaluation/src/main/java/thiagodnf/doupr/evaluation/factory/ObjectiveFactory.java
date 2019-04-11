@@ -1,9 +1,6 @@
 package thiagodnf.doupr.evaluation.factory;
 
 import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
-import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
-import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
 import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
@@ -37,7 +34,7 @@ public class ObjectiveFactory {
         if (name.equalsIgnoreCase("Number Of Refactorings")) {
             return new NumberOfNRPOptimization();
         }
-        if (name.equalsIgnoreCase("Coupling")) {
+        /*if (name.equalsIgnoreCase("Coupling")) {
             return new Coupling();
         }
         if (name.equalsIgnoreCase("Cohesion")) {
@@ -45,7 +42,7 @@ public class ObjectiveFactory {
         }
         if (name.equalsIgnoreCase("Complexity")) {
             return new Complexity();
-        }
+        }*/
 
         return null;
     }

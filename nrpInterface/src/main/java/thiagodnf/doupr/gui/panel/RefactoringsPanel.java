@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.action.table.EvaluateAction;
 import thiagodnf.doupr.gui.model.table.RefactoringsTableModel;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
@@ -38,7 +38,7 @@ public class RefactoringsPanel extends AbstractPanel {
     }
 
     @Override
-    public void load(ProjectObject project, List<Refactoring> refactorings) {
+    public void load(ProjectObject project, List<NrpBase> refactorings) {
         this.tableModel.setRefactorings(refactorings);
         updateRows();
     }

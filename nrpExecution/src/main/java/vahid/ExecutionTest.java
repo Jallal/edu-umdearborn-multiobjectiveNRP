@@ -1,4 +1,4 @@
-package main.java.vahid;
+package vahid;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
@@ -9,11 +9,10 @@ import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.factory.NrpFactory;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.qualityattributes.Cohesion;
-import thiagodnf.doupr.evaluation.qualityattributes.Complexity;
-import thiagodnf.doupr.evaluation.qualityattributes.Coupling;
+import thiagodnf.doupr.evaluation.qualityattributes.NumberOfNRPOptimization;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
@@ -26,8 +25,10 @@ import thiagodnf.doupr.optimization.algorithm.builder.BuilderCustomNSGAIII;
 import thiagodnf.doupr.optimization.operators.crossovers.SinglePointCrossover;
 import thiagodnf.doupr.optimization.operators.mutations.BitFlipMutation;
 import thiagodnf.doupr.optimization.operators.selections.BinaryTournamentSelection;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.io.File;
 import java.io.IOException;
@@ -76,15 +77,15 @@ public class ExecutionTest {
 		objectives.add(new QMOODFunctionality());
 		objectives.add(new QMOODReusability());
 		objectives.add(new QMOODUnderstandability());
-		objectives.add(new Coupling());
-		objectives.add(new Cohesion());
-		objectives.add(new Complexity());
-//        objectives.add(new NumberOfNRPOptimization());
+		//objectives.add(new Coupling());
+		//objectives.add(new Cohesion());
+		//objectives.add(new Complexity());
+     objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<Refactoring> selectedRefactorings = new ArrayList<>();
+		List<NrpBase> selectedRefactorings = new ArrayList<>();
 
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
+		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Extract Class"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Push Down Field"));
@@ -97,10 +98,13 @@ public class ExecutionTest {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Field Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Method Security"));
-		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));
+		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
+
+		selectedRefactorings.add(NrpFactory.getNrpOptimization("Optimize NRP"));
+
 
 		// Initiate the problem
-		RefactoringProblem problem = new RefactoringProblem(file, objectives, selectedRefactorings);
+		NrpProblem problem = new NrpProblem(file, objectives, selectedRefactorings);
 
 		problem.setMinSolutionSize(minRefatorings);
 		problem.setMaxSolutionSize(maxRefatorings);
@@ -150,16 +154,16 @@ public class ExecutionTest {
 		if (LOGGER.isInfoEnabled()) LOGGER.info("Done");
 	}
 
-	public static void printResults(RefactoringProblem problem, ProjectObject originalProject,
-									List<RefactoringSolution> paretoFront) throws IOException {
+	public static void printResults(NrpProblem problem, ProjectObject originalProject,
+									List<NrpSolution> paretoFront) throws IOException {
 
 		for (int i = 0; i < paretoFront.size(); i++) {
 
-			RefactoringSolution solution = paretoFront.get(i);
+			NrpSolution solution = paretoFront.get(i);
 
 			System.out.println(solution);
 
-			List<Refactoring> refactorings = ((RefactoringVariable) solution.getVariableValue(0)).getRefactorings();
+			List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
 
 //			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
 //			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));

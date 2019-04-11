@@ -43,9 +43,9 @@ public class EvaluationUtils {
         OBJECTIVES.add(new QMOODFunctionality());
         OBJECTIVES.add(new QMOODReusability());
         OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.QMOODUnderstandability());
-        OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Coupling());
-        OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Cohesion());
-        OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Complexity());
+       // OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Coupling());
+        //OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Cohesion());
+        //OBJECTIVES.add(new thiagodnf.doupr.evaluation.qualityattributes.Complexity());
         OBJECTIVES.add(new NumberOfNRPOptimization());
     }
 }

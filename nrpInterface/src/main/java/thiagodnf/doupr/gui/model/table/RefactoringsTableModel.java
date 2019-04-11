@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.model.table;
 
 import thiagodnf.doupr.core.formatter.RefactoringFormatter;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class RefactoringsTableModel extends TableModel {
 
     private static final long serialVersionUID = 4238689909866943950L;
 
-    protected List<Refactoring> refactorings;
+    protected List<NrpBase> refactorings;
 
     public RefactoringsTableModel() {
 
@@ -29,7 +29,7 @@ public class RefactoringsTableModel extends TableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
 
-        Refactoring refactoring = refactorings.get(rowIndex);
+        NrpBase refactoring = refactorings.get(rowIndex);
 
         switch (columnIndex) {
             case 0:
@@ -43,7 +43,7 @@ public class RefactoringsTableModel extends TableModel {
         }
     }
 
-    public void setRefactorings(List<Refactoring> refactorings) {
+    public void setRefactorings(List<NrpBase> refactorings) {
         this.refactorings = refactorings;
     }
 }

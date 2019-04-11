@@ -9,7 +9,7 @@ import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.callgraph.CallGraph;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
-import thiagodnf.doupr.core.refactoring.defineactor.DefineActorsForEncapsulateField;
+import thiagodnf.doupr.core.refactoring.defineactor.DefineTasksForAssigingToDeveloper;
 import thiagodnf.doupr.core.util.AttributeObjectUtils;
 import thiagodnf.doupr.core.util.MethodObjectUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
@@ -20,7 +20,7 @@ import java.util.List;
 
 public class AssignTaskToDeveloper extends NrpBase{
 
-    protected static final Logger LOGGER = Logger.getLogger(EncapsulateField.class);
+    protected static final Logger LOGGER = Logger.getLogger(AssignTaskToDeveloper.class);
 
     protected ClassObject sourceCls;
 
@@ -53,7 +53,7 @@ public class AssignTaskToDeveloper extends NrpBase{
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsClassCondition(sourceCls));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsFieldCondition(attr));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.DefineCondition(sourceCls, attr));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PUBLIC));
+        //conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PUBLIC));
 
         return conditions;
     }
@@ -67,7 +67,7 @@ public class AssignTaskToDeveloper extends NrpBase{
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsClassCondition(sourceCls));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsFieldCondition(attr));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.DefineCondition(sourceCls, attr));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
+        //conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
 
         return conditions;
     }
@@ -108,7 +108,7 @@ public class AssignTaskToDeveloper extends NrpBase{
 
         // Step 3: After all field invocations have been replaced, make the
         // field private.
-        attr.setVisibility(Visibility.PRIVATE);
+       // attr.setVisibility(Visibility.PRIVATE);
 
         // ========================================================================
         // Update the calls
@@ -155,7 +155,7 @@ public class AssignTaskToDeveloper extends NrpBase{
 
     @Override
     public DefineActors getDefineActors() {
-        return new DefineActorsForEncapsulateField();
+        return new DefineTasksForAssigingToDeveloper();
     }
 
     @Override

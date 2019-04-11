@@ -2,10 +2,11 @@ package thiagodnf.doupr.optimization.operators.mutations;
 
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.util.RandomUtils;
+import thiagodnf.doupr.optimization.problem.NrpProblem;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.util.List;
 
@@ -66,15 +67,15 @@ public class BitFlipMutation implements MutationOperator<Solution> {
     public void doMutation(Solution solution) {
 
         // Create a refactoring variable for saving the list of refactorings
-        RefactoringVariable variable = (RefactoringVariable) solution.getVariableValue(0);
+        NrpVariable variable = (NrpVariable) solution.getVariableValue(0);
 
-        List<Refactoring> refactorings = variable.getRefactorings();
+        List<NrpBase> refactorings = variable.getRefactorings();
 
         if (refactorings.isEmpty()) {
             return;
         }
 
-        RefactoringProblem problem = (RefactoringProblem) solution.getProblem();
+        NrpProblem problem = (NrpProblem) solution.getProblem();
 
         int numberOfChanges = 1;
 
@@ -87,7 +88,7 @@ public class BitFlipMutation implements MutationOperator<Solution> {
             int position = RandomUtils.getRandomInteger(0, refactorings.size() - 1);
 
             // Instantiate the refactoring operation
-            Refactoring refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
+            NrpBase refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
 
             // Add the refactoring in the variable
             refactorings.set(position, refactoring);

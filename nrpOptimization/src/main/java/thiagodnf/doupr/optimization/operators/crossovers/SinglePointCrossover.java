@@ -2,9 +2,10 @@ package thiagodnf.doupr.optimization.operators.crossovers;
 
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import thiagodnf.doupr.core.refactoring.Refactoring;
+import thiagodnf.doupr.core.refactoring.NrpBase;
+import thiagodnf.doupr.optimization.solution.NrpSolution;
 import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.RefactoringVariable;
+import thiagodnf.doupr.optimization.variables.NrpVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,13 +69,13 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
         // Before it starts, we need to do a copy of the parents
         List<Solution> offspring = new ArrayList<>(2);
 
-        offspring.add((RefactoringSolution) parent1.copy());
-        offspring.add((RefactoringSolution) parent2.copy());
+        offspring.add((NrpSolution) parent1.copy());
+        offspring.add((NrpSolution) parent2.copy());
 
         if (JMetalRandom.getInstance().nextDouble() < probability) {
 
-            List<Refactoring> c1 = ((RefactoringVariable) offspring.get(0).getVariableValue(0)).getRefactorings();
-            List<Refactoring> c2 = ((RefactoringVariable) offspring.get(1).getVariableValue(0)).getRefactorings();
+            List<NrpBase> c1 = ((NrpVariable) offspring.get(0).getVariableValue(0)).getRefactorings();
+            List<NrpBase> c2 = ((NrpVariable) offspring.get(1).getVariableValue(0)).getRefactorings();
 
             int minimum = Math.min(c1.size(), c2.size());
 
@@ -84,8 +85,8 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
 
             int cut = JMetalRandom.getInstance().nextInt(1, minimum - 2);
 
-            List<Refactoring> newC1 = new ArrayList<>();
-            List<Refactoring> newC2 = new ArrayList<>();
+            List<NrpBase> newC1 = new ArrayList<>();
+            List<NrpBase> newC2 = new ArrayList<>();
 
             for (int i = 0; i < cut; i++) {
                 newC1.add(c1.get(i));
@@ -103,8 +104,8 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
                 newC2.add(c1.get(i));
             }
 
-            ((RefactoringVariable) offspring.get(0).getVariableValue(0)).setRefatorings(newC1);
-            ((RefactoringVariable) offspring.get(1).getVariableValue(0)).setRefatorings(newC2);
+            ((NrpVariable) offspring.get(0).getVariableValue(0)).setRefatorings(newC1);
+            ((NrpVariable) offspring.get(1).getVariableValue(0)).setRefatorings(newC2);
         }
 
         return offspring;
