@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bce763-019f-418d-b632-5c460eb2ec9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsTaskNotAssignedYet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForEncapsulateField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForExtractClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForExtractSubClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForExtractSuperClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForIncreaseOrDecreaseFieldSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForIncreaseOrDecreaseMethodSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForMoveField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForMoveMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPullUpField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPullUpMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPushDownField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActorsForPushDownMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/AbstractAntiPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/AbstractAntiPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/factory/ObjectiveFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/factory/ObjectiveFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/Cohesion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/Complexity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/Coupling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/EvaluationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/EvaluationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/util/ParetoObjectCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/util/ParetoObjectCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportRefactoringsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportRefactoringsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveRefactoringAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveRefactoringAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/EvaluateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/EvaluateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OptimizeAsyncTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OptimizeAsyncTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JOpaquePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JOpaquePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByClassTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByClassTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByOperationTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByOperationTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByRefactoringClassTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByRefactoringClassTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClusterChartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClusterChartPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClustersCenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClustersCenterPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForClassPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ParetoFrontPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ParetoFrontPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/QualityAttributesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/QualityAttributesPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/RefactoringsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/RefactoringsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/XYChartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/XYChartPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewParetoFrontSubWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewParetoFrontSubWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/AbstractAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/AbstractAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/CustomNSGAII.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/CustomNSGAII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/builder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/builder/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/crossovers/SinglePointCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/crossovers/SinglePointCrossover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/mutations/BitFlipMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/mutations/BitFlipMutation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/nrpOptimization/target/" />
@@ -197,7 +130,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -381,7 +314,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554943408191" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555028523182" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -490,17 +423,17 @@
       <workItem from="1552752921434" duration="750000" />
       <workItem from="1552753765341" duration="3991000" />
       <workItem from="1552757953029" duration="24410000" />
-      <workItem from="1554673770169" duration="8857000" />
+      <workItem from="1554673770169" duration="9195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38008000" />
+    <option name="totallyTimeSpent" value="38346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3111588" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3111588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -509,7 +442,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6041096" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.09589041" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
