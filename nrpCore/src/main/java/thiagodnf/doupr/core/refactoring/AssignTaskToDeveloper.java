@@ -50,10 +50,7 @@ public class AssignTaskToDeveloper extends NrpBase{
         List<thiagodnf.doupr.core.refactoring.condition.Condition> conditions = new ArrayList<>();
 
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.ExistCondition(sourceCls, class1));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsClassCondition(sourceCls));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsFieldCondition(attr));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.DefineCondition(sourceCls, attr));
-        //conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PUBLIC));
 
         return conditions;
     }
@@ -64,8 +61,6 @@ public class AssignTaskToDeveloper extends NrpBase{
         List<thiagodnf.doupr.core.refactoring.condition.Condition> conditions = new ArrayList<>();
 
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.ExistCondition(sourceCls, class1));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsClassCondition(sourceCls));
-        conditions.add(new thiagodnf.doupr.core.refactoring.condition.IsFieldCondition(attr));
         conditions.add(new thiagodnf.doupr.core.refactoring.condition.DefineCondition(sourceCls, attr));
         //conditions.add(new thiagodnf.doupr.core.refactoring.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
 

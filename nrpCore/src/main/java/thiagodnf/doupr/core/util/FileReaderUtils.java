@@ -10,6 +10,10 @@ import com.google.common.io.Files;
 import org.apache.commons.io.Charsets;
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.core.base.Block;
+import thiagodnf.doupr.core.base.CallObject;
+import thiagodnf.doupr.core.base.ClassObject;
+import thiagodnf.doupr.core.base.ElementObject;
+import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.callgraph.CallGraph;
 import thiagodnf.doupr.core.factory.NrpFactory;
 import thiagodnf.doupr.core.refactoring.NrpBase;
@@ -44,15 +48,15 @@ public class FileReaderUtils {
 
 	protected static final Logger LOGGER = Logger.getLogger(FileReaderUtils.class);
 
-	public static thiagodnf.doupr.core.base.ProjectObject read(File filename) throws IOException {
+	public static ProjectObject read(File filename) throws IOException {
 
 		// All lines will be put into a block
-		List<thiagodnf.doupr.core.base.Block> blocks = new ArrayList<>();
+		List<Block> blocks = new ArrayList<>();
 
 		// We read the file and put the lines into an array
 		List<String> lines = Files.readLines(filename, Charsets.UTF_8);
 
-		thiagodnf.doupr.core.base.Block block = new thiagodnf.doupr.core.base.Block();
+		Block block = new thiagodnf.doupr.core.base.Block();
 
 		// Parse the lines of the file
 		for (String line : lines) {
@@ -66,7 +70,7 @@ public class FileReaderUtils {
 			}
 		}
 
-		thiagodnf.doupr.core.base.ProjectObject project = new thiagodnf.doupr.core.base.ProjectObject();
+		ProjectObject project = new ProjectObject();
 
 		// Convert the block object into a class one
 
@@ -74,8 +78,8 @@ public class FileReaderUtils {
 		List<thiagodnf.doupr.core.base.CallObject> calls = new ArrayList<>();
 
 		for (Block b : blocks) {
-			thiagodnf.doupr.core.base.ClassObject cls = b.getCls();
-			List<thiagodnf.doupr.core.base.CallObject> call = b.getCalls();
+			ClassObject cls = b.getCls();
+			List<CallObject> call = b.getCalls();
 
 			if (cls != null) {
 				classes.add(cls);
@@ -108,11 +112,11 @@ public class FileReaderUtils {
 
 		for (thiagodnf.doupr.core.base.CallObject call : calls) {
 
-			thiagodnf.doupr.core.base.ClassObject c1 = ClassObjectUtils.findByName(classes, call.getSourceClass());
-			thiagodnf.doupr.core.base.ClassObject c2 = ClassObjectUtils.findByName(classes, call.getTargetClass());
+			ClassObject c1 = ClassObjectUtils.findByName(classes, call.getSourceClass());
+			ClassObject c2 = ClassObjectUtils.findByName(classes, call.getTargetClass());
 
-			thiagodnf.doupr.core.base.ElementObject sourceMethod = MethodObjectUtils.findByName(c1, call.getSourceMethod());
-			thiagodnf.doupr.core.base.ElementObject targetElement = null;
+			ElementObject sourceMethod = MethodObjectUtils.findByName(c1, call.getSourceMethod());
+			ElementObject targetElement = null;
 
 			if (call.isCallForAttribute()) {
 				targetElement = AttributeObjectUtils.findByName(c2, call.getTargetName());

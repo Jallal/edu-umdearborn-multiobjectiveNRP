@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class AttributeObject extends thiagodnf.doupr.core.base.ElementObject {
+public class AttributeObject extends ElementObject {
 
     protected String type;
 
@@ -38,7 +38,7 @@ public class AttributeObject extends thiagodnf.doupr.core.base.ElementObject {
     public String getTypeWithTemplate() {
         StringBuilder builder = new StringBuilder();
 
-        builder.append(thiagodnf.doupr.core.util.StringUtils.getSimpleName(getType()));
+        builder.append(StringUtils.getSimpleName(getType()));
 
         if (!templates.isEmpty()) {
 

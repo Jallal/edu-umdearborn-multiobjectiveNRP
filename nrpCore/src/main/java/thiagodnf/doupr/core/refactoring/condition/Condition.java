@@ -1,5 +1,4 @@
 package thiagodnf.doupr.core.refactoring.condition;
-
 import thiagodnf.doupr.core.base.ProjectObject;
 
 public abstract class Condition {

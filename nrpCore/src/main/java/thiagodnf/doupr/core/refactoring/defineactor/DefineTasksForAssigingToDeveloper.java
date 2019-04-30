@@ -7,6 +7,8 @@ import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.util.Candidate;
 import thiagodnf.doupr.core.util.RandomUtils;
 
+import static thiagodnf.doupr.core.util.RandomUtils.getRandomElement;
+
 public class DefineTasksForAssigingToDeveloper extends DefineActors{
 
     protected static final Logger LOGGER = Logger.getLogger(DefineTasksForAssigingToDeveloper .class);
@@ -35,7 +37,7 @@ public class DefineTasksForAssigingToDeveloper extends DefineActors{
 
         trials = 0;
 
-        AttributeObject attr = (AttributeObject) RandomUtils.getRandomElement(sourceClass.getAttributes());
+        AttributeObject attr = (AttributeObject)getRandomElement(sourceClass.getAttributes());
 
         while (!attr.isPublic()) {
 
@@ -43,7 +45,7 @@ public class DefineTasksForAssigingToDeveloper extends DefineActors{
                 return null;
             }
 
-            attr = (AttributeObject) RandomUtils.getRandomElement(sourceClass.getAttributes());
+            attr = (AttributeObject) getRandomElement(sourceClass.getAttributes());
 
             trials++;
         }

@@ -7,8 +7,6 @@ import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.condition.DefineCondition;
 import thiagodnf.doupr.core.refactoring.condition.ExistCondition;
-import thiagodnf.doupr.core.refactoring.condition.IsClassCondition;
-import thiagodnf.doupr.core.refactoring.condition.IsFieldCondition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineTasksForAssigingToDeveloper;
 import thiagodnf.doupr.core.util.AttributeObjectUtils;
@@ -43,8 +41,6 @@ public class InputTasks extends NrpBase {
 
         conditions.add(new ExistCondition(sourceCls, class1));
         conditions.add(new ExistCondition(attr, this.attributes.get(0)));
-        conditions.add(new IsClassCondition(sourceCls));
-        conditions.add(new IsFieldCondition(attr));
         conditions.add(new DefineCondition(sourceCls, attr));
       //  conditions.add(NOT(new HasVisibilityCondition(attr, Visibility.PUBLIC)));
 
@@ -57,8 +53,6 @@ public class InputTasks extends NrpBase {
 
         conditions.add(new ExistCondition(sourceCls, class1));
         conditions.add(new ExistCondition(attr, this.attributes.get(0)));
-        conditions.add(new IsClassCondition(sourceCls));
-        conditions.add(new IsFieldCondition(attr));
         conditions.add(new DefineCondition(sourceCls, attr));
 
         return conditions;
