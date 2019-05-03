@@ -39,8 +39,8 @@ public class CustomNSGAIII extends NSGAIII<Solution> {
 
         int numberOfObjectives = problem.getNumberOfObjectives();
 
-//		String filename = "src/main/resources/weights/" + numberOfObjectives + "-obj.txt";
-        String filename = "sbse-Refactoring/doupr-execution/src/main/resources/weights/" + numberOfObjectives + "-obj.txt";
+//		String filename = "src/main/projectResources/weights/" + numberOfObjectives + "-obj.txt";
+        String filename = "sbse-Refactoring/doupr-execution/src/main/projectResources/weights/" + numberOfObjectives + "-obj.txt";
 
         File file = new File(filename);
 

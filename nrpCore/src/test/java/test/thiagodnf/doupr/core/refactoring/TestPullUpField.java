@@ -6,13 +6,13 @@ public class TestPullUpField {
 
     @Before
     public void init() throws IOException {
-        this.project = FileReaderUtils.read(new File("src/test/resources/pull-up-field/project.blocks"));
+        this.project = FileReaderUtils.read(new File("src/test/projectResources/pull-up-field/project.blocks"));
     }
 
     @Test
     public void shouldRetornar() throws Exception {
 
-        ProjectObject expected = FileReaderUtils.read(new File("src/test/resources/pull-up-field/test-1-expected.blocks"));
+        ProjectObject expected = FileReaderUtils.read(new File("src/test/projectResources/pull-up-field/test-1-expected.blocks"));
 
 
         assertEquals(1, 1);

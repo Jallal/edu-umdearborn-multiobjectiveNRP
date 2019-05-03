@@ -65,8 +65,8 @@ public class ExploreConsole {
         if (LOGGER.isInfoEnabled()) LOGGER.info("Running " + values.algorithm);
 
         // The name of the instance file
-//		String instanceFile = "src/main/resources/ganttproject.blocks";
-//		String instanceFile = "src/main/resources/argouml-v0.26/argouml.blocks";
+//		String instanceFile = "src/main/projectResources/ganttproject.blocks";
+//		String instanceFile = "src/main/projectResources/argouml-v0.26/argouml.blocks";
 
         File file = new File(values.instanceFile);
 

@@ -3,47 +3,49 @@ package edu.umich.ISELab.core.grooming;
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.condition.Condition;
+import edu.umich.ISELab.core.grooming.condition.DefineCondition;
 import edu.umich.ISELab.core.grooming.condition.ExistCondition;
 import edu.umich.ISELab.core.grooming.defineactor.DefineActors;
+import edu.umich.ISELab.core.projectResources.Person;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AssignTaskToDeveloper extends NrpBase {
+public class AssignTask extends NrpBase {
 
-    protected static final Logger LOGGER = Logger.getLogger(AssignTaskToDeveloper.class);
+    protected static final Logger LOGGER = Logger.getLogger(AssignTask.class);
 
-    protected WorkItem sourceCls;
+    protected WorkItem activeItem;
+    protected Person person;
 
     //protected AttributeObject attr;
 
-    public AssignTaskToDeveloper() {
+    public AssignTask() {
         super();
     }
 
-    public AssignTaskToDeveloper(AssignTaskToDeveloper assignTaskToDeveloper) {
-        super(assignTaskToDeveloper);
+    public AssignTask(AssignTask assignTask) {
+        super(assignTask);
     }
 
-    public AssignTaskToDeveloper(String className, String attributeName) {
-        super(className, null, Arrays.asList(attributeName), new ArrayList<>());
+    public AssignTask(WorkItem item , Person person) {
+        super(item,person);
     }
 
     @Override
-    public void loadActors(WorkItem item) {
+    public void loadActors(Project project) {
         //this.sourceCls = ProjectObjectUtils.findByType(project, this.class1);
         //this.attr = AttributeObjectUtils.findByName(sourceCls, this.attributes.get(0));
     }
 
     @Override
-    public List<Condition> getPreConditions(WorkItem project) {
+    public List<Condition> getPreConditions(WorkItem item, Person person) {
 
         List<Condition> conditions = new ArrayList<>();
-
-        conditions.add(new ExistCondition(sourceCls, class1));
-        //conditions.add(new DefineCondition(sourceCls, attr));
+        conditions.add(new ExistCondition(activeItem, person));
+        conditions.add(new DefineCondition(activeItem, person));
 
         return conditions;
     }
@@ -138,7 +140,7 @@ public class AssignTaskToDeveloper extends NrpBase {
 
     @Override
     public NrpBase copy() {
-        return new AssignTaskToDeveloper(this);
+        return new AssignTask(this);
     }
 
     @Override

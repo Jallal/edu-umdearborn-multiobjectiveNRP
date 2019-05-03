@@ -8,9 +8,9 @@ import edu.umich.ISELab.core.util.RandomUtils;
 
 import static edu.umich.ISELab.core.util.RandomUtils.getRandomElement;
 
-public class AssignWorkItem extends DefineActors{
+public class Actor extends DefineActors{
 
-    protected static final Logger LOGGER = Logger.getLogger(AssignWorkItem.class);
+    protected static final Logger LOGGER = Logger.getLogger(Actor.class);
 
     public Candidate execute(Project project) {
 
@@ -30,10 +30,6 @@ public class AssignWorkItem extends DefineActors{
 
             trials++;
         }
-
-       // if (LOGGER.isDebugEnabled()) LOGGER.debug("Source class: " + sourceClass.getSimpleName());
-        //if (LOGGER.isDebugEnabled()) LOGGER.debug("Finding the attribute");
-
         trials = 0;
 
         WorkItem attr = (WorkItem) getRandomElement(project.getWorkItemList());

@@ -4,7 +4,7 @@ import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.AssignTaskToDeveloper;
+import edu.umich.ISELab.core.grooming.AssignTask;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.core.sys.LOGGER;
 import edu.umich.ISELab.evaluation.Objective;
@@ -200,7 +200,7 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 		groupForQMood.add(new QMOODUnderstandability().toString(), true);
 
 		groupForStandard = new JCheckBoxGroup("Standard", 2);
-		groupForStandard.add(new AssignTaskToDeveloper().toString(), true);
+		groupForStandard.add(new AssignTask().toString(), true);
 
 
 		/*groupForStandard.add(new Coupling().toString(), true);
@@ -227,7 +227,7 @@ public class OptimizePanel extends JOpaquePanel implements ChangeListener {
 	protected JPanel getPanelForRefactoringsSettings() {
 
 		groupForMovingFeatures = new JCheckBoxGroup("Moving Features between Objects", 2);
-		groupForMovingFeatures.add(new AssignTaskToDeveloper().getName(), true);
+		groupForMovingFeatures.add(new AssignTask().getName(), true);
 
 
 		/*groupForMovingFeatures.add(new MoveMethod().getName(), true);

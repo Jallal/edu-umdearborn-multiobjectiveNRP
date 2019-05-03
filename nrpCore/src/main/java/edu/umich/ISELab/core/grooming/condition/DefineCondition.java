@@ -1,31 +1,33 @@
 package edu.umich.ISELab.core.grooming.condition;
 
 import edu.umich.ISELab.core.backlog.WorkItem;
+import edu.umich.ISELab.core.projectResources.Person;
 
 public class DefineCondition extends Condition {
 
     private WorkItem  workItem;
+    private Person person;
 
 
-    public DefineCondition(WorkItem item) {
+    public DefineCondition(WorkItem item, Person person) {
 
         this.workItem = item;
+        this.person = person;
     }
 
     @Override
-    public boolean verify(WorkItem item) {
+    public boolean verify(WorkItem item, Person person ) {
 
-        if (item instanceof WorkItem) {
-            return verifyItemIsAvailable(item);
+        if ((item instanceof WorkItem) && (person instanceof  Person)) {
+            return verifyItemIsAvailable(item, person);
         }
 
         return false;
     }
 
-    protected boolean verifyItemIsAvailable(WorkItem item) {
-        if (!item.isAssigned()) {
+    protected boolean verifyItemIsAvailable(WorkItem item, Person person) {
+        if (!item.isAssigned()&&!person.isAssigned()) {
                 return true;
-
         }
 
         return false;

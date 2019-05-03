@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.panel;
 
 import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.AssignTaskToDeveloper;
+import edu.umich.ISELab.core.grooming.AssignTask;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.component.JFilterComboBox;
 import thiagodnf.doupr.gui.component.JSortedComboBox;
@@ -170,7 +170,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		this.refactoringTypesComboBox.addItem(new PullUpMethod().getName());
 		this.refactoringTypesComboBox.addItem(new PushDownField().getName());
 		this.refactoringTypesComboBox.addItem(new PushDownMethod().getName());*/
-		this.refactoringTypesComboBox.addItem(new AssignTaskToDeveloper().getName());
+		this.refactoringTypesComboBox.addItem(new AssignTask().getName());
 
 		// We always select the first index in the Combobox component
 		this.refactoringTypesComboBox.setSelectedIndex(9);
@@ -253,7 +253,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 		refactorings.add(new ExtractClass().getName());
 		refactorings.add(new ExtractSubClass().getName());
 		refactorings.add(new ExtractSuperClass().getName());*/
-		refactorings.add(new AssignTaskToDeveloper().getName());
+		refactorings.add(new AssignTask().getName());
 
 		if (refactorings.contains(refactoringName)) {
 			this.targetClassComboBox.setEnabled(false);

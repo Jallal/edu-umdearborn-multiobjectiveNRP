@@ -1,5 +1,5 @@
 package edu.umich.ISELab.core.backlog;
 
 public enum WorkItemDefinition {
-    BUG,TASK,USERSTORY,FEATURE;
+    BUG,TASK,USER_STORY,FEATURE;
 }

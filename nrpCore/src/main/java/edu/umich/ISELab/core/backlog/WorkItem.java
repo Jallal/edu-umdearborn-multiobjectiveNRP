@@ -1,5 +1,7 @@
 package edu.umich.ISELab.core.backlog;
 
+import edu.umich.ISELab.core.projectResources.Person;
+
 public abstract class WorkItem{
 
     private int weight;
@@ -7,6 +9,17 @@ public abstract class WorkItem{
     private boolean isReadyForImplementation=false;
     private Priority priority;
     private WorkItemDefinition workItemDefinition;
+    private Person person;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
+
 
     public WorkItemDefinition getWorkItemDefinition() {
         return workItemDefinition;
