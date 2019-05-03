@@ -2,7 +2,7 @@ package thiagodnf.doupr.gui.subwindow;
 
 import thiagodnf.doupr.gui.panel.FrequencyByOperationPanel;
 import thiagodnf.doupr.gui.panel.FrequencyByRefactoringClassPanel;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.solution.Solution;
 
 import javax.swing.*;
 import java.util.List;

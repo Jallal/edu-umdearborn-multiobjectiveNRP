@@ -6,8 +6,8 @@ import thiagodnf.doupr.gui.component.JExportAsChooser;
 import thiagodnf.doupr.gui.component.JExportAsChooser.JExportAsChooserListener;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.NrpVariable;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.variables.NrpVariable;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,10 +16,10 @@ import java.io.IOException;
 import java.util.Arrays;
 
 /**
- * This class is responsible for exporting a list of refactoring for a file. To
+ * This class is responsible for exporting a list of grooming for a file. To
  * do it, a FileChooser is showed to the user and s(he) must type the filename
  * and choose the file extension before do it. Before save it, it is
- * important the list of refactoring does not be empty
+ * important the list of grooming does not be empty
  *
  * @author Thiago N. Ferreira
  * @version 1.0.0
@@ -43,7 +43,7 @@ public class ExportRefactoringsAction implements ActionListener, JExportAsChoose
         Solution solution = window.getSolution();
 
         if (((NrpVariable) solution.getVariableValue(0)).getRefactorings().isEmpty()) {
-            MessageBox.warning("The refactoring list cannot be empty. You must add some refactorings before save them");
+            MessageBox.warning("The grooming list cannot be empty. You must add some refactorings before save them");
             return;
         }
 

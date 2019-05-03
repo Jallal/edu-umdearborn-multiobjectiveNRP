@@ -4,11 +4,11 @@ import org.knowm.xchart.CategoryChart;
 import org.knowm.xchart.CategoryChartBuilder;
 import org.knowm.xchart.XChartPanel;
 import org.knowm.xchart.style.Styler;
-import thiagodnf.doupr.core.sys.LOGGER;
+import edu.umich.ISELab.core.sys.LOGGER;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
-import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.problem.Problem;
+import edu.umich.ISELab.optimization.solution.Solution;
 import vahid.ML.Clustering;
 import vahid.util.Math.Stats;
 

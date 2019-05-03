@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.action.button.AddFilterAction;
 import thiagodnf.doupr.gui.action.button.ChooseColorizeAction;
 import thiagodnf.doupr.gui.action.button.RemoveFilterAction;
@@ -18,7 +18,7 @@ import thiagodnf.doupr.gui.component.JSortedComboBox;
 import thiagodnf.doupr.gui.model.table.FilterTableModel;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
 import thiagodnf.doupr.gui.util.GridBagUtils;
-import thiagodnf.doupr.optimization.filter.Filter;
+import edu.umich.ISELab.optimization.filter.Filter;
 
 import javax.swing.*;
 import java.util.List;

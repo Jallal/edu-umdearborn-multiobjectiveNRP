@@ -10,22 +10,22 @@ import org.apache.log4j.Logger;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODEffectiveness;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODExtendibility;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODFunctionality;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODUnderstandability;
-import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.algorithm.builder.BuilderCustomNSGAII;
-import thiagodnf.doupr.optimization.algorithm.builder.BuilderCustomNSGAIII;
-import thiagodnf.doupr.optimization.operators.crossovers.SinglePointCrossover;
-import thiagodnf.doupr.optimization.operators.mutations.BitFlipMutation;
-import thiagodnf.doupr.optimization.operators.selections.BinaryTournamentSelection;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODEffectiveness;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODExtendibility;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODFlexibility;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODFunctionality;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODReusability;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODUnderstandability;
+import edu.umich.ISELab.optimization.algorithm.builder.Builder;
+import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
+import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
+import edu.umich.ISELab.optimization.operators.crossovers.SinglePointCrossover;
+import edu.umich.ISELab.optimization.operators.mutations.BitFlipMutation;
+import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelection;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.Solution;
 import vahid.util.ParetoObjectCRUD;
 
 import java.io.File;
@@ -79,7 +79,7 @@ public class RefactoringExecution {
 
 	public List<Solution> run() throws IOException {
 
-		LOGGER.info("Starting the refactoring process...");
+		LOGGER.info("Starting the grooming process...");
 		LOGGER.info("Setting up the parameters...");
 		File file = new File(instanceFile);
 

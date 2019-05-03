@@ -172,7 +172,7 @@ public class Clustering {
 
     public void OperationsProbHash() {
 
-        if (LOGGER.isInfoEnabled()) LOGGER.info("Generating refactoring probability Hash table");
+        if (LOGGER.isInfoEnabled()) LOGGER.info("Generating grooming probability Hash table");
 
         int numClustersSelected = this.selectedClusters.size();
         Map<String, Double> totalProbHash = new HashMap<>();

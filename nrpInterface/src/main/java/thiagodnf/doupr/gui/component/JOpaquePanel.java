@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.component;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.panel.AbstractPanel;
 
 import java.awt.*;

@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.evaluation.Objective;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
 import thiagodnf.doupr.gui.asynctask.AsyncTask;
 import thiagodnf.doupr.gui.asynctask.OptimizeAsyncTask;
 import thiagodnf.doupr.gui.listener.AsyncTaskListener;
@@ -12,8 +12,8 @@ import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
 import thiagodnf.doupr.gui.window.MainWindow;
-import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.algorithm.builder.Builder;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.optimization.filter.Filter;
-import thiagodnf.doupr.optimization.util.constants.FilterConstants;
+import edu.umich.ISELab.optimization.filter.Filter;
+import edu.umich.ISELab.optimization.util.constants.FilterConstants;
 
 import java.util.ArrayList;
 import java.util.List;

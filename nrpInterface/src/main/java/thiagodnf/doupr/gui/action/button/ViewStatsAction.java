@@ -4,7 +4,7 @@ import thiagodnf.doupr.gui.subwindow.SubWindow;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
 import thiagodnf.doupr.gui.subwindow.ViewStatsWindow;
 import thiagodnf.doupr.gui.window.MainWindow;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.solution.Solution;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

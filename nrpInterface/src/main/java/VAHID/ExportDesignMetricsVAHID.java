@@ -1,7 +1,7 @@
 package main.java.VAHID;
 
 
-import thiagodnf.doupr.core.sys.LOGGER;
+import edu.umich.ISELab.core.sys.LOGGER;
 import thiagodnf.doupr.gui.component.JExportAsChooser;
 import thiagodnf.doupr.gui.component.JExportAsChooser.JExportAsChooserListener;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;

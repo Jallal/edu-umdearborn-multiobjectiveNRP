@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.action.table.EvaluateAction;
 import thiagodnf.doupr.gui.model.table.RefactoringsTableModel;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;

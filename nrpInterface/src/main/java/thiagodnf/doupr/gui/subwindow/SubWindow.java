@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.subwindow;
 
-import thiagodnf.doupr.core.sys.LOGGER;
+import edu.umich.ISELab.core.sys.LOGGER;
 import thiagodnf.doupr.gui.action.jmenuitem.CloseWindowsAction;
 import thiagodnf.doupr.gui.util.LookAndFeelUtils;
 

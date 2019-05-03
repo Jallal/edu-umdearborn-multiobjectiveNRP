@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.action.table;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.component.JHorizontalSlider;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;

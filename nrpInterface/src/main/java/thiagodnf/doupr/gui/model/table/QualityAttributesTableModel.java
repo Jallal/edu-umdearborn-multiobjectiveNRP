@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.util.EvaluationUtils;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.util.EvaluationUtils;
 
 import java.util.ArrayList;
 import java.util.List;

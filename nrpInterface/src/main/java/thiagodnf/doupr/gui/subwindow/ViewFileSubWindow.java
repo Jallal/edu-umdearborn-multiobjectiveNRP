@@ -78,7 +78,7 @@ public class ViewFileSubWindow extends SubWindow implements ChangeListener {
 
 		toolbar.setFloatable(false);
 
-		String optimizeTip = "Find best refactoring solutions to improve the quality of this project using multi-objective optimization.";
+		String optimizeTip = "Find best grooming solutions to improve the quality of this project using multi-objective optimization.";
 		String chartsTip = "Class diagrams and Dependency graphs.";
 		String applyTip = "Apply the selected refactorings on the project (Under construction).";
 		String exportTip = "Export the solutions and design metrics into CSV files.";

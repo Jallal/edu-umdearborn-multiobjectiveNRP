@@ -1,12 +1,12 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.commons.io.FileUtils;
-import thiagodnf.doupr.core.sys.LOGGER;
-import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.export.html.generator.HTMLClassDiagramGenerator;
-import thiagodnf.doupr.export.html.generator.HTMLHierarchicalEdgeBundlingGenerator;
-import thiagodnf.doupr.export.html.generator.HTMLInteractiveForceLayout;
-import thiagodnf.doupr.export.html.generator.HTMLRotatingClusterLayout;
+import edu.umich.ISELab.core.sys.LOGGER;
+import edu.umich.ISELab.core.util.ProjectObjectUtils;
+import edu.umich.ISELab.export.html.generator.HTMLClassDiagramGenerator;
+import edu.umich.ISELab.export.html.generator.HTMLHierarchicalEdgeBundlingGenerator;
+import edu.umich.ISELab.export.html.generator.HTMLInteractiveForceLayout;
+import edu.umich.ISELab.export.html.generator.HTMLRotatingClusterLayout;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.window.MainWindow;

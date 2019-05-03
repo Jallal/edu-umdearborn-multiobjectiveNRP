@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.asynctask;
 
-import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.util.MessageBox;
 
 import java.io.File;

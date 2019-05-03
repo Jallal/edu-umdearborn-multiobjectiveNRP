@@ -3,7 +3,7 @@ package thiagodnf.doupr.gui.window;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.util.UUIDUtils;
+import edu.umich.ISELab.core.util.UUIDUtils;
 import thiagodnf.doupr.gui.action.jmenuitem.CloseAllWindowsAction;
 import thiagodnf.doupr.gui.action.jmenuitem.CloseApplicationAction;
 import thiagodnf.doupr.gui.action.jmenuitem.CloseWindowsAction;

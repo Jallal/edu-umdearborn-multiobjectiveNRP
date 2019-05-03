@@ -1,11 +1,11 @@
 package thiagodnf.doupr.gui.action.button;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.util.ProjectObjectUtils;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -33,7 +33,7 @@ public class EditRefactoringAction extends AddRefactoringAction implements Actio
         }
 
         if (selectedRows.length != 1) {
-            MessageBox.warning("You must select just a refactoring before edit it");
+            MessageBox.warning("You must select just a grooming before edit it");
             return;
         }
 

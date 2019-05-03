@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.evaluation.designmetrics.AbstractDesignMetric;
-import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
-import thiagodnf.doupr.evaluation.util.EvaluationUtils;
+import edu.umich.ISELab.evaluation.designmetrics.AbstractDesignMetric;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
+import edu.umich.ISELab.evaluation.util.EvaluationUtils;
 
 import java.util.List;
 

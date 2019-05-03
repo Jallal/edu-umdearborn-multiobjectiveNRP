@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.NrpVariable;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.variables.NrpVariable;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.model.table.FrequencyByOperationTableModel;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.solution.Solution;
 
 import javax.swing.*;
 import java.awt.*;

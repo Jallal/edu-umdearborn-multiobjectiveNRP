@@ -191,7 +191,7 @@
             <!--<configuration>-->
             <!--<archive>-->
             <!--<manifest>-->
-            <!--<mainClass>thiagodnf.doupr.execution.ExploreGUI</mainClass>-->
+            <!--<mainClass>ExploreGUI</mainClass>-->
             <!--</manifest>-->
             <!--</archive>-->
             <!--</configuration>-->
@@ -200,7 +200,7 @@
             <!--<configuration>-->
             <!--<archive>-->
             <!--<manifest>-->
-            <!--<mainClass>thiagodnf.doupr.execution.ExploreGUI</mainClass>-->
+            <!--<mainClass>ExploreGUI</mainClass>-->
             <!--</manifest>-->
             <!--</archive>-->
             <!--</configuration>-->
@@ -219,7 +219,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        thiagodnf.doupr.execution.ExploreGUI
+                                        ExploreGUI
                                     </mainClass>
                                 </manifest>
                             </archive>

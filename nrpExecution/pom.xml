@@ -67,7 +67,7 @@
                         </descriptorRefs>
                         <archive>
                             <manifest>
-                                <mainClass>thiagodnf.doupr.execution.ExploreConsole</mainClass>
+                                <mainClass>edu.umich.ISELab.execution.ExploreConsole</mainClass>
                             </manifest>
                         </archive>
                     </configuration>

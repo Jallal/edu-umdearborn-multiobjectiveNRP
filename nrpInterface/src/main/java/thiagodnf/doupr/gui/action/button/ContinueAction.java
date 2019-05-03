@@ -1,19 +1,19 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.evaluation.Objective;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
 import thiagodnf.doupr.gui.panel.ContinuePanel;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.util.MessageBox.MessageBoxListener;
 import thiagodnf.doupr.gui.util.PreferencesUtils;
-import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.solution.NrpSolution;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.util.NormalizerUtils;
-import thiagodnf.doupr.optimization.util.SolutionListUtils;
+import edu.umich.ISELab.optimization.algorithm.builder.Builder;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.NrpSolution;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.util.NormalizerUtils;
+import edu.umich.ISELab.optimization.util.SolutionListUtils;
 import vahid.ML.Clustering;
 
 import java.awt.event.ActionEvent;

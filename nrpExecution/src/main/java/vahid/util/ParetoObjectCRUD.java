@@ -4,7 +4,7 @@ package vahid.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.solution.Solution;
 
 import java.io.File;
 import java.io.FileInputStream;

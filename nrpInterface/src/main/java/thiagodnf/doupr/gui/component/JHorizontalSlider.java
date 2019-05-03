@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.component;
 
-import thiagodnf.doupr.optimization.util.NormalizerUtils;
+import edu.umich.ISELab.optimization.util.NormalizerUtils;
 
 import javax.swing.*;
 import java.util.Hashtable;

@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 
 import java.util.ArrayList;
 import java.util.List;

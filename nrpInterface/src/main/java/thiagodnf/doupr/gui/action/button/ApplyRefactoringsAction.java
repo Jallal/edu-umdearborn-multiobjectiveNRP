@@ -1,12 +1,12 @@
 package thiagodnf.doupr.gui.action.button;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;
-import thiagodnf.doupr.evaluation.qualityattributes.QMOODReusability;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.solution.NrpSolution;
-import thiagodnf.doupr.optimization.variables.NrpVariable;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODFlexibility;
+import edu.umich.ISELab.evaluation.qualityattributes.QMOODReusability;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.NrpSolution;
+import edu.umich.ISELab.optimization.variables.NrpVariable;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,7 +39,7 @@ public class ApplyRefactoringsAction implements ActionListener {
 
         NrpSolution solution = new NrpSolution(problem);
 
-        // Create a refactoring variable for saving the list of refactorings
+        // Create a grooming variable for saving the list of refactorings
         NrpVariable variable = new NrpVariable();
 
         // Save the variable (list of refactorings) in the solution

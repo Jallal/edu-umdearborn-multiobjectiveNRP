@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.factory.NrpFactory;
-import thiagodnf.doupr.core.refactoring.AssignTaskToDeveloper;
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.factory.NrpFactory;
+import edu.umich.ISELab.core.grooming.AssignTaskToDeveloper;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.component.JFilterComboBox;
 import thiagodnf.doupr.gui.component.JSortedComboBox;
 import thiagodnf.doupr.gui.component.JSortedList;
@@ -56,13 +56,13 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 
 		adjustComponents();
 
-		// Verify if the user is adding or editing a refactoring
+		// Verify if the user is adding or editing a grooming
 		if (refactoring != null) {
 
-			// Select the current refactoring name because we are editing it
+			// Select the current grooming name because we are editing it
 			this.refactoringTypesComboBox.setSelectedItem(refactoring.getName());
 
-			// The users cannot change the refactoring type when they are editing it
+			// The users cannot change the grooming type when they are editing it
 			this.refactoringTypesComboBox.setEnabled(false);
 
 			if (refactoring.getClass1() != null && !refactoring.getClass1().isEmpty()) {
@@ -78,7 +78,7 @@ public class FormRefactoringPanel extends JPanel implements ItemListener {
 
 			setEnabled(refactoring.getName());
 		} else {
-			//The user is adding a new refactoring
+			//The user is adding a new grooming
 			setEnabled(getSelectedRefactoring().getName());
 		}
 	}

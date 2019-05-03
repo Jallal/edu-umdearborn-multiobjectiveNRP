@@ -8,8 +8,8 @@ import thiagodnf.doupr.gui.subwindow.SubWindow;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.window.MainWindow;
-import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.problem.Problem;
+import edu.umich.ISELab.optimization.solution.Solution;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

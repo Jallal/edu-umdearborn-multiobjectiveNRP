@@ -1,13 +1,13 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.evaluation.Objective;
+import edu.umich.ISELab.evaluation.Objective;
 import thiagodnf.doupr.gui.component.JOpaquePanel;
 import thiagodnf.doupr.gui.component.JSortedComboBox;
 import thiagodnf.doupr.gui.util.GridBagUtils;
-import thiagodnf.doupr.optimization.filter.Filter;
-import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.util.FilterUtils;
-import thiagodnf.doupr.optimization.util.constants.FilterConstants;
+import edu.umich.ISELab.optimization.filter.Filter;
+import edu.umich.ISELab.optimization.problem.Problem;
+import edu.umich.ISELab.optimization.util.FilterUtils;
+import edu.umich.ISELab.optimization.util.constants.FilterConstants;
 
 import javax.swing.*;
 import java.awt.*;

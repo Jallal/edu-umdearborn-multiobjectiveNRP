@@ -3,7 +3,7 @@ package thiagodnf.doupr.gui.action.button;
 import org.apache.log4j.Logger;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
-import thiagodnf.doupr.optimization.util.SolutionListUtils;
+import edu.umich.ISELab.optimization.util.SolutionListUtils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

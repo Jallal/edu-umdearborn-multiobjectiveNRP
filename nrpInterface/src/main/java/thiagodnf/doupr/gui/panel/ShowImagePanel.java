@@ -1,6 +1,6 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

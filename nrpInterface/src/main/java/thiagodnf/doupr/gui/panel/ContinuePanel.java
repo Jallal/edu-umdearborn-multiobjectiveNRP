@@ -1,10 +1,10 @@
 package thiagodnf.doupr.gui.panel;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.evaluation.comparator.SortObjectivesByRankingComparator;
-import thiagodnf.doupr.evaluation.util.ObjectiveUtils;
-import thiagodnf.doupr.evaluation.util.constants.ObjectiveConstants;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.comparator.SortObjectivesByRankingComparator;
+import edu.umich.ISELab.evaluation.util.ObjectiveUtils;
+import edu.umich.ISELab.evaluation.util.constants.ObjectiveConstants;
 import thiagodnf.doupr.gui.component.JCheckBoxGroup;
 import thiagodnf.doupr.gui.component.JOpaquePanel;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;

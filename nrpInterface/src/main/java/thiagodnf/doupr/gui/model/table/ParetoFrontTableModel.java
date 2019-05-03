@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.evaluation.Objective;
-import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.solution.Solution;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.optimization.problem.Problem;
+import edu.umich.ISELab.optimization.solution.Solution;
 import vahid.ML.Clustering;
 
 import java.util.ArrayList;

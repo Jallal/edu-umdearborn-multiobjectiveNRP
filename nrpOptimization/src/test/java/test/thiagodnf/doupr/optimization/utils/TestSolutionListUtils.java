@@ -1,8 +1,8 @@
 package test.java.test.thiagodnf.doupr.optimization.utils;
 
 import org.junit.Test;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.util.SolutionListUtils;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.util.SolutionListUtils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;

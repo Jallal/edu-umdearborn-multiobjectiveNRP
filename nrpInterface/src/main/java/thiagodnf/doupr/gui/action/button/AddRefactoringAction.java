@@ -1,8 +1,8 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.refactoring.condition.Condition;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.condition.Condition;
 import thiagodnf.doupr.gui.panel.FormRefactoringPanel;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
@@ -53,7 +53,7 @@ public class AddRefactoringAction implements ActionListener {
                 break;
             }
 
-            if (LOGGER.isInfoEnabled()) LOGGER.info("The user pushed the OK button. Validaing the refactoring");
+            if (LOGGER.isInfoEnabled()) LOGGER.info("The user pushed the OK button. Validaing the grooming");
 
             NrpBase refactoring = panel.getRefactoring();
 
@@ -79,7 +79,7 @@ public class AddRefactoringAction implements ActionListener {
 
             if (results.size() == conditions.size() && !results.contains(false)) {
 
-                if (LOGGER.isInfoEnabled()) LOGGER.info("The new refactoring is valid");
+                if (LOGGER.isInfoEnabled()) LOGGER.info("The new grooming is valid");
 
                 return JOptionPane.OK_OPTION;
             }

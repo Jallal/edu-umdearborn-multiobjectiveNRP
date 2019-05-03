@@ -3,10 +3,10 @@ package thiagodnf.doupr.gui.asynctask;
 import org.apache.log4j.Logger;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
-import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.util.SolutionListUtils;
+import edu.umich.ISELab.optimization.algorithm.builder.Builder;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.util.SolutionListUtils;
 
 import java.util.List;
 

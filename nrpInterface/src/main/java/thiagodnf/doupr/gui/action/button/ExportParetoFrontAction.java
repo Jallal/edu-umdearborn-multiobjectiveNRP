@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
-import thiagodnf.doupr.core.sys.LOGGER;
+import edu.umich.ISELab.core.sys.LOGGER;
 import thiagodnf.doupr.gui.component.JExportAsChooser;
 import thiagodnf.doupr.gui.component.JExportAsChooser.JExportAsChooserListener;
 import thiagodnf.doupr.gui.subwindow.ViewParetoFrontSubWindow;

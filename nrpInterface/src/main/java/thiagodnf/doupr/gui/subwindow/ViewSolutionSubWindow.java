@@ -1,10 +1,10 @@
 package thiagodnf.doupr.gui.subwindow;
 
-import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.sys.LOGGER;
-import thiagodnf.doupr.core.util.ProjectObjectUtils;
-import thiagodnf.doupr.core.util.UUIDUtils;
-import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.sys.LOGGER;
+import edu.umich.ISELab.core.util.ProjectObjectUtils;
+import edu.umich.ISELab.core.util.UUIDUtils;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.action.button.AddRefactoringAction;
 import thiagodnf.doupr.gui.action.button.EditRefactoringAction;
 import thiagodnf.doupr.gui.action.button.ExportRefactoringsAction;
@@ -24,10 +24,10 @@ import thiagodnf.doupr.gui.panel.RefactoringsPanel;
 import thiagodnf.doupr.gui.panel.SummaryPanel;
 import thiagodnf.doupr.gui.util.ImageUtils;
 import thiagodnf.doupr.gui.util.MessageBox;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.problem.Problem;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.variables.NrpVariable;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.problem.Problem;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.variables.NrpVariable;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -125,11 +125,11 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 		toolbar.setFloatable(false);
 
 		String openTip = "Load the refactorings.";
-		String exportTip = "Export the refactoring of this solution.";
+		String exportTip = "Export the grooming of this solution.";
 		String chartsTip = "Class diagrams and Dependency graphs.";
-		String addTip = "Add refactoring manually.";
-		String editTip = "Modify the selected refactoring.";
-		String removeTip = "Removing the selected refactoring.";
+		String addTip = "Add grooming manually.";
+		String editTip = "Modify the selected grooming.";
+		String removeTip = "Removing the selected grooming.";
 		String evaluateTip = "Evaluate the whole solution. This will assign your feedback on all refactorings of this solution.";
 
 		toolbar.add(new JToolBarButton(this, "Open", "open.png", openTip, new OpenRefactoringsAction(this)));
@@ -189,7 +189,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 	public void removeRefactoring(List<NrpBase> refactoringsToRemove) {
 
-		// First we have to remove the selected refactoring into refactoring list
+		// First we have to remove the selected grooming into grooming list
 		for (NrpBase refactoring : refactoringsToRemove) {
 			getRefactorings().remove(refactoring);
 		}
@@ -198,10 +198,10 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 		ProjectObject copy = ProjectObjectUtils.copy(((NrpProblem) problem).getProject());
 
-		// After remove it, some refactoring can be invalid. So, we have to remove all invalid ones
+		// After remove it, some grooming can be invalid. So, we have to remove all invalid ones
 		setRefactorings(NrpUtils.getValids(copy, getRefactorings()));
 
-		// Next we apply the valid refactoring again and we calculate again the design metrics
+		// Next we apply the valid grooming again and we calculate again the design metrics
 		applyRefactorings();
 
 		// Load the result in the panel
@@ -210,7 +210,7 @@ public class ViewSolutionSubWindow extends SubWindow implements ChangeListener {
 
 	public void removeAllRefactorings() {
 
-		// First we have to remove the selected refactoring into refactoring list
+		// First we have to remove the selected grooming into grooming list
 		getRefactorings().clear();
 
 		// The refactored project turns back to the original one

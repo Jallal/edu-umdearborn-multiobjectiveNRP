@@ -18,12 +18,12 @@ import thiagodnf.doupr.gui.panel.SettingsForParetoFrontPanel;
 import thiagodnf.doupr.gui.panel.XYChartPanel;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.window.MainWindow;
-import thiagodnf.doupr.optimization.algorithm.builder.Builder;
-import thiagodnf.doupr.optimization.filter.Filter;
-import thiagodnf.doupr.optimization.problem.NrpProblem;
-import thiagodnf.doupr.optimization.solution.Solution;
-import thiagodnf.doupr.optimization.util.FilterUtils;
-import thiagodnf.doupr.optimization.util.NormalizerUtils;
+import edu.umich.ISELab.optimization.algorithm.builder.Builder;
+import edu.umich.ISELab.optimization.filter.Filter;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.util.FilterUtils;
+import edu.umich.ISELab.optimization.util.NormalizerUtils;
 import vahid.ML.Clustering;
 
 import javax.swing.*;

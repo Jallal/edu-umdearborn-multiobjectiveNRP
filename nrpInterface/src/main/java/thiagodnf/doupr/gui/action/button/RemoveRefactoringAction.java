@@ -1,7 +1,7 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.refactoring.NrpBase;
+import edu.umich.ISELab.core.grooming.NrpBase;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 
@@ -33,7 +33,7 @@ public class RemoveRefactoringAction implements ActionListener {
         }
 
         if (selectedRows.length == 0) {
-            MessageBox.warning("You must select at least a refactoring before remove it");
+            MessageBox.warning("You must select at least a grooming before remove it");
             return;
         }
 

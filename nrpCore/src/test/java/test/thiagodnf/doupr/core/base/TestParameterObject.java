@@ -1,14 +1,8 @@
 package test.java.test.thiagodnf.doupr.core.base;
 
-import org.junit.Test;
-
-import java.util.Arrays;
-
-import static org.junit.Assert.assertFalse;
-
 public class TestParameterObject {
 
-    @Test
+   /* @Test
     public void shouldCloneAnObject() {
         ParameterObject main = new ParameterObject();
 
@@ -25,6 +19,6 @@ public class TestParameterObject {
         assertFalse(copy.getTemplates().contains("Double"));
         assertFalse(copy.getTemplates().contains("String"));
         assertFalse(main.getTemplates().contains("Integer"));
-    }
+    }*/
 
 }
