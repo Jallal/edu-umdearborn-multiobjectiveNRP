@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.action.button;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.qualityattributes.QMOODFlexibility;

@@ -2,16 +2,10 @@ package thiagodnf.doupr.core.refactoring;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.callgraph.CallGraph;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineTasksForAssigingToDeveloper;
-import thiagodnf.doupr.core.util.AttributeObjectUtils;
-import thiagodnf.doupr.core.util.MethodObjectUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 
 import java.util.ArrayList;
@@ -40,7 +34,7 @@ public class AssignTaskToDeveloper extends NrpBase{
 
     @Override
     public void loadActors(ProjectObject project) {
-        this.sourceCls = ProjectObjectUtils.findByName(project, this.class1);
+        this.sourceCls = ProjectObjectUtils.findByType(project, this.class1);
         this.attr = AttributeObjectUtils.findByName(sourceCls, this.attributes.get(0));
     }
 

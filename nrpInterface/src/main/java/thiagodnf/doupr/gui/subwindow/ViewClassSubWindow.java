@@ -1,7 +1,5 @@
 package thiagodnf.doupr.gui.subwindow;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.gui.panel.DesignMetricsForClassPanel;
 
 import javax.swing.*;

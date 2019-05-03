@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.component;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.panel.AbstractPanel;
 

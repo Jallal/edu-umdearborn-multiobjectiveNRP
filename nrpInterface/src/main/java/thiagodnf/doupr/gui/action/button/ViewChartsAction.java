@@ -1,9 +1,6 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.commons.io.FileUtils;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.sys.LOGGER;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.export.html.generator.HTMLClassDiagramGenerator;
@@ -132,7 +129,7 @@ public class ViewChartsAction implements ActionListener {
             @Override
             public void onAccepted(Object selectedOption) {
 
-                ClassObject cls = ProjectObjectUtils.findByName(project, String.valueOf(selectedOption));
+                ClassObject cls = ProjectObjectUtils.findByType(project, String.valueOf(selectedOption));
 
                 LOGGER.info(this, "The user selected: " + cls.getName());
 
@@ -163,7 +160,7 @@ public class ViewChartsAction implements ActionListener {
             @Override
             public void onAccepted(Object selectedOption) {
 
-                ClassObject cls = ProjectObjectUtils.findByName(project, String.valueOf(selectedOption));
+                ClassObject cls = ProjectObjectUtils.findByType(project, String.valueOf(selectedOption));
 
                 LOGGER.info(this, "The user selected: " + cls.getName());
 

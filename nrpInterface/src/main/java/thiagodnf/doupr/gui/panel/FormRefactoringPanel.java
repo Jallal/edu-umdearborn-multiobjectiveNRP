@@ -1,12 +1,8 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ElementObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.factory.NrpFactory;
 import thiagodnf.doupr.core.refactoring.AssignTaskToDeveloper;
 import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.util.ClassObjectUtils;
 import thiagodnf.doupr.gui.component.JFilterComboBox;
 import thiagodnf.doupr.gui.component.JSortedComboBox;
 import thiagodnf.doupr.gui.component.JSortedList;

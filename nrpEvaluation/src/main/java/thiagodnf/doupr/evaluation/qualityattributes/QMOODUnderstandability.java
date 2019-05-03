@@ -1,6 +1,5 @@
 package thiagodnf.doupr.evaluation.qualityattributes;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.evaluation.Objective;
 
 /**

@@ -1,9 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 import java.util.List;
 import java.util.Map;
 

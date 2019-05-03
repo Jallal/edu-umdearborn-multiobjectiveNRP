@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the <b>Number Of Hierarchies (NOH)</b> design metric.
  * It is the total number of 'root' classes in the design. Design Property:

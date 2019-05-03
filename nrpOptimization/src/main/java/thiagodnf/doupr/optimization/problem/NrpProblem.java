@@ -2,10 +2,7 @@ package thiagodnf.doupr.optimization.problem;
 
 import org.apache.commons.io.FilenameUtils;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.util.FileReaderUtils;
-import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.core.util.RandomUtils;
 import thiagodnf.doupr.core.util.UUIDUtils;

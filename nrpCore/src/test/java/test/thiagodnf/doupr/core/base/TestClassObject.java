@@ -1,12 +1,6 @@
 package test.java.test.thiagodnf.doupr.core.base;
 
 import org.junit.Test;
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ElementObject.Visibility;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ParameterObject;
-import thiagodnf.doupr.core.util.ClassObjectUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -114,13 +108,13 @@ public class TestClassObject {
 //	@Test(expected = IllegalArgumentException.class)
 //	public void shouldThrowAnExceptionCallingFindByNameWhenEmptyClassName() {
 //		List<ClassObject> classes = new ArrayList<>();
-//		ClassObjectUtils.findByName(classes, "");
+//		ClassObjectUtils.findByType(classes, "");
 //	}
 
 //	@Test(expected = NullPointerException.class)
 //	public void shouldThrowAnExceptionCallingFindByNameWhenNullClassName() {
 //		List<ClassObject> classes = new ArrayList<>();
-//		ClassObjectUtils.findByName(classes, null);
+//		ClassObjectUtils.findByType(classes, null);
 //	}
 
     @Test

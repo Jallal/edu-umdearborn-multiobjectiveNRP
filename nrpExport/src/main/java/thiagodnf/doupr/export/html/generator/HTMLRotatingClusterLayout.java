@@ -1,7 +1,5 @@
 package thiagodnf.doupr.export.html.generator;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.export.json.generator.JSONRotatingClusterLayoutGenerator;
 
 import java.io.IOException;

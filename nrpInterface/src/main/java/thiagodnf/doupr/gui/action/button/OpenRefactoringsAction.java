@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.action.button;
 
-import thiagodnf.doupr.core.util.FileReaderUtils;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;
 import thiagodnf.doupr.gui.util.MessageBox;
 import thiagodnf.doupr.gui.window.MainWindow;

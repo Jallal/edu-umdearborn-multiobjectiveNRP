@@ -1,9 +1,6 @@
 package test.java.test.thiagodnf.doupr.core.base;
 
 import org.junit.Test;
-import thiagodnf.doupr.core.base.ElementObject.Visibility;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ParameterObject;
 
 import java.util.Arrays;
 

@@ -1,18 +1,18 @@
 package thiagodnf.doupr.core.refactoring.condition;
 
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.WorkItem;
 
 import java.util.List;
 
 public class EmptyCondition extends Condition {
 
-    protected List<?> list;
+    protected List<WorkItem> list;
 
-    public EmptyCondition(List<?> list) {
+    public EmptyCondition(List<WorkItem> list) {
         this.list = list;
     }
 
-    public boolean verify(ProjectObject project) {
+    public boolean verify(WorkItem item) {
         return list.isEmpty();
     }
 

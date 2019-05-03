@@ -1,6 +1,5 @@
 package main.java.VAHID;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.designmetrics.AbstractDesignMetric;
 import thiagodnf.doupr.evaluation.util.EvaluationUtils;

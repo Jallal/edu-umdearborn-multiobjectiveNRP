@@ -1,60 +1,39 @@
 package thiagodnf.doupr.core.refactoring.condition;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ElementObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.WorkItem;
 
 public class DefineCondition extends Condition {
 
-    protected ClassObject cls;
+    private WorkItem  workItem;
 
-    protected ElementObject el;
 
-    public DefineCondition(ClassObject cls, ElementObject el) {
-        this.cls = cls;
-        this.el = el;
+    public DefineCondition(WorkItem item) {
+
+        this.workItem = item;
     }
 
     @Override
-    public boolean verify(ProjectObject project) {
+    public boolean verify(WorkItem item) {
 
-        if (el instanceof AttributeObject) {
-            return verifyAttribute(project, (AttributeObject) el);
-        }
-
-        if (el instanceof MethodObject) {
-            return verifyMethod(project, (MethodObject) el);
+        if (item instanceof WorkItem) {
+            return verifyItemIsAvailable(item);
         }
 
         return false;
     }
 
-    protected boolean verifyAttribute(ProjectObject project, AttributeObject attr) {
-
-        for (AttributeObject a : cls.getAttributes()) {
-            if (a == attr) {
+    protected boolean verifyItemIsAvailable(WorkItem item) {
+        if (!item.isAssigned()) {
                 return true;
-            }
+
         }
 
         return false;
     }
 
-    protected boolean verifyMethod(ProjectObject project, MethodObject m) {
-
-        for (MethodObject method : cls.getMethods()) {
-            if (method == m) {
-                return true;
-            }
-        }
-
-        return false;
-    }
 
     @Override
     public String getErrorMessage() {
-        return "The class does not define the attribute or method";
+        return "The item can't be assigned";
     }
 }

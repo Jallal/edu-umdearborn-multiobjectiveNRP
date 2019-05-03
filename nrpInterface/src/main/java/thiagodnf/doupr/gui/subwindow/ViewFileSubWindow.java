@@ -1,7 +1,6 @@
 package thiagodnf.doupr.gui.subwindow;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.gui.action.button.ApplyRefactoringsAction;
 import thiagodnf.doupr.gui.action.button.OptimizeAction;
 import thiagodnf.doupr.gui.action.button.ViewChartsAction;

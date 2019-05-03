@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.formatter.RefactoringFormatter;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.util.ArrayList;

@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.action.jmenuitem;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.gui.asynctask.AsyncTask;
 import thiagodnf.doupr.gui.asynctask.OpenFileAsyncTask;
 import thiagodnf.doupr.gui.listener.AsyncTaskListener;

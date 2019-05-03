@@ -2,29 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bce763-019f-418d-b632-5c460eb2ec9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Bug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Feature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/UserStory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItemDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Block.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/CallObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ClassObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ElementObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/MethodObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/PackageObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ParameterObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ProjectObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/AreClassesCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/GreaterOrEqualsThanCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasPolymorphismCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasSignatureCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasTheTypeCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasVisibilityCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/InheritanceHierarchyCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsClassCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsFieldCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsMethodCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsSubClassOfCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsSuperClassOfCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/NumberOfMethodsCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsTaskNotAssignedYet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ElementObjectUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/AssignWorkItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/util/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/util/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ClassObjectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ConverterUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/MethodObjectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/NrpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestAttributeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestAttributeObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestClassObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestClassObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestMethodObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestMethodObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestParameterObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestParameterObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/Objective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/AbstractAntiPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/AbstractAntiPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/Blob.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/Blob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/AbstractDesignMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/AbstractDesignMetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODAverageNumberOfAncestors.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODAverageNumberOfAncestors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODClassInterfaceSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODClassInterfaceSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDataAccessMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDataAccessMetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDesignSizeInClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDesignSizeInClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDirectClassCoupling.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODDirectClassCoupling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODMeasureOfAggregation.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODMeasureOfAggregation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODMeasureOfFunctionalAbstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODMeasureOfFunctionalAbstraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfHierarchies.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfHierarchies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfPolymorphicMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODNumberOfPolymorphicMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardCohesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardCohesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardComplexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardComplexity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardCoupling.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/StandardCoupling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/AbstractQualityAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfNRPOptimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/NumberOfNRPOptimization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODEffectiveness.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODEffectiveness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODExtendibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODExtendibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODFlexibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODFlexibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODFunctionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODFunctionality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODReusability.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODReusability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODUnderstandability.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/qualityattributes/QMOODUnderstandability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/DesignMetricsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/util/DesignMetricsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/thiagodnf/doupr/execution/ExploreConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/ExportGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/ExportGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/ExportParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/ExportParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/generator/BlocksGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/generator/BlocksGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/AttributesBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/AttributesBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/CallInsBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/CallInsBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/CallOutsBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/CallOutsBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/ClassBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/ClassBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/GeneralizationsBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/GeneralizationsBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/MethodsBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/MethodsBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/ParametersBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/ParametersBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/RealizationsBlocksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/block/parser/RealizationsBlocksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotAbstractGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotAbstractGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotClassDiagramGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotClassDiagramGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotDependencyGraphGenenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/generator/DotDependencyGraphGenenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/ClassDotParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/ClassDotParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/CompositionDotParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/CompositionDotParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/DependencyDotParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/DependencyDotParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/GeneralizationDotParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/GeneralizationDotParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/RealizationDotParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/dot/parser/RealizationDotParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLClassDiagramGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLClassDiagramGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLHierarchicalEdgeBundlingGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLHierarchicalEdgeBundlingGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLInteractiveForceLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLInteractiveForceLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLRotatingClusterLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/html/generator/HTMLRotatingClusterLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONClassDiagramGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONClassDiagramGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONHierarchicalEdgeBundlingGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONHierarchicalEdgeBundlingGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONInteractiveForceLayoutGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONInteractiveForceLayoutGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONRotatingClusterLayoutGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/json/generator/JSONRotatingClusterLayoutGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/generator/PlantUMLGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/generator/PlantUMLGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/AttributesPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/AttributesPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/ClassPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/ClassPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/CompositionsPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/CompositionsPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/GeneralizationsPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/GeneralizationsPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/MethodsPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/MethodsPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/RealizationsPlantUMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/plantuml/parser/RealizationsPlantUMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/util/FormatterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExport/src/main/java/thiagodnf/doupr/export/util/FormatterUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportDesignMetricsVAHID.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportDesignMetricsVAHID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToCDMFilesVAHID.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToCDMFilesVAHID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToPMFilesVAHID.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToPMFilesVAHID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OpenRefactoringsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OpenRefactoringsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewChartsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewChartsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenFileAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenFileAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/OpenClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/OpenClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OpenFileAsyncTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OpenFileAsyncTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JOpaquePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JOpaquePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForClassTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForClassTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForProjectTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForProjectTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/QualityAttributesTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/QualityAttributesTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/SummaryTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/SummaryTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClusterChartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClusterChartPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClustersCenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClustersCenterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForClassPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ParetoFrontPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ParetoFrontPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/QualityAttributesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/QualityAttributesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/RefactoringsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/RefactoringsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/XYChartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/XYChartPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClassSubWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClassSubWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/CustomNSGAIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/CustomNSGAIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/problem/NrpProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/problem/NrpProblem.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/nrpOptimization/target/" />
@@ -46,64 +171,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/AbstractAntiPattern.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="165">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/antipatterns/Blob.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="345">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/comparator/SortObjectivesByRankingComparator.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/AssignWorkItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/UUIDUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/AbstractDesignMetric.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/StringUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODAverageNumberOfAncestors.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="990">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/sys/LOGGER.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1788">
+              <caret line="83" column="27" lean-forward="true" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java">
+        <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODClassInterfaceSize.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -113,6 +268,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -139,22 +295,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/crossovers/SinglePointCrossover.java" />
-        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/operators/mutations/BitFlipMutation.java" />
-        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/builder/Builder.java" />
-        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/AbstractAlgorithm.java" />
-        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/thiagodnf/doupr/optimization/algorithm/CustomNSGAII.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportRefactoringsAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveRefactoringAction.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewParetoFrontSubWindow.java" />
-        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" />
         <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" />
         <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" />
         <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" />
@@ -183,13 +323,29 @@
         <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" />
         <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/readyTask.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/priority.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/UserStory.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Task.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Feature.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Bug.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItemDefinition.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItem.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java" />
         <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Project.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/AssignWorkItem.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" />
       </list>
     </option>
   </component>
@@ -364,112 +520,6 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="antipatterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="comparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="designmetrics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="qualityattributes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpEvaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -479,7 +529,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556474991416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556846879666" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -589,18 +639,18 @@
       <workItem from="1552753765341" duration="3991000" />
       <workItem from="1552757953029" duration="24410000" />
       <workItem from="1554673770169" duration="9195000" />
-      <workItem from="1556406615739" duration="4503000" />
+      <workItem from="1556406615739" duration="10735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42849000" />
+    <option name="totallyTimeSpent" value="49081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33404863" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26967096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -608,7 +658,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32744566" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32697546" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.04076087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -635,317 +685,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/GreaterOrEqualsThanCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/NumberOfMethodsCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/HasPolymorphismCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsSuperClassOfCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsSubClassOfCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsMethodCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsFieldCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/InheritanceHierarchyCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/AreClassesCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ElementObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ConverterUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ClassObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/CallObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ProjectObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ParameterObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/PackageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ElementObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/factory/NrpFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/MethodObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/org/eclipse/wb/swing/FocusTraversalOnArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="65" column="57" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ClassObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#6175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/MethodObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/NrpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/UUIDUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsTaskNotAssignedYet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/util/Candidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2521">
-          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -993,8 +736,322 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/thiagodnf/doupr/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
+        <state relative-caret-position="435">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/AttributeObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding>
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/CallObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/PackageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ClassObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/MethodObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ElementObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/ProjectObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/RefactoringFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/formatter/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/IsTaskNotAssignedYet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Bug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Feature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Priority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/UserStory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/NrpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/MethodObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/FileReaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ConverterUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ClassObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/AttributeObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/WorkItemDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/util/Candidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/factory/NrpFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/callgraph/CallGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/DefineCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/AssignWorkItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/UUIDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/sys/LOGGER.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1788">
+          <caret line="83" column="27" lean-forward="true" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

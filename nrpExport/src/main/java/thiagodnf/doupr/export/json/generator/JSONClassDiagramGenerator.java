@@ -1,11 +1,5 @@
 package thiagodnf.doupr.export.json.generator;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ParameterObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.core.util.StringUtils;
 import thiagodnf.doupr.export.util.FormatterUtils;
@@ -200,7 +194,7 @@ public class JSONClassDiagramGenerator extends JSONAbstractGenerator {
 
 			int to = ids.get(superClass);
 
-			ClassObject superCls = ProjectObjectUtils.findByName(project, superClass);
+			ClassObject superCls = ProjectObjectUtils.findByType(project, superClass);
 
 			linkdata.add("{ \"from\": " + from + ", \"to\": " + to + ", \"relationship\": \"generalization\" }");
 
@@ -214,7 +208,7 @@ public class JSONClassDiagramGenerator extends JSONAbstractGenerator {
 		for (String inter : cls.getInterfaces()) {
 			int to = ids.get(inter);
 
-			ClassObject interCls = ProjectObjectUtils.findByName(project, inter);
+			ClassObject interCls = ProjectObjectUtils.findByType(project, inter);
 
 			linkdata.add("{ \"from\": " + from + ", \"to\": " + to + ", \"relationship\": \"realization\" }");
 
@@ -231,7 +225,7 @@ public class JSONClassDiagramGenerator extends JSONAbstractGenerator {
 
 				int to = ids.get(attr.getType());
 
-				ClassObject attrCls = ProjectObjectUtils.findByName(project, attr.getType());
+				ClassObject attrCls = ProjectObjectUtils.findByType(project, attr.getType());
 
 				linkdata.add("{ \"from\": " + to + ", \"to\": " + from + ", \"relationship\": \"aggregation\" }");
 

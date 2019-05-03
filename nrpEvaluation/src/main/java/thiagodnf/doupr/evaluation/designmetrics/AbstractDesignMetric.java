@@ -1,9 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the main methods that a Design Metric should implement
  *

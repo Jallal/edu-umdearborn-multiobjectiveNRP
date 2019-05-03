@@ -1,11 +1,8 @@
 package thiagodnf.doupr.core.util;
 
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.Project;
+import thiagodnf.doupr.core.base.WorkItem;
 import thiagodnf.doupr.core.factory.NrpFactory;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import vahid.ML.Clustering;
@@ -28,34 +25,34 @@ public class RandomUtils {
 		return JMetalRandom.getInstance().nextInt(minValue, maxValue);
 	}
 
-	public static List<MethodObject> getRandomMethods(ClassObject cls, int maxValue) {
+	public static List<WorkItem> getRandomWorkItem(Project cls, int maxValue) {
 
 		if (maxValue == 0) {
 			return new ArrayList<>();
 		}
 
-		List<MethodObject> possibleMethods = new ArrayList<>();
+		List<WorkItem> possibleWorkItem = new ArrayList<>();
 
-		for (MethodObject m : cls.getMethods()) {
+		for (WorkItem m : cls.getWorkItemList()) {
 
-			if (m.isContructor()) {
+			if (m.isAssigned()) {
 				continue;
 			}
 
-			possibleMethods.add(m);
+			possibleWorkItem.add(m);
 		}
 
-		if (possibleMethods.isEmpty()) {
+		if (possibleWorkItem .isEmpty()) {
 			return new ArrayList<>();
 		}
 
 		int amount = JMetalRandom.getInstance().nextInt(1, maxValue);
 
-		List<MethodObject> selectedMethod = new ArrayList<>();
+		List<WorkItem> selectedMethod = new ArrayList<>();
 
 		while (selectedMethod.size() != amount) {
 
-			MethodObject m = (MethodObject) getRandomElement(possibleMethods);
+			WorkItem m = (WorkItem) getRandomElement(possibleWorkItem);
 
 			if (!selectedMethod.contains(m)) {
 				selectedMethod.add(m);
@@ -65,41 +62,16 @@ public class RandomUtils {
 		return selectedMethod;
 	}
 
-	public static List<AttributeObject> getRandomAttributes(ClassObject cls, int maxValue) {
 
-		if (maxValue == 0) {
-			return new ArrayList<>();
+	public static WorkItem getRandomItem(Project project) {
+
+		WorkItem pkgSource = (WorkItem) getRandomElement(project.getWorkItemList());
+
+		while (pkgSource.isAssigned()) {
+			pkgSource = (WorkItem) getRandomElement(project.getWorkItemList());
 		}
 
-		if (!cls.hasAttributes()) {
-			return new ArrayList<>();
-		}
-
-		int amount = JMetalRandom.getInstance().nextInt(1, maxValue);
-
-		List<AttributeObject> selectedAttributes = new ArrayList<>();
-
-		while (selectedAttributes.size() != amount) {
-
-			AttributeObject attr = (AttributeObject) getRandomElement(cls.getAttributes());
-
-			if (!selectedAttributes.contains(attr)) {
-				selectedAttributes.add(attr);
-			}
-		}
-
-		return selectedAttributes;
-	}
-
-	public static ClassObject getRandomClass(ProjectObject project) {
-
-		PackageObject pkgSource = (PackageObject) getRandomElement(project.getPackages());
-
-		while (!pkgSource.hasClasses()) {
-			pkgSource = (PackageObject) getRandomElement(project.getPackages());
-		}
-
-		return (ClassObject) getRandomElement(pkgSource.getClasses());
+		return pkgSource;
 	}
 
 	public static NrpBase getRandomRefactoring(List<NrpBase> possibleRefactorings) {

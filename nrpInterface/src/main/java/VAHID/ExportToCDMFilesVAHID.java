@@ -1,9 +1,6 @@
 package VAHID;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 
 import java.io.File;
 import java.io.FileWriter;

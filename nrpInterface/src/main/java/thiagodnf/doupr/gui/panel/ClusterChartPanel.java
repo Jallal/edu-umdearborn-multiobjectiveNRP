@@ -13,7 +13,6 @@ import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.util.ShapeUtilities;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.gui.action.table.OpenSolutionAction;

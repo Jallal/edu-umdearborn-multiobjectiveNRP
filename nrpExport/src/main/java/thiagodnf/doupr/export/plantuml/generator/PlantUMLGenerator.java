@@ -1,7 +1,5 @@
 package thiagodnf.doupr.export.plantuml.generator;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.export.ExportGenerator;
 import thiagodnf.doupr.export.plantuml.parser.ClassPlantUMLParser;
 

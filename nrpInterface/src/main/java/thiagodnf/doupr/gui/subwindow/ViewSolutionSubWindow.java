@@ -1,9 +1,7 @@
 package thiagodnf.doupr.gui.subwindow;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.core.sys.LOGGER;
-import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.core.util.UUIDUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;

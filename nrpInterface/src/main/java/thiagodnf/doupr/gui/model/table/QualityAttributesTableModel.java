@@ -1,6 +1,5 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.util.EvaluationUtils;
 

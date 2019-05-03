@@ -1,6 +1,5 @@
 package thiagodnf.doupr.export.block.parser;
 
-import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.export.ExportParser;
 
 import java.util.List;

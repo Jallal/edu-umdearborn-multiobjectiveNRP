@@ -1,8 +1,6 @@
 package thiagodnf.doupr.gui.action.table;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.gui.component.JTable;
 import thiagodnf.doupr.gui.panel.SummaryPanel;
 import thiagodnf.doupr.gui.subwindow.ViewClassSubWindow;

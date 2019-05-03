@@ -1,6 +1,6 @@
 package thiagodnf.doupr.core.refactoring.condition;
 
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.WorkItem;
 
 public class ExistCondition extends Condition {
 
@@ -18,7 +18,7 @@ public class ExistCondition extends Condition {
     }
 
     @Override
-    public boolean verify(ProjectObject project) {
+    public boolean verify(WorkItem project) {
 
         if (object == null) {
             return false;

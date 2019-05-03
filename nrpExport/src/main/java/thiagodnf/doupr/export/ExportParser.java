@@ -1,7 +1,5 @@
 package thiagodnf.doupr.export;
 
-import thiagodnf.doupr.core.base.ClassObject;
-
 import java.util.List;
 
 public abstract class ExportParser {

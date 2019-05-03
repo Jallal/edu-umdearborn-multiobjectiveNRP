@@ -1,8 +1,6 @@
 package thiagodnf.doupr.gui.action.button;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
-import thiagodnf.doupr.core.util.NrpUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.subwindow.ViewSolutionSubWindow;

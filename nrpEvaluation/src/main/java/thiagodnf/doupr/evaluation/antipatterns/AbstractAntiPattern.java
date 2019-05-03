@@ -1,7 +1,6 @@
 package thiagodnf.doupr.evaluation.antipatterns;
 
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;

@@ -1,8 +1,6 @@
 package thiagodnf.doupr.export;
 
 import org.apache.commons.io.FileUtils;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 
 import java.io.File;
 import java.io.IOException;

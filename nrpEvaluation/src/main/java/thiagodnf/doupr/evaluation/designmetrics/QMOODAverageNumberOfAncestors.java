@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the <b>Average Number of Ancestors (ANA)</b> design
  * metric. It is the average number of classes in the inheritance tree for each class.

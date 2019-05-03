@@ -1,7 +1,6 @@
 package test.java.test.thiagodnf.doupr.core.base;
 
 import org.junit.Test;
-import thiagodnf.doupr.core.base.ParameterObject;
 
 import java.util.Arrays;
 

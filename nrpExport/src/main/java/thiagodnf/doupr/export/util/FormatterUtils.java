@@ -1,8 +1,5 @@
 package thiagodnf.doupr.export.util;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ParameterObject;
 import thiagodnf.doupr.core.util.StringUtils;
 
 import java.util.regex.Matcher;

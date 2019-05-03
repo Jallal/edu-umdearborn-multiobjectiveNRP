@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * The degree of understanding and the easiness of learning the design
  * implementation details

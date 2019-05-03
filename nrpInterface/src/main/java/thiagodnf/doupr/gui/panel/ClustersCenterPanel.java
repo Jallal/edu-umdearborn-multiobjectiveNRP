@@ -1,7 +1,6 @@
 package thiagodnf.doupr.gui.panel;
 
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.action.table.OpenSolutionAction;
 import thiagodnf.doupr.gui.component.JPanelForTabbedPane;

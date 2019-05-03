@@ -1,7 +1,5 @@
 package thiagodnf.doupr.gui.model.table;
 
-import thiagodnf.doupr.core.base.ProjectObject;
-
 public class SummaryTableModel extends TableModel {
 
     private static final long serialVersionUID = 4238689909866943950L;

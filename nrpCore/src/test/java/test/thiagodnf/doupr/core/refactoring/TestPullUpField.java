@@ -2,8 +2,6 @@ package test.java.test.thiagodnf.doupr.core.refactoring;
 
 import org.junit.Before;
 import org.junit.Test;
-import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.util.FileReaderUtils;
 
 import java.io.File;
 import java.io.IOException;

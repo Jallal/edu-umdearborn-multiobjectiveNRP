@@ -1,8 +1,5 @@
 package thiagodnf.doupr.core.refactoring.util;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
 import thiagodnf.doupr.core.util.StringUtils;
 
 import java.util.ArrayList;

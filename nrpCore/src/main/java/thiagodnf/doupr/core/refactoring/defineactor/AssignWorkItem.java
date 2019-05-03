@@ -1,25 +1,24 @@
 package thiagodnf.doupr.core.refactoring.defineactor;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.Project;
+import thiagodnf.doupr.core.base.WorkItem;
 import thiagodnf.doupr.core.refactoring.util.Candidate;
 import thiagodnf.doupr.core.util.RandomUtils;
 
 import static thiagodnf.doupr.core.util.RandomUtils.getRandomElement;
 
-public class DefineTasksForAssigingToDeveloper extends DefineActors{
+public class AssignWorkItem extends DefineActors{
 
-    protected static final Logger LOGGER = Logger.getLogger(DefineTasksForAssigingToDeveloper .class);
+    protected static final Logger LOGGER = Logger.getLogger(AssignWorkItem.class);
 
-    public Candidate execute(ProjectObject project) {
+    public Candidate execute(Project project) {
 
         if (LOGGER.isDebugEnabled()) LOGGER.debug("Finding the source class");
 
         int trials = 0;
 
-        ClassObject sourceClass = RandomUtils.getRandomClass(project);
+        WorkItem sourceClass = RandomUtils.getRandomItem(project);
 
         while (sourceClass.isInterface() || !sourceClass.hasAttributes()) {
 

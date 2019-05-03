@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.util;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 import thiagodnf.doupr.evaluation.designmetrics.AbstractDesignMetric;
 

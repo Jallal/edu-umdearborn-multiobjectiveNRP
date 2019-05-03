@@ -1,9 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the <b>Number of Polymorphic Methods (NOP)</b> design
  * metric. It is Any method that can be used by a class and its descendants.

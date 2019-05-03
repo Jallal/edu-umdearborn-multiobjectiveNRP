@@ -1,6 +1,5 @@
 package thiagodnf.doupr.evaluation.antipatterns;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.evaluation.Objective;
 
 /**

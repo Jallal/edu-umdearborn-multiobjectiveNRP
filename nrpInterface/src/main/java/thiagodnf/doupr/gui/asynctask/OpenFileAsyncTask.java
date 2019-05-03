@@ -1,7 +1,5 @@
 package thiagodnf.doupr.gui.asynctask;
 
-import thiagodnf.doupr.core.base.ProjectObject;
-import thiagodnf.doupr.core.util.FileReaderUtils;
 import thiagodnf.doupr.evaluation.util.DesignMetricsUtil;
 import thiagodnf.doupr.gui.util.MessageBox;
 

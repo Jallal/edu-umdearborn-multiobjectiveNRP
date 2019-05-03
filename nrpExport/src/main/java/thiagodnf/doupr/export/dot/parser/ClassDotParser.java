@@ -1,9 +1,5 @@
 package thiagodnf.doupr.export.dot.parser;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ParameterObject;
 import thiagodnf.doupr.core.util.StringUtils;
 import thiagodnf.doupr.export.ExportParser;
 

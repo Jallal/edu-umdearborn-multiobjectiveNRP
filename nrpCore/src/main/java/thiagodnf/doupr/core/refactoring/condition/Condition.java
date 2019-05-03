@@ -1,17 +1,18 @@
 package thiagodnf.doupr.core.refactoring.condition;
-import thiagodnf.doupr.core.base.ProjectObject;
+
+import thiagodnf.doupr.core.base.WorkItem;
 
 public abstract class Condition {
 
     protected boolean isNegate = false;
 
-    public boolean validate(ProjectObject project) {
+    public boolean validate(WorkItem item) {
 
         if (isNegate()) {
-            return !verify(project);
+            return !verify(item);
         }
 
-        return verify(project);
+        return verify(item);
     }
 
     public boolean isNegate() {
@@ -41,7 +42,7 @@ public abstract class Condition {
         return msg;
     }
 
-    public abstract boolean verify(ProjectObject project);
+    public abstract boolean verify(WorkItem item);
 
     protected abstract String getErrorMessage();
 }

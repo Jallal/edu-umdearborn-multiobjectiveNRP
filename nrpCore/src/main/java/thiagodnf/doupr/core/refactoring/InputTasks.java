@@ -1,15 +1,12 @@
 package thiagodnf.doupr.core.refactoring;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.Project;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.condition.DefineCondition;
 import thiagodnf.doupr.core.refactoring.condition.ExistCondition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineTasksForAssigingToDeveloper;
-import thiagodnf.doupr.core.util.AttributeObjectUtils;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 
 import java.util.ArrayList;
@@ -29,14 +26,14 @@ public class InputTasks extends NrpBase {
 
 
     @Override
-    public void loadActors(ProjectObject project) {
-        this.sourceCls = ProjectObjectUtils.findByName(project, this.class1);
+    public void loadActors(Project project) {
+        this.sourceCls = ProjectObjectUtils.findByType(project, this.class1);
         this.attr = AttributeObjectUtils.findByName(sourceCls, this.attributes.get(0));
 
     }
 
     @Override
-    public List<Condition> getPreConditions(ProjectObject project) {
+    public List<Condition> getPreConditions(Project project) {
         List<thiagodnf.doupr.core.refactoring.condition.Condition> conditions = new ArrayList<>();
 
         conditions.add(new ExistCondition(sourceCls, class1));

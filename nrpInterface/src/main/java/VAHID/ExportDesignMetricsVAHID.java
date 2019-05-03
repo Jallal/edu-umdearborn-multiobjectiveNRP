@@ -1,7 +1,6 @@
 package main.java.VAHID;
 
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.sys.LOGGER;
 import thiagodnf.doupr.gui.component.JExportAsChooser;
 import thiagodnf.doupr.gui.component.JExportAsChooser.JExportAsChooserListener;

@@ -1,6 +1,5 @@
 package thiagodnf.doupr.evaluation;
 
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 
 import java.io.Serializable;

@@ -1,6 +1,5 @@
 package thiagodnf.doupr.export.dot.generator;
 
-import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.export.ExportGenerator;
 import thiagodnf.doupr.export.dot.parser.ClassDotParser;
 

@@ -1,8 +1,7 @@
 package thiagodnf.doupr.core.refactoring;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
+import thiagodnf.doupr.core.base.Project;
 import thiagodnf.doupr.core.refactoring.condition.Condition;
 import thiagodnf.doupr.core.refactoring.defineactor.DefineActors;
 import thiagodnf.doupr.core.refactoring.util.Candidate;
@@ -70,7 +69,7 @@ public abstract class NrpBase implements Serializable {
         return condition;
     }
 
-    public boolean verifyPreConditions(ProjectObject project) throws Exception {
+    public boolean verifyPreConditions(Project project) throws Exception {
 
         if (LOGGER.isDebugEnabled()) LOGGER.debug("Verifying pre-conditions for " + toString());
 
@@ -92,7 +91,7 @@ public abstract class NrpBase implements Serializable {
         return true;
     }
 
-    public boolean verifyPostCondition(ProjectObject project) throws Exception {
+    public boolean verifyPostCondition(Project project) throws Exception {
 
         if (LOGGER.isDebugEnabled()) LOGGER.debug("Verifying pos-conditions for " + toString());
 

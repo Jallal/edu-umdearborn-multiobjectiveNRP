@@ -1,7 +1,5 @@
 package thiagodnf.doupr.export.plantuml.parser;
 
-import thiagodnf.doupr.core.base.AttributeObject;
-import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.export.ExportParser;
 
 import java.util.List;

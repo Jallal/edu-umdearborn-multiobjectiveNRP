@@ -1,6 +1,5 @@
 package thiagodnf.doupr.export.dot.parser;
 
-import thiagodnf.doupr.core.base.ClassObject;
 import thiagodnf.doupr.export.ExportParser;
 
 import java.util.List;
@@ -23,7 +22,7 @@ public class CompositionDotParser extends ExportParser {
 //		for (String c : compositionClasses) {
 //			builder.append(cls.getSimpleName().replaceAll("\\$", "__"));
 //			builder.append(" -> ");
-//			builder.append(ClassObjectUtils.findByName(classes, c).getSimpleName().replaceAll("\\$", "__"));
+//			builder.append(ClassObjectUtils.findByType(classes, c).getSimpleName().replaceAll("\\$", "__"));
 //			builder.append("[arrowtail=diamond]");
 //			builder.append("\n");
 //		}

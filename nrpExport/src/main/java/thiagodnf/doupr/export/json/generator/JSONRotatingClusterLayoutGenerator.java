@@ -1,9 +1,5 @@
 package thiagodnf.doupr.export.json.generator;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.PackageObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 import java.util.ArrayList;
 import java.util.List;
 

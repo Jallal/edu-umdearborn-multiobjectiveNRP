@@ -1,7 +1,5 @@
 package thiagodnf.doupr.export.block.generator;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.util.UUIDUtils;
 import thiagodnf.doupr.export.ExportGenerator;
 import thiagodnf.doupr.export.block.parser.AttributesBlocksParser;

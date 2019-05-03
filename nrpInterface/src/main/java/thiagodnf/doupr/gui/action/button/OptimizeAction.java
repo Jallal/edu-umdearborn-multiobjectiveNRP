@@ -1,7 +1,6 @@
 package thiagodnf.doupr.gui.action.button;
 
 import org.apache.log4j.Logger;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.evaluation.Objective;
 import thiagodnf.doupr.gui.asynctask.AsyncTask;

@@ -1,7 +1,5 @@
 package thiagodnf.doupr.gui.panel;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.refactoring.NrpBase;
 import thiagodnf.doupr.gui.model.table.DesignMetricsForClassTableModel;
 

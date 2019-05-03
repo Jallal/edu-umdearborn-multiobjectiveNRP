@@ -1,9 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the <b>Class Interface Size (CIS)</b> design metric. It
  * is the number of public methods in class. Design Property: <i>Messaging</i>

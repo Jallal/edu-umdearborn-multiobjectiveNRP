@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.ProjectObject;
-
 /**
  * This class implements the <b>Number of Methods (NOM)</b> design metric. It is
  * the number of methods declared in a class. Design Property: <i>Complexity</i>

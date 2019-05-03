@@ -1,8 +1,5 @@
 package thiagodnf.doupr.evaluation.designmetrics;
 
-import thiagodnf.doupr.core.base.ClassObject;
-import thiagodnf.doupr.core.base.MethodObject;
-import thiagodnf.doupr.core.base.ProjectObject;
 import thiagodnf.doupr.core.util.ProjectObjectUtils;
 
 /**
@@ -39,7 +36,7 @@ public class QMOODMeasureOfFunctionalAbstraction extends AbstractDesignMetric {
 
         for (String className : cls.getSuperClasses()) {
 
-            ClassObject superCls = ProjectObjectUtils.findByName(project, className);
+            ClassObject superCls = ProjectObjectUtils.findByType(project, className);
 
             for (MethodObject method : superCls.getMethods()) {
 
