@@ -22,4 +22,18 @@ public class ProjectObjectUtils {
        }
         return null;
     }
+
+    public static Map<WorkItem, Person> findAll(Project project) {
+        Map<WorkItem, Person>  workPair = new HashMap<>();
+        List<Person> personList= project.getPersonList();
+        List<WorkItem> workItem= project.getWorkItemList();
+        for(Person person:personList){
+            for(WorkItem item :workItem) {
+                if (!item.isAssigned()&&!person.isAssigned()) {
+                    workPair.put(item, person);
+                }
+            }
+        }
+        return (Map<WorkItem, Person>) workPair;
+    }
 }

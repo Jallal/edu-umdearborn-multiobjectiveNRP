@@ -1,16 +1,15 @@
 package edu.umich.ISELab.evaluation.util;
 
-import edu.umich.ISELab.core.util.ProjectObjectUtils;
-import edu.umich.ISELab.evaluation.designmetrics.AbstractDesignMetric;
+import edu.umich.ISELab.core.backlog.Project;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class DesignMetricsUtil {
 
-    public static Map<String, Double> calculate(ProjectObject project) {
+    public static Map<String, Double> calculate(Project project) {
 
-        project.getAttributes().put("MAP_ID_TO_ELEMENT", ProjectObjectUtils.mapElement(project));
+       /* project.getAttributes().put("MAP_ID_TO_ELEMENT", ProjectObjectUtils.mapElement(project));
         project.getAttributes().put("MAP_ID_TO_CLASS", ProjectObjectUtils.mapParent(project));
         project.getAttributes().put("CLASSNAMES", ProjectObjectUtils.getClassNames(project));
 
@@ -54,7 +53,8 @@ public class DesignMetricsUtil {
             designMetrics.put(designProperty, sum.get(designProperty) / counter.get(designProperty));
         }
 
-        return designMetrics;
+        return designMetrics;*/
+       return new HashMap<String, Double>();
     }
 
     public static double rate(double oldValue, double newValue) {

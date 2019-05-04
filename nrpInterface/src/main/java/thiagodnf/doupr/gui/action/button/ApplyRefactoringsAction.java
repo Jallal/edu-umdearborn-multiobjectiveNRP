@@ -2,8 +2,6 @@ package thiagodnf.doupr.gui.action.button;
 
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.evaluation.qualityattributes.QMOODFlexibility;
-import edu.umich.ISELab.evaluation.qualityattributes.QMOODReusability;
 import edu.umich.ISELab.optimization.problem.NrpProblem;
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;

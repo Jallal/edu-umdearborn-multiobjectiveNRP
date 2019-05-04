@@ -20,7 +20,10 @@ public class ExistCondition extends Condition {
         if (item == null || person ==null) {
             return false;
         }
-        if(item.getPerson().equals(person)){
+        if(!item.getPerson().equals(person)){
+            return false;
+        }
+        if(!item.isAssigned()||!person.isAssigned()){
             return false;
         }
 

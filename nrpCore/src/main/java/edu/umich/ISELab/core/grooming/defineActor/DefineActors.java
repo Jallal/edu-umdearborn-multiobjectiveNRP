@@ -1,4 +1,4 @@
-package edu.umich.ISELab.core.grooming.defineactor;
+package edu.umich.ISELab.core.grooming.defineActor;
 
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.util.Candidate;

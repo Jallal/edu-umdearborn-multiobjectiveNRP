@@ -1,15 +1,5 @@
 package edu.umich.ISELab.execution;
 
-import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.kohsuke.args4j.CmdLineException;
-import org.kohsuke.args4j.CmdLineParser;
-import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
-import org.uma.jmetal.util.AlgorithmRunner;
-import org.uma.jmetal.util.fileoutput.SolutionListOutput;
-import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import edu.umich.ISELab.core.factory.NrpFactory;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.evaluation.Objective;
@@ -31,6 +21,16 @@ import edu.umich.ISELab.optimization.problem.NrpProblem;
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.log4j.Level;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.kohsuke.args4j.CmdLineException;
+import org.kohsuke.args4j.CmdLineParser;
+import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
+import org.uma.jmetal.util.AlgorithmRunner;
+import org.uma.jmetal.util.fileoutput.SolutionListOutput;
+import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,7 +46,6 @@ import java.util.List;
  */
 public class ExploreConsole {
 
-    protected static final Logger LOGGER = Logger.getLogger(ExploreConsole.class);
 
     public static void main(String[] args) throws IOException {
 

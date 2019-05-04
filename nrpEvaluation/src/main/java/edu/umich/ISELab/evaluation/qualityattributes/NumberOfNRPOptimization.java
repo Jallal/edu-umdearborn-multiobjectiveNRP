@@ -1,5 +1,6 @@
 package edu.umich.ISELab.evaluation.qualityattributes;
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.evaluation.Objective;
 
@@ -16,22 +17,22 @@ public class NumberOfNRPOptimization extends Objective {
     }
 
     @Override
-    public double getDiff(ProjectObject project, ProjectObject refactored) {
+    public double getDiff(Project project, Project groomedProject) {
         return 0;
     }
 
     @Override
-    public double getValue(ProjectObject project) {
+    public double getValue(Project project) {
         return 0;
     }
 
-    public double calculate(ProjectObject original, ProjectObject refactored, List<NrpBase> appliedRefactorings) {
+    public double calculate(Project original, Project groomedProject, List<NrpBase> appliedGrooming) {
 
         if (isMinimize()) {
-            return (appliedRefactorings.size());
+            return (appliedGrooming.size());
         }
 
-        return -1.0 * (appliedRefactorings.size());
+        return -1.0 * (appliedGrooming.size());
     }
 
     @Override
@@ -41,7 +42,7 @@ public class NumberOfNRPOptimization extends Objective {
 
     @Override
     public String toString() {
-        return "Number Of Refactorings";
+        return "Number Of Grooming";
     }
 
     @Override

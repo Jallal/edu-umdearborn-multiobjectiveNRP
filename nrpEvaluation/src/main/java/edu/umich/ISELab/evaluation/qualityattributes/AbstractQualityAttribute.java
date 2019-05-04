@@ -1,7 +1,7 @@
 package edu.umich.ISELab.evaluation.qualityattributes;
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import edu.umich.ISELab.evaluation.Objective;
 
 import java.util.List;
@@ -16,9 +16,9 @@ public abstract class AbstractQualityAttribute extends Objective {
         super(objective);
     }
 
-    public double calculate(ProjectObject original, ProjectObject refactored, List<NrpBase> appliedRefactorings) {
+    public double calculate(Project original, Project groomedProject, List<NrpBase> appliedGrooming) {
 
-        double newValue = getDiff(original, refactored);
+        double newValue = getDiff(original, groomedProject);
 
         if (isMinimize()) {
             return (newValue);
@@ -27,7 +27,8 @@ public abstract class AbstractQualityAttribute extends Objective {
         return -1.0 * (newValue);
     }
 
-    protected double getRate(ProjectObject project, ProjectObject refactored, String name) {
-        return DesignMetricsUtil.rate(project.getDesignMetrics().get(name), refactored.getDesignMetrics().get(name));
+    protected double getRate(Project project, Project groomedProject, String name) {
+       // return DesignMetricsUtil.rate(project.getDesignMetrics().get(name), refactored.getDesignMetrics().get(name));
+        return 0.0;
     }
 }

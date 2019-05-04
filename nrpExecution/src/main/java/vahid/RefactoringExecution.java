@@ -40,7 +40,6 @@ import java.util.List;
  */
 public class RefactoringExecution {
 
-	protected static final Logger LOGGER = Logger.getLogger(RefactoringExecution.class);
 
 	public static int minRefatorings = 15;
 

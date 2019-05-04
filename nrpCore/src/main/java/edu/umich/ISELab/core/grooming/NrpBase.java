@@ -3,7 +3,7 @@ package edu.umich.ISELab.core.grooming;
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.condition.Condition;
-import edu.umich.ISELab.core.grooming.defineactor.DefineActors;
+import edu.umich.ISELab.core.grooming.defineActor.DefineActors;
 import edu.umich.ISELab.core.grooming.util.Candidate;
 import edu.umich.ISELab.core.projectResources.Person;
 import org.apache.log4j.Logger;
@@ -155,29 +155,15 @@ public abstract class NrpBase implements Serializable {
     public void setUserFeedback(double value) {
         getProperties().put("USER_FEEDBACK", value);
     }
-    public abstract void loadActors(WorkItem item, Person person);
+    public abstract void loadActors(Project project);
     public abstract List<Condition> getPreConditions(WorkItem item, Person person);
     public abstract List<Condition> getPostConditions(WorkItem item, Person person);
     public abstract void execute(Project project) throws Exception;
     public abstract DefineActors getDefineActors();
     public abstract String getName();
     public abstract NrpBase copy();
-    public abstract WorkItem getSourceCls();
-    public abstract WorkItem getTargetCls();
-    public WorkItem getWorkItem() {
-        return workItem;
-    }
+    public abstract Person getPerson();
+    public abstract WorkItem getWorkItem();
 
-    public void setWorkItem(WorkItem workItem) {
-        this.workItem = workItem;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 
 }
