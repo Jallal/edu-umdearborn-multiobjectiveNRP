@@ -16,22 +16,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="nrpCore" />
-        <module name="nrpEvaluation" />
-        <module name="nrpExecution" />
+        <module name="nprExecution" />
         <module name="nrpExport" />
         <module name="nrpInterface" />
         <module name="nrpOptimization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="multiObjectiveNrp" target="1.8" />
-      <module name="nrpCore" target="1.8" />
-      <module name="nrpEvaluation" target="1.8" />
-      <module name="nrpExecution" target="8" />
+      <module name="core" target="1.8" />
+      <module name="edu-umich-ISELab-monrp" target="1.8" />
+      <module name="evaluation" target="1.8" />
+      <module name="execution" target="8" />
+      <module name="nprExecution" target="8" />
       <module name="nrpExport" target="1.8" />
       <module name="nrpInterface" target="1.8" />
       <module name="nrpOptimization" target="1.8" />
+      <module name="optimization" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

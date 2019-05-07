@@ -13,8 +13,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>thiagodnf.doupr</groupId>
-    <artifactId>sbse-Refactoring</artifactId>
+    <groupId>edu-umich-ISELab-nrp</groupId>
+    <artifactId>sbse-nrp</artifactId>
     <version>1.0.0</version>
     <name>SBSE : Software Refactoring</name>
     <packaging>pom</packaging>
@@ -28,12 +28,10 @@
     </properties>
     <!-- Modules used in this project -->
     <modules>
-        <module>nrpCore</module>
-        <module>nrpEvaluation</module>
-        <module>nrpExecution</module>
-        <module>nrpExport</module>
-        <module>nrpInterface</module>
-        <module>nrpOptimization</module>
+        <module>core</module>
+        <module>evaluation</module>
+        <module>execution</module>
+        <module>optimization</module>
     </modules>
     <dependencies>
         <!--Google GUAVA-->

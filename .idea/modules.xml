@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/multiObjectiveNrp.iml" filepath="$PROJECT_DIR$/multiObjectiveNrp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nrpCore/nrpCore.iml" filepath="$PROJECT_DIR$/nrpCore/nrpCore.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nrpEvaluation/nrpEvaluation.iml" filepath="$PROJECT_DIR$/nrpEvaluation/nrpEvaluation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nrpExecution/nrpExecution.iml" filepath="$PROJECT_DIR$/nrpExecution/nrpExecution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu-umich-ISELab-monrp.iml" filepath="$PROJECT_DIR$/edu-umich-ISELab-monrp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/execution/nprExecution.iml" filepath="$PROJECT_DIR$/execution/nprExecution.iml" />
       <module fileurl="file://$PROJECT_DIR$/nrpExport/nrpExport.iml" filepath="$PROJECT_DIR$/nrpExport/nrpExport.iml" />
       <module fileurl="file://$PROJECT_DIR$/nrpInterface/nrpInterface.iml" filepath="$PROJECT_DIR$/nrpInterface/nrpInterface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nrpOptimization/nrpOptimization.iml" filepath="$PROJECT_DIR$/nrpOptimization/nrpOptimization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optimization/nrpOptimization.iml" filepath="$PROJECT_DIR$/optimization/nrpOptimization.iml" />
     </modules>
   </component>
 </project>

@@ -2,46 +2,417 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bce763-019f-418d-b632-5c460eb2ec9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/groomingDesignMetric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__args4j_args4j_2_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_8_0_beta2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__thiagodnf_doupr_nprInterface_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__thiagodnf_doupr_nrpCore_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__thiagodnf_doupr_nrpEvaluation_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__thiagodnf_doupr_nrpExport_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__thiagodnf_doupr_nrpInterface_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/execution/execution.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineactor/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineactor/DefineActors.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/DefineActors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/antipatterns/AbstractAntiPattern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/antipatterns/Blob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODAverageNumberOfAncestors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODClassInterfaceSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDataAccessMetric.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDesignSizeInClasses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDirectClassCoupling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODMeasureOfAggregation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODMeasureOfFunctionalAbstraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODNumberOfHierarchies.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODNumberOfMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODNumberOfPolymorphicMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/StandardCohesion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/StandardComplexity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/StandardCoupling.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODEffectiveness.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODExtendibility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODFlexibility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODFunctionality.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODReusability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODUnderstandability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiObjectiveNrp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-umich-ISELab-monrp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/nrpCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/Bug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/Feature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/Priority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/UserStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/UserStory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/WorkItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItemDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/backlog/WorkItemDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/callgraph/CallGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/callgraph/CallGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/factory/NrpFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/factory/NrpFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/formatter/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/formatter/Formatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/condition/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/DefineCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/condition/DefineCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/EmptyCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/condition/EmptyCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/defineActor/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/DefineActors.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/defineActor/DefineActors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/util/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/util/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Analyst.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/projectResources/Analyst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Architect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/projectResources/Architect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/projectResources/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/projectResources/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/sys/LOGGER.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/sys/LOGGER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/util/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/UUIDUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/util/UUIDUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/ML/Clustering.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/ML/Clustering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/ML/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/ML/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/ML/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/ML/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/HashUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/util/HashUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/Math/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/util/Math/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/java/vahid/util/PrintHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/vahid/util/PrintHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/VA-ML-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/VA-ML-Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/runConfigurations/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/runConfigurations/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.spyproject/codestyle.ini" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.spyproject/codestyle.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.spyproject/encoding.ini" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.spyproject/encoding.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.spyproject/vcs.ini" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.spyproject/vcs.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/.spyproject/workspace.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Executables/ClusterExplain.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Executables/ClusterExplain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Executables/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Executables/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Executables/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Executables/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Executables/mainComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Executables/mainComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Executables/mainPlots.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Executables/mainPlots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/JavaClustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/JavaClustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Java_Link/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Java_Link/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/Old/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/Old/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/Old/delete_this.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/Old/delete_this.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/Old/load_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/Old/load_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/Old/remove_inside_parenthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/Old/remove_inside_parenthesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/designmetrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/designmetrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/iterations.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/iterations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/refactoringsolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/refactoringsolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/Legacy/tempExecArg.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/Legacy/tempExecArg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_ML/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_ML/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_ML/clustering_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_ML/clustering_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_ML/discretize_obj.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_ML/discretize_obj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Tools/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Tools/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Tools/designmetrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Tools/designmetrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Tools/refactoringsolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Tools/refactoringsolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Util/handlePath.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Util/handlePath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Viz/ClusterExplain.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Viz/ClusterExplain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/VA_Viz/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/VA_Viz/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/VA-ML-Python/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/VA-ML-Python/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/main/resources/log4j-BACKUP.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/log4j-BACKUP.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestAttributeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/test/thiagodnf/doupr/core/base/TestAttributeObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestClassObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/test/thiagodnf/doupr/core/base/TestClassObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestMethodObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/test/thiagodnf/doupr/core/base/TestMethodObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestParameterObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/test/thiagodnf/doupr/core/base/TestParameterObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/resources/PullUp.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/PullUp.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/resources/pull-up-field/project.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/pull-up-field/project.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpCore/src/test/resources/pull-up-field/test-1-expected.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/pull-up-field/test-1-expected.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/nrpEvaluation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/evaluation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/Objective.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/Objective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/comparator/SortObjectivesByRankingComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/comparator/SortObjectivesByRankingComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/groomingDesignMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/groomingDesignMetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/ObjectiveUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/util/ObjectiveUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/constants/ObjectiveConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/src/main/java/edu/umich/ISELab/evaluation/util/constants/ObjectiveConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/execution/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/fdsfs.pm" beforeDir="false" afterPath="$PROJECT_DIR$/execution/fdsfs.pm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/jMetal.log.lck" beforeDir="false" afterPath="$PROJECT_DIR$/execution/jMetal.log.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/nrpExecution.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/execution/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/execution/run.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/edu/umich/ISELab/execution/ExploreGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/util/CommandLineValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/edu/umich/ISELab/execution/util/CommandLineValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/vahid/ExecutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/vahid/MetricsCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/vahid/RefactoringExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/util/ParetoObjectCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/vahid/util/ParetoObjectCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/util/SolutionListOutputVahid.java" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/java/vahid/util/SolutionListOutputVahid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/JFreechart.refactorings" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/JFreechart.refactorings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/Jfreechart1.0.19.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/Jfreechart1.0.19.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/Rhino1_7R5.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/Rhino1_7R5.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/ant-v1.7.0/ant.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/ant-v1.7.0/ant.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/argouml-v0.26/argouml.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/argouml-v0.26/argouml.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/azureus-v2.3.0.6/azureus.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/azureus-v2.3.0.6/azureus.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/example-grocery/example-grocery.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/example-grocery/example-grocery.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/example-grocery/expected-by-thiago.refactorings" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/example-grocery/expected-by-thiago.refactorings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/ganttproject-v1.10.2/ganttproject-gold-set-original.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/ganttproject-v1.10.2/ganttproject-gold-set-original.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/ganttproject-v1.10.2/ganttproject-gold-set-valid.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/ganttproject-v1.10.2/ganttproject-gold-set-valid.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/ganttproject-v1.10.2/ganttproject.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/ganttproject-v1.10.2/ganttproject.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/ganttproject-v1.10.2/ganttproject.expected.refactorings" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/ganttproject-v1.10.2/ganttproject.expected.refactorings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/jhotdraw-7.6/jhotdraw.blocks" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/jhotdraw-7.6/jhotdraw.blocks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/rhino.refactorings" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/rhino.refactorings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/10-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/10-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/2-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/2-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/3-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/3-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/4-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/4-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/5-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/5-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/6-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/6-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/7-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/7-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/8-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/8-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExecution/src/main/resources/weights/9-obj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/execution/src/main/resources/weights/9-obj.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-rasterizer-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-slideshow-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-squiggle-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-svgpp-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/batik-ttf2svg-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/jgraphx.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/lib/plantuml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/nrpExport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/nrpOptimization.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example1/output.cd.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example1/output.cd.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example1/output.dg.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example1/output.dg.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example2/output.cd.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example2/output.cd.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example2/output.dg.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example2/output.dg.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example3/output.cd.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example3/output.cd.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example3/output.dg.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/example3/output.dg.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/ganttproject/output.cd.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/ganttproject/output.cd.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/ganttproject/output.dg.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/output/ganttproject/output.dg.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/generator/BlocksGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/AttributesBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/CallInsBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/CallOutsBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/ClassBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/GeneralizationsBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/MethodsBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/ParametersBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/RealizationsBlocksParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotAbstractGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotClassDiagramGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotDependencyGraphGenenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/ClassDotParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/CompositionDotParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/DependencyDotParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/GeneralizationDotParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/RealizationDotParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLAbstractGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLClassDiagramGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLHierarchicalEdgeBundlingGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLInteractiveForceLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLRotatingClusterLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONAbstractGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONClassDiagramGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONHierarchicalEdgeBundlingGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONInteractiveForceLayoutGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONRotatingClusterLayoutGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/generator/PlantUMLGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/AttributesPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/ClassPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/CompositionsPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/GeneralizationsPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/MethodsPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/RealizationsPlantUMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/util/FormatterUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/HTMLClassDiagram.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/HTMLHierarchicalEdgeBundling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/HTMLInteractiveForceLayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/HTMLRotatingClusterLayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/templates/HTMLClassDiagram.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/templates/HTMLHierarchicalEdgeBundling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/templates/HTMLInteractiveForceLayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpExport/src/main/resources/templates/HTMLRotatingClusterLayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/jgoodies-forms-1.8.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/jgoodies-forms-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/lib/com/apple/eawt/eawt/1.4/eawt-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/lib/org/apache/batik/1.9/batik-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/lib/org/apache/xmlgraphics/xmlgraphics-commons/2.2/xmlgraphics-commons-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/miglayout15-swing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/nrpInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/execution/nprExecution.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/CSVUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportDesignMetricsVAHID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToCDMFilesVAHID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/VAHID/ExportToPMFilesVAHID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/org/eclipse/wb/swing/FocusTraversalOnArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddFilterAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ChooseColorizeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ClearFeedbackAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ClearSavedPreferencesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportParetoFrontAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportRefactoringsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OpenRefactoringsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveFilterAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveRefactoringAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewChartsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewClusterExplainAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewObjectiveValuesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewStatsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/CloseAllWindowsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/CloseApplicationAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/CloseWindowsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenAboutAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenAboutDevelopersAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenConsoleAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenFileAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenPreferencesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/OpenRecentFilesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/WindowAsTileAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/jmenuitem/WindowsAsCascadeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/EvaluateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/OpenClassAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/table/OpenSolutionAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/AsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OpenFileAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/asynctask/OptimizeAsyncTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/colorize/Colorize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/colorize/ColorizeByEuclideanDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/colorize/ColorizeByLevenshteinDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/colorize/NoColorize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JBoldLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JButtonGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JCheckBoxGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JExportAsChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JFilterComboBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JHorizontalGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JHorizontalSlider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JMenuGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JOpaquePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JPanelForTabbedPane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JProgressBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JScroll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JShortButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JSortedComboBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JSortedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/component/JToolBarButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/factory/ColorizeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/listener/AsyncTaskListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/listener/JDialogBoxListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/list/RecentFilesListModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/ClusterCenterTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForClassTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/DesignMetricsForProjectTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FilterTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByClassTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByOperationTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/FrequencyByRefactoringClassTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/ObjectivesTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/ParetoFrontTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/QualityAttributesTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/RefactoringsTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/SummaryTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/model/table/TableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AboutPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/BarChartPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClusterChartPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ClustersCenterPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ContinuePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForClassPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormFilterPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FormRefactoringPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByClassPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByOperationPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/FrequencyByRefactoringClassPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/OptimizePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ParetoFrontPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/PreferencesPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/QualityAttributesPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/RefactoringsPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SettingsForParetoFrontPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/ShowImagePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/SummaryPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/XYChartPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/renderer/RecentFilesCellRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/DebugConsoleSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/RecentFilesSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/SubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClassSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClusterExplainWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewParetoFrontSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewStatsWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/MacOSManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/PreferencesManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorizeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/GridBagUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ImageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/LookAndFeelUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/MessageBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/OSUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/PreferencesUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/NormalizationConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/PreferencesConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/UserFeedbackConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/window/MainWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Apply.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Continue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Evaluate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/Optimize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/analytics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/analytics2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/analytics3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/analytics4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/explain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/seo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/stats.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpInterface/src/main/resources/trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/nrpOptimization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/optimization.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/AbstractAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/AbstractAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/CustomNSGAII.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/CustomNSGAII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/CustomNSGAIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/CustomNSGAIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/BuilderCustomNSGAII.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/BuilderCustomNSGAII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/BuilderCustomNSGAIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/algorithm/builder/BuilderCustomNSGAIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/factory/AlgorithmFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/factory/AlgorithmFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/filter/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/operators/crossovers/SinglePointCrossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/operators/crossovers/SinglePointCrossover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/operators/mutations/BitFlipMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/operators/mutations/BitFlipMutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/operators/selections/BinaryTournamentSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/operators/selections/BinaryTournamentSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/problem/NrpProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/problem/NrpProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/problem/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/problem/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/solution/NrpSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/solution/NrpSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/solution/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/solution/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/ArraysUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/ArraysUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/DistanceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/DistanceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/FilterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/FilterUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/NormalizerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/NormalizerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/ProblemUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/ProblemUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/SolutionListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/SolutionListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/constants/FilterConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/constants/FilterConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/util/constants/SolutionConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/util/constants/SolutionConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/variables/NrpVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/variables/NrpVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/variables/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/main/java/edu/umich/ISELab/optimization/variables/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nrpOptimization/src/test/java/test/thiagodnf/doupr/optimization/utils/TestSolutionListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optimization/src/test/java/test/thiagodnf/doupr/optimization/utils/TestSolutionListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/nrpOptimization/target/" />
@@ -51,6 +422,8 @@
     <ignored path="$PROJECT_DIR$/nrpEvaluation/target/" />
     <ignored path="$PROJECT_DIR$/nrpCore/target/" />
     <ignored path="$PROJECT_DIR$/nrpExport/target/" />
+    <ignored path="$PROJECT_DIR$/execution/target/" />
+    <ignored path="$PROJECT_DIR$/optimization/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +434,53 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1105">
-              <caret line="89" column="47" lean-forward="true" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+            <state relative-caret-position="315">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/execution/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-393">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/execution/run.bat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/optimization/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -96,6 +510,7 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/nrpExport</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -104,57 +519,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/EmptyCondition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/condition/ExistCondition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineTasksForAssigingToDeveloper.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/base/Project.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/AssignWorkItem.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/RandomUtils.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/defineactor/DefineActors.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/util/ProjectObjectUtils.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/NrpBase.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/InputTasks.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/thiagodnf/doupr/core/refactoring/AssignTaskToDeveloper.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/refactoring/defineactor/AssignWorkItem.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/refactoring/util/Candidate.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/Objective.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/refactoring/InputTasks.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/refactoring/AssignTaskToDeveloper.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/refactoring/NrpBase.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestAttributeObject.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestClassObject.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestMethodObject.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/base/TestParameterObject.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/test/java/test/thiagodnf/doupr/core/refactoring/TestPullUpField.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/base/Person.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/resources/Analyst.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/resources/Architect.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/resources/Developer.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItemDefinition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/Condition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/EmptyCondition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineactor/AssignWorkItem.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTaskToDeveloper.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/DefineCondition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItem.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Person.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/util/Candidate.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Project.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineactor/Actor.java" />
-        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/Actor.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/groomingDesignMetric.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java" />
-        <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java" />
         <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java" />
         <option value="$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java" />
+        <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java" />
+        <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/ExecutionTest.java" />
+        <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/util/SolutionListOutputVahid.java" />
         <option value="$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java" />
         <option value="$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/RealizationsPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/MethodsPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/GeneralizationsPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/CompositionsPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/ClassPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/AttributesPlantUMLParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/generator/PlantUMLGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONRotatingClusterLayoutGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONInteractiveForceLayoutGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONHierarchicalEdgeBundlingGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONClassDiagramGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/json/generator/JSONAbstractGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLAbstractGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLClassDiagramGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLHierarchicalEdgeBundlingGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLInteractiveForceLayout.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/html/generator/HTMLRotatingClusterLayout.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/RealizationDotParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/GeneralizationDotParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/CompositionDotParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/DependencyDotParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/parser/ClassDotParser.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotDependencyGraphGenenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotClassDiagramGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/dot/generator/DotAbstractGenerator.java" />
+        <option value="$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/block/parser/RealizationsBlocksParser.java" />
+        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/algorithm/CustomNSGAIII.java" />
+        <option value="$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/problem/NrpProblem.java" />
+        <option value="$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/sys/LOGGER.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewChartsAction.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OpenRefactoringsAction.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClassSubWindow.java" />
+        <option value="$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/evaluation/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/execution/pom.xml" />
+        <option value="$PROJECT_DIR$/optimization/pom.xml" />
       </list>
     </option>
   </component>
@@ -171,9 +586,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="720" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="720" />
     <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -188,84 +604,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
+              <item name="edu-umich-ISELab-monrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu-umich-ISELab-monrp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
+              <item name="edu-umich-ISELab-monrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu-umich-ISELab-monrp" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu-umich-ISELab-monrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu-umich-ISELab-monrp" type="462c0819:PsiDirectoryNode" />
               <item name="execution" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="execution" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vahid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiObjectiveNrp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiObjectiveNrp" type="462c0819:PsiDirectoryNode" />
-              <item name="nrpExecution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vahid" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="edu-umich-ISELab-monrp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu-umich-ISELab-monrp" type="462c0819:PsiDirectoryNode" />
+              <item name="optimization" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556929171242" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557197156063" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -297,7 +663,7 @@
   <component name="RunManager" selected="Application.Launcher">
     <configuration name="ExploreConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thiagodnf.doupr.execution.ExploreConsole" />
-      <module name="nrpExecution" />
+      <module name="execution" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thiagodnf.doupr.execution.*" />
@@ -310,7 +676,7 @@
     </configuration>
     <configuration name="ExploreGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thiagodnf.doupr.execution.ExploreGUI" />
-      <module name="nrpExecution" />
+      <module name="execution" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thiagodnf.doupr.execution.*" />
@@ -330,7 +696,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="multiObjectiveNrp" />
+      <module name="edu-umich-ISELab-monrp" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -339,7 +705,7 @@
       </method>
     </configuration>
     <configuration name="thiagodnf.doupr.core in nrpCore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nrpCore" />
+      <module name="core" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thiagodnf.doupr.core.*" />
@@ -384,18 +750,20 @@
       <workItem from="1552753765341" duration="3991000" />
       <workItem from="1552757953029" duration="24410000" />
       <workItem from="1554673770169" duration="9195000" />
-      <workItem from="1556406615739" duration="23406000" />
+      <workItem from="1556406615739" duration="23499000" />
+      <workItem from="1557192007797" duration="2345000" />
+      <workItem from="1557196003355" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71260000" />
+    <option name="totallyTimeSpent" value="74539000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26251787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -435,7 +803,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java</url>
+          <url>file://$PROJECT_DIR$/core/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="1" />
@@ -444,434 +812,86 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/UserStory.java">
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddFilterAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/AddRefactoringAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewStatsAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewObjectiveValuesAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewClusterExplainAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveRefactoringAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/RemoveFilterAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportRefactoringsAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ExportParetoFrontAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/EditRefactoringAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ContinueAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ClearSavedPreferencesAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ClearFeedbackAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ChooseColorizeAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ApplyRefactoringsAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OptimizeAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/OpenRefactoringsAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/action/button/ViewChartsAction.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/PreferencesUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/OSUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/MessageBox.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/LookAndFeelUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ImageUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/GridBagUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/ColorizeUtils.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/UserFeedbackConstants.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/PreferencesConstants.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/util/constants/NormalizationConstants.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/PreferencesManager.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/sys/MacOSManager.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewStatsWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewSolutionSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewParetoFrontSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewFileSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClusterExplainWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/ViewClassSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/SubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/RecentFilesSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/subwindow/DebugConsoleSubWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/renderer/RecentFilesCellRenderer.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/DesignMetricsForProjectPanel.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/panel/AbstractPanel.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/thiagodnf/doupr/gui/window/MainWindow.java" />
+    <entry file="file://$PROJECT_DIR$/nrpInterface/src/main/java/Launcher.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItemDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/callgraph/CallGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1702">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/factory/NrpFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/WorkItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/projectResources/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/backlog/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/DefineCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/EmptyCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/ExistCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/condition/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/util/ProjectObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/DefineActors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/util/Candidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/AssignTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2524#2525#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2759#2760#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2907#2908#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2910#2911#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/NrpBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpCore/src/main/java/edu/umich/ISELab/core/grooming/defineActor/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODCohesionAmongMethodOfClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDataAccessMetric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODAverageNumberOfAncestors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODClassInterfaceSize.java">
+    <entry file="file://$PROJECT_DIR$/evaluation/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDesignSizeInClasses.java">
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/QMOODDirectClassCoupling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/execution/run.bat">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/StandardCoupling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODEffectiveness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODExtendibility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/QMOODUnderstandability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/antipatterns/Blob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/antipatterns/AbstractAntiPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/factory/ObjectiveFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/constants/ObjectiveConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/AbstractDesignMetric.java">
+    <entry file="file://$PROJECT_DIR$/optimization/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/comparator/SortObjectivesByRankingComparator.java">
+    <entry file="file://$PROJECT_DIR$/execution/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/designmetrics/groomingDesignMetric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/NumberOfNRPOptimization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/qualityattributes/AbstractQualityAttribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/DesignMetricsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/EvaluationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/util/ObjectiveUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpEvaluation/src/main/java/edu/umich/ISELab/evaluation/Objective.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/ExportGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/util/FormatterUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/GeneralizationsPlantUMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExport/src/main/java/edu/umich/ISELab/export/plantuml/parser/CompositionsPlantUMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/variables/NrpVariable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpOptimization/src/main/java/edu/umich/ISELab/optimization/variables/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreConsole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1128">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/vahid/MetricsCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/edu/umich/ISELab/execution/ExploreGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nrpExecution/src/main/java/vahid/RefactoringExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="89" column="47" lean-forward="true" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+        <state relative-caret-position="-393">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
