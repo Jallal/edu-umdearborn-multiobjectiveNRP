@@ -16,7 +16,7 @@
     <groupId>edu-umich-ISELab-nrp</groupId>
     <artifactId>sbse-nrp</artifactId>
     <version>1.0.0</version>
-    <name>SBSE : Software Refactoring</name>
+    <name>edu-umich-ISELab-monrp::parent</name>
     <packaging>pom</packaging>
     <!-- Properties of this project -->
     <properties>

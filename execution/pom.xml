@@ -7,7 +7,7 @@
         <version>1.0.0</version>
     </parent>
     <artifactId>execution</artifactId>
-    <name>DOUPR Execution Module</name>
+    <name>edu-umich-ISELab-monrp::execution</name>
     <dependencies>
         <dependency>
             <groupId>edu-umich-ISELab-nrp</groupId>

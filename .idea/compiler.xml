@@ -16,10 +16,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="execution" />
         <module name="nprExecution" />
         <module name="nrpExport" />
         <module name="nrpInterface" />
         <module name="nrpOptimization" />
+        <module name="optimization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

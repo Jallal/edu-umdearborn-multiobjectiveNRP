@@ -7,7 +7,7 @@
         <version>1.0.0</version>
     </parent>
     <artifactId>optimization</artifactId>
-    <name>DOUPR Optimization Module</name>
+    <name>edu-umich-ISELab-monrp::optimization</name>
     <dependencies>
         <dependency>
             <groupId>edu-umich-ISELab-nrp</groupId>
