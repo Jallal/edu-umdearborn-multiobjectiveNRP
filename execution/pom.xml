@@ -29,13 +29,6 @@
             <version>1.8.0-beta2</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>thiagodnf.doupr</groupId>
-            <artifactId>nprInterface</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-
     </dependencies>
     <build>
         <pluginManagement>
