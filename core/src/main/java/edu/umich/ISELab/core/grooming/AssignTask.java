@@ -18,11 +18,37 @@ import java.util.Set;
 import static java.lang.Boolean.TRUE;
 
 public class AssignTask extends NrpBase {
-
-
     protected WorkItem activeItem;
     protected Person activePerson;
     private  Map<WorkItem, Person> projectActors;
+
+    public Project getProject() {
+        return project;
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    private Project project;
+
+
+    public WorkItem getActiveItem() {
+        return activeItem;
+    }
+
+    public void setActiveItem(WorkItem activeItem) {
+        this.activeItem = activeItem;
+    }
+
+    public Person getActivePerson() {
+        return activePerson;
+    }
+
+    public void setActivePerson(Person activePerson) {
+        this.activePerson = activePerson;
+    }
+
 
 
     public AssignTask() {

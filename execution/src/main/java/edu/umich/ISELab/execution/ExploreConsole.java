@@ -4,6 +4,7 @@ import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.Task;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.NrpFactory;
+import edu.umich.ISELab.core.grooming.AssignTask;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.core.projectResources.Person;
 import edu.umich.ISELab.evaluation.Objective;
@@ -29,13 +30,6 @@ public class ExploreConsole {
 
 
 	public static void main(String[] args) throws IOException {
-		// The list of objectives used to optimize the problem
-		CommandLineValues command = new CommandLineValues();
-		List<Objective> objectives = new ArrayList<>();
-		objectives.add(new NumberOfNRPOptimization());
-		List<NrpBase> selectedRefactorings = new ArrayList<>();
-		selectedRefactorings.add(NrpFactory.getNrpOptimization("Assign Task"));
-
 		//personList
 		List<Person> personList = new ArrayList<>();
 		Person person1 = new Person();
@@ -45,7 +39,6 @@ public class ExploreConsole {
 		personList.add(person1);
 
 		//WorkItemList
-
 		List<WorkItem> workItemList = new ArrayList<>();
 		Task workItem1 = new Task();
 		workItem1.setAssigned(false);
@@ -57,6 +50,17 @@ public class ExploreConsole {
 		Project project = new Project();
 		project.setPersonList(personList);
 		project.setWorkItemList(workItemList);
+
+		// The list of objectives used to optimize the problem
+		CommandLineValues command = new CommandLineValues();
+		List<Objective> objectives = new ArrayList<>();
+		objectives.add(new NumberOfNRPOptimization());
+		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		AssignTask assign_task = NrpFactory.getNrpOptimization("Assign Task");
+		assign_task.loadActors(project);
+		selectedRefactorings.add(assign_task);
+
+
 		//problem
 		NrpProblem problem = new NrpProblem(project, objectives, selectedRefactorings);
 		problem.setMinSolutionSize(5);
