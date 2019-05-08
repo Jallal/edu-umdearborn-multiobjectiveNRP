@@ -5,6 +5,7 @@ package src.main.java.vahid;/*
  */
 
 
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
@@ -16,7 +17,6 @@ import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.core.sys.LOGGER;
 import edu.umich.ISELab.evaluation.Objective;
 import src.main.java.vahid.util.ParetoObjectCRUD;
@@ -86,7 +86,7 @@ public class RefactoringExecution {
 //        objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		List<grooming> selectedRefactorings = new ArrayList<>();
 
 		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));

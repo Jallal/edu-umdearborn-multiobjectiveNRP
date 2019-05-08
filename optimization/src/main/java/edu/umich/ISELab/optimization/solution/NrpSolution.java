@@ -2,7 +2,7 @@ package edu.umich.ISELab.optimization.solution;
 
 import edu.umich.ISELab.optimization.problem.Problem;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 
 import java.util.List;
 
@@ -36,10 +36,10 @@ public class NrpSolution extends Solution {
     }
 
 
-    @Override
+    /*@Override
     public double getUserFeedback() {
 
-        List<NrpBase> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
+        List<grooming> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
 
         if (refactorings.isEmpty()) {
             return 0.0;
@@ -47,21 +47,21 @@ public class NrpSolution extends Solution {
 
         double userFeedback = 0.0;
 
-        /*for (NrpBase nrpBase : refactorings) {
+        for (grooming nrpBase : refactorings) {
             userFeedback += nrpBase.getUserFeedback();
-        }*/
+        }
 
         return userFeedback / (double) refactorings.size();
-    }
+    }*/
 
     @Override
     public void clearAttributes() {
         super.clearAttributes();
 
-        List<NrpBase> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
+        List<grooming> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
 
-        for (NrpBase nrpBase : refactorings) {
-           // nrpBase.reset();
+        for (grooming grooming : refactorings) {
+           grooming.reset();
         }
     }
 }

@@ -2,7 +2,7 @@ package edu.umich.ISELab.evaluation.qualityattributes;
 
 
 import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.evaluation.Objective;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public abstract class AbstractQualityAttribute extends Objective {
         super(objective);
     }
 
-    public double calculate(Project original, Project groomedProject, List<NrpBase> appliedGrooming) {
+    public double calculate(Project original, Project groomedProject, List<grooming> appliedGrooming) {
 
         double newValue = getDiff(original, groomedProject);
 

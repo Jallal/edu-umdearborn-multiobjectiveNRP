@@ -2,7 +2,7 @@ package edu.umich.ISELab.evaluation.qualityattributes;
 
 
 import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.evaluation.Objective;
 
 import java.util.List;
@@ -27,7 +27,7 @@ public class NumberOfNRPOptimization extends AbstractQualityAttribute {
         return 0;
     }
 
-    public double calculate(Project original, Project groomedProject, List<NrpBase> appliedGrooming) {
+    public double calculate(Project original, Project groomedProject, List<grooming> appliedGrooming) {
 
         if (isMinimize()) {
             return (appliedGrooming.size());

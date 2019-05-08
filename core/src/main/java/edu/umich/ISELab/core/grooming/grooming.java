@@ -11,7 +11,7 @@ import edu.umich.ISELab.core.projectResources.Person;
 import java.io.Serializable;
 import java.util.List;
 
-public abstract class NrpBase implements Serializable {
+public abstract class grooming implements Serializable {
 
 
     protected WorkItem workItem;
@@ -19,17 +19,17 @@ public abstract class NrpBase implements Serializable {
 
 
 
-    public NrpBase() {
+    public grooming() {
 
     }
 
 
-    public NrpBase(WorkItem item , Person person) {
+    public grooming(WorkItem item , Person person) {
         this.workItem = item;
         this.person = person;
     }
 
-    public NrpBase(NrpBase nrp) {
+    public grooming(grooming nrp) {
         this.workItem = nrp.getWorkItem();
         this.person = nrp.getPerson();
 
@@ -41,14 +41,14 @@ public abstract class NrpBase implements Serializable {
         return condition;
     }
 
-    public boolean verifyPreConditions(WorkItem activeItem, Person person) throws Exception {
+    public boolean verifyPreConditions(WorkItem activeItem, Person activePerson) throws Exception {
 
 
-        List<Condition> conditions = getPreConditions(activeItem, person);
+        List<Condition> conditions = getPreConditions(activeItem, activePerson);
 
         for (Condition condition : conditions) {
 
-            boolean isValid = condition.validate(activeItem, person);
+            boolean isValid = condition.validate(activeItem, activePerson);
 
 
             if (!isValid) {
@@ -113,7 +113,7 @@ public abstract class NrpBase implements Serializable {
     public abstract void execute(Project project) throws Exception;
     public abstract DefineActors getDefineActors();
     public abstract String getName();
-    public abstract NrpBase copy();
+    public abstract grooming copy();
     public abstract Person getPerson();
     public abstract WorkItem getWorkItem();
 

@@ -1,12 +1,12 @@
 package edu.umich.ISELab.optimization.operators.mutations;
 
 
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.optimization.problem.NrpProblem;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.core.util.RandomUtils;
 
 import java.util.List;
@@ -70,7 +70,7 @@ public class BitFlipMutation implements MutationOperator<Solution> {
         // Create a grooming variable for saving the list of refactorings
         NrpVariable variable = (NrpVariable) solution.getVariableValue(0);
 
-        List<NrpBase> refactorings = variable.getRefactorings();
+        List<grooming> refactorings = variable.getRefactorings();
 
         if (refactorings.isEmpty()) {
             return;
@@ -89,7 +89,7 @@ public class BitFlipMutation implements MutationOperator<Solution> {
             int position = RandomUtils.getRandomInteger(0, refactorings.size() - 1);
 
             // Instantiate the grooming operation
-            NrpBase refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
+            grooming refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
 
             // Add the grooming in the variable
             refactorings.set(position, refactoring);

@@ -1,5 +1,6 @@
 package vahid;
 
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
@@ -20,7 +21,6 @@ import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
 
@@ -77,7 +77,7 @@ public class ExecutionTest {
      objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		List<grooming> selectedRefactorings = new ArrayList<>();
 
 		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
@@ -157,7 +157,7 @@ public class ExecutionTest {
 
 			System.out.println(solution);
 
-			List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
+			List<grooming> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
 
 //			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
 //			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));

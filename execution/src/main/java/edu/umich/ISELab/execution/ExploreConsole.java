@@ -5,7 +5,7 @@ import edu.umich.ISELab.core.backlog.Task;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.NrpFactory;
 import edu.umich.ISELab.core.grooming.AssignTask;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.core.projectResources.Person;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
@@ -67,7 +67,7 @@ public class ExploreConsole {
 		List<Objective> objectives = new ArrayList<>();
 		NumberOfNRPOptimization optimization=new NumberOfNRPOptimization();
 		objectives.add(optimization);
-		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		List<grooming> selectedRefactorings = new ArrayList<>();
 		AssignTask assign_task = NrpFactory.getNrpOptimization("Assign Task");
 		assign_task.loadActors(project);
 		selectedRefactorings.add(assign_task);
@@ -97,7 +97,6 @@ public class ExploreConsole {
 		List<Solution> paretoFront = algorithm.getResult();
 		for(Solution solution:paretoFront){
 			System.out.println(solution.toString());
-
 		}
 
 	}
@@ -111,8 +110,8 @@ public class ExploreConsole {
 
 			System.out.println(solution);
 
-			//List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
-			List<NrpBase> refactorings = null;
+			//List<grooming> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
+			List<grooming> refactorings = null;
 
 //			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
 //			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));

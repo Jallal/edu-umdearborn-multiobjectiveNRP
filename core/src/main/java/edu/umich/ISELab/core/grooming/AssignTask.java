@@ -17,7 +17,7 @@ import java.util.Set;
 
 import static java.lang.Boolean.TRUE;
 
-public class AssignTask extends NrpBase {
+public class AssignTask extends grooming {
     protected WorkItem activeItem;
     protected Person activePerson;
     private  Map<WorkItem, Person> projectActors;
@@ -129,7 +129,7 @@ public class AssignTask extends NrpBase {
     }
 
     @Override
-    public NrpBase copy() {
+    public grooming copy() {
         return new AssignTask(this);
     }
 

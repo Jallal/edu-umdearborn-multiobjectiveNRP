@@ -27,7 +27,7 @@ public class DefineCondition extends Condition {
     }
 
     protected boolean verifyItemIsAvailable(WorkItem item, Person person) {
-        if (!item.isAssigned()&&!person.isAssigned()) {
+        if (!item.isAssigned()&&(!person.isAssigned())) {
                 return true;
         }
 

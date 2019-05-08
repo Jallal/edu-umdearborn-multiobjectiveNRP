@@ -1,7 +1,7 @@
 package edu.umich.ISELab.optimization.problem;
 
 import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.core.util.RandomUtils;
 import edu.umich.ISELab.core.util.UUIDUtils;
 import edu.umich.ISELab.evaluation.Objective;
@@ -29,11 +29,11 @@ public class NrpProblem extends Problem {
     protected int maxSolutionSize = 10;
     protected EvolutionListener listener;
     protected Project project;
-    protected List<NrpBase> selectedRefactorings;
+    protected List<grooming> selectedRefactorings;
     protected File file;
 
 
-    public NrpProblem(Project project, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
+    public NrpProblem(Project project, List<Objective> objectives, List<grooming> selectedRefactorings) {
         super(objectives);
 
         //Verify the arguments
@@ -44,7 +44,7 @@ public class NrpProblem extends Problem {
         setNumberOfVariables(1);
     }
 
-    public NrpProblem(File file,Project project, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
+    public NrpProblem(File file,Project project, List<Objective> objectives, List<grooming> selectedRefactorings) {
         super(objectives);
 
         //Verify the arguments
@@ -58,7 +58,7 @@ public class NrpProblem extends Problem {
         setNumberOfVariables(1);
     }
 
-    public NrpProblem(File file, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
+    public NrpProblem(File file, List<Objective> objectives, List<grooming> selectedRefactorings) {
         super(objectives);
 
         checkNotNull(file, "The 'filename' cannot be null");
@@ -83,9 +83,9 @@ public class NrpProblem extends Problem {
 
         //Project copy = ProjectObjectUtils.copy(project);
 
-        List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
+        List<grooming> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
 
-        //List<NrpBase> valids = NrpUtils.getValids(copy, refactorings);
+        //List<grooming> valids = NrpUtils.getValids(copy, refactorings);
 
         /*while (valids.size() > maxSolutionSize) {
             valids.remove(valids.size() - 1);
@@ -93,7 +93,7 @@ public class NrpProblem extends Problem {
 
         while (valids.size() < minSolutionSize) {
 
-            NrpBase nrpBase = RandomUtils.getRandomRefactoring(selectedRefactorings);
+            grooming nrpBase = RandomUtils.getRandomRefactoring(selectedRefactorings);
 
             try {
                 NrpUtils.apply(copy, nrpBase);
@@ -180,11 +180,11 @@ public class NrpProblem extends Problem {
         this.listener = listener;
     }
 
-    public List<NrpBase> getSelectedRefactorings() {
+    public List<grooming> getSelectedRefactorings() {
         return selectedRefactorings;
     }
 
-    public void setSelectedRefactorings(List<NrpBase> selectedRefactorings) {
+    public void setSelectedRefactorings(List<grooming> selectedRefactorings) {
         this.selectedRefactorings = selectedRefactorings;
     }
 

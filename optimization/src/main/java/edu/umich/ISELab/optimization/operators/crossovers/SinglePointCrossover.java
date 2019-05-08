@@ -1,12 +1,12 @@
 package edu.umich.ISELab.optimization.operators.crossovers;
 
 
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import edu.umich.ISELab.core.grooming.NrpBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,8 +75,8 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
 
         if (JMetalRandom.getInstance().nextDouble() < probability) {
 
-            List<NrpBase> c1 = ((NrpVariable) offspring.get(0).getVariableValue(0)).getRefactorings();
-            List<NrpBase> c2 = ((NrpVariable) offspring.get(1).getVariableValue(0)).getRefactorings();
+            List<grooming> c1 = ((NrpVariable) offspring.get(0).getVariableValue(0)).getRefactorings();
+            List<grooming> c2 = ((NrpVariable) offspring.get(1).getVariableValue(0)).getRefactorings();
 
             int minimum = Math.min(c1.size(), c2.size());
 
@@ -86,8 +86,8 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
 
             int cut = JMetalRandom.getInstance().nextInt(1, minimum - 2);
 
-            List<NrpBase> newC1 = new ArrayList<>();
-            List<NrpBase> newC2 = new ArrayList<>();
+            List<grooming> newC1 = new ArrayList<>();
+            List<grooming> newC2 = new ArrayList<>();
 
             for (int i = 0; i < cut; i++) {
                 newC1.add(c1.get(i));

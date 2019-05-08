@@ -6,7 +6,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.grooming.grooming;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
 
@@ -63,7 +63,7 @@ public class MetricsCalculation {
 		objectives.add(new NumberOfNRPOptimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		List<grooming> selectedRefactorings = new ArrayList<>();
 
 		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
