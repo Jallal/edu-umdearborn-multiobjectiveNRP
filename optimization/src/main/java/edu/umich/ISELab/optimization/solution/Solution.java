@@ -1,9 +1,9 @@
 package edu.umich.ISELab.optimization.solution;
 
-import org.uma.jmetal.solution.impl.AbstractGenericSolution;
 import edu.umich.ISELab.optimization.problem.Problem;
 import edu.umich.ISELab.optimization.util.constants.SolutionConstants;
 import edu.umich.ISELab.optimization.variables.Variable;
+import org.uma.jmetal.solution.impl.AbstractGenericSolution;
 
 import java.util.HashMap;
 import java.util.Map;

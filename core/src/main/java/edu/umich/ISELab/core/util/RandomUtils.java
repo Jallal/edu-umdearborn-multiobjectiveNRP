@@ -1,12 +1,13 @@
 package edu.umich.ISELab.core.util;
 
+
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.NrpFactory;
 import edu.umich.ISELab.core.grooming.NrpBase;
-import vahid.ML.Clustering;
-import vahid.util.HashUtil;
+import src.main.java.vahid.ML.Clustering;
+import src.main.java.vahid.util.HashUtil;
 
 import java.util.ArrayList;
 import java.util.List;

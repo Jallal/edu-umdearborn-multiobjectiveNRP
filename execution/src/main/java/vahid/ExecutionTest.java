@@ -1,10 +1,5 @@
 package vahid;
 
-import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
@@ -23,6 +18,11 @@ import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
+import edu.umich.ISELab.core.backlog.Project;
+import edu.umich.ISELab.core.factory.NrpFactory;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
 
 import java.io.File;
 import java.io.IOException;

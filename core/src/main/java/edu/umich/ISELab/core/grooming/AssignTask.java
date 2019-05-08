@@ -1,5 +1,6 @@
 package edu.umich.ISELab.core.grooming;
 
+
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.condition.Condition;
@@ -8,7 +9,6 @@ import edu.umich.ISELab.core.grooming.condition.ExistCondition;
 import edu.umich.ISELab.core.grooming.defineActor.DefineActors;
 import edu.umich.ISELab.core.projectResources.Person;
 import edu.umich.ISELab.core.util.ProjectObjectUtils;
-import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,6 @@ import static java.lang.Boolean.TRUE;
 
 public class AssignTask extends NrpBase {
 
-    protected static final Logger LOGGER = Logger.getLogger(AssignTask.class);
 
     protected WorkItem activeItem;
     protected Person activePerson;

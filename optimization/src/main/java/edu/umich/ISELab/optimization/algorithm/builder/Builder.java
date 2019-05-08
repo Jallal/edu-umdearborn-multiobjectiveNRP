@@ -1,5 +1,9 @@
 package edu.umich.ISELab.optimization.algorithm.builder;
 
+import edu.umich.ISELab.optimization.operators.crossovers.SinglePointCrossover;
+import edu.umich.ISELab.optimization.operators.mutations.BitFlipMutation;
+import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelection;
+import edu.umich.ISELab.optimization.problem.NrpProblem;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.operator.CrossoverOperator;
@@ -7,7 +11,6 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
 import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
 
 import java.util.List;
 
@@ -39,7 +42,7 @@ public abstract class Builder {
         return crossover;
     }
 
-    public void setCrossover(CrossoverOperator<Solution> crossover) {
+    public void setCrossover(SinglePointCrossover crossover) {
         this.crossover = crossover;
     }
 
@@ -47,7 +50,7 @@ public abstract class Builder {
         return mutation;
     }
 
-    public void setMutation(MutationOperator<Solution> mutation) {
+    public void setMutation(BitFlipMutation mutation) {
         this.mutation = mutation;
     }
 
@@ -55,7 +58,7 @@ public abstract class Builder {
         return selection;
     }
 
-    public void setSelection(SelectionOperator<List<Solution>, Solution> selection) {
+    public void setSelection(BinaryTournamentSelection selection) {
         this.selection = selection;
     }
 

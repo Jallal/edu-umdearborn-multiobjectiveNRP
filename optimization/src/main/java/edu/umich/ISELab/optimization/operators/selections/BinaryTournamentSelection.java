@@ -4,6 +4,7 @@ import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.operator.impl.selection.TournamentSelection;
 import org.uma.jmetal.util.comparator.RankingAndCrowdingDistanceComparator;
 
+
 /**
  * The Binary Tournament Selection Class. In this selection operator we use
  * the binary one

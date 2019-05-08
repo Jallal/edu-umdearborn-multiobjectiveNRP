@@ -1,5 +1,4 @@
-package vahid.util.Math;
-
+package src.main.java.vahid.util.Math;
 
 /*
  * Copyright (c) 2009-2010, Sergey Karakovskiy and Julian Togelius

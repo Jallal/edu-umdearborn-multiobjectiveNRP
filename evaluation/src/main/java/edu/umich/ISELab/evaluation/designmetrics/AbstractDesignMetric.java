@@ -1,8 +1,8 @@
 package edu.umich.ISELab.evaluation.designmetrics;
 
+
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
-
 
 public abstract class AbstractDesignMetric {
 

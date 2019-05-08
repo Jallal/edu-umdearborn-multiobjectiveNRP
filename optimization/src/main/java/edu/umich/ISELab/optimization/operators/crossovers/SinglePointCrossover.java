@@ -1,11 +1,12 @@
 package edu.umich.ISELab.optimization.operators.crossovers;
 
-import org.uma.jmetal.operator.CrossoverOperator;
-import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import edu.umich.ISELab.core.grooming.NrpBase;
+
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
+import org.uma.jmetal.operator.CrossoverOperator;
+import org.uma.jmetal.util.pseudorandom.JMetalRandom;
+import edu.umich.ISELab.core.grooming.NrpBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,8 +117,15 @@ public class SinglePointCrossover implements CrossoverOperator<Solution> {
      *
      * @return the number of required parents
      */
+
+
     @Override
-    public int getNumberOfParents() {
+    public int getNumberOfRequiredParents() {
         return 2;
+    }
+
+    @Override
+    public int getNumberOfGeneratedChildren() {
+        return 0;
     }
 }

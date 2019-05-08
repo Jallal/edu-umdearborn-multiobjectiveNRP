@@ -1,9 +1,10 @@
 package edu.umich.ISELab.optimization.filter;
 
+
+import edu.umich.ISELab.optimization.problem.Problem;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.util.ProblemUtils;
 import edu.umich.ISELab.optimization.util.constants.FilterConstants;
-import edu.umich.ISELab.optimization.problem.Problem;
 
 public class Filter {
 

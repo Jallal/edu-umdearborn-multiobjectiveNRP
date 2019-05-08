@@ -1,5 +1,6 @@
 package edu.umich.ISELab.evaluation.qualityattributes;
 
+
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.evaluation.Objective;
@@ -28,7 +29,7 @@ public abstract class AbstractQualityAttribute extends Objective {
     }
 
     protected double getRate(Project project, Project groomedProject, String name) {
-       // return DesignMetricsUtil.rate(project.getDesignMetrics().get(name), refactored.getDesignMetrics().get(name));
+        // return DesignMetricsUtil.rate(project.getDesignMetrics().get(name), refactored.getDesignMetrics().get(name));
         return 0.0;
     }
 }

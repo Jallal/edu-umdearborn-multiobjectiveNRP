@@ -1,12 +1,12 @@
 package edu.umich.ISELab.core.grooming;
 
+
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.condition.Condition;
 import edu.umich.ISELab.core.grooming.defineActor.DefineActors;
 import edu.umich.ISELab.core.grooming.util.Candidate;
 import edu.umich.ISELab.core.projectResources.Person;
-import org.apache.log4j.Logger;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -15,7 +15,6 @@ import java.util.Map;
 
 public abstract class NrpBase implements Serializable {
 
-    protected static final Logger LOGGER = Logger.getLogger(NrpBase.class);
     protected WorkItem workItem;
     protected Person person;
     protected boolean mustDefineActors;
@@ -52,7 +51,6 @@ public abstract class NrpBase implements Serializable {
 
     public boolean verifyPreConditions(WorkItem activeItem, Person person) throws Exception {
 
-        if (LOGGER.isDebugEnabled()) LOGGER.debug("Verifying pre-conditions for " + toString());
 
         List<Condition> conditions = getPreConditions(activeItem, person);
 
@@ -60,21 +58,18 @@ public abstract class NrpBase implements Serializable {
 
             boolean isValid = condition.validate(activeItem, person);
 
-            if (LOGGER.isDebugEnabled()) LOGGER.debug("Analising " + condition + ": " + isValid);
 
             if (!isValid) {
                 throw new Exception(getName() + ": " + condition.getError());
             }
         }
 
-        if (LOGGER.isDebugEnabled()) LOGGER.debug("All pre-conditions are valids");
 
         return true;
     }
 
     public boolean verifyPostCondition(WorkItem item, Person person) throws Exception {
 
-        if (LOGGER.isDebugEnabled()) LOGGER.debug("Verifying pos-conditions for " + toString());
 
         List<Condition> conditions = getPostConditions(item,person);
 
@@ -82,14 +77,12 @@ public abstract class NrpBase implements Serializable {
 
             boolean isValid = condition.validate(item, person);
 
-            if (LOGGER.isDebugEnabled()) LOGGER.debug("Analising " + condition + ": " + isValid);
 
             if (!isValid) {
                 throw new Exception(getName() + ": " + condition.getError());
             }
         }
 
-        if (LOGGER.isDebugEnabled()) LOGGER.debug("All pos-conditions are valids");
 
         return true;
     }
@@ -110,7 +103,6 @@ public abstract class NrpBase implements Serializable {
 
         DefineActors defineActors = getDefineActors();
 
-        if (LOGGER.isDebugEnabled()) LOGGER.debug("Define the actors for " + defineActors.getClass().getSimpleName());
 
         reset();
 
@@ -120,8 +112,8 @@ public abstract class NrpBase implements Serializable {
             throw new Exception("Cannot define the actors for " + getName());
         }
 
-        this.workItem = candidate.getWorkItem() != null ? candidate.getWorkItem() : null;
-        this.person = candidate.getPerson() != null ? candidate.getPerson() : null;
+        //this.workItem = candidate.getWorkItem() != null ? candidate.getWorkItem() : null;
+        //this.person = candidate.getPerson() != null ? candidate.getPerson() : null;
         this.mustDefineActors = false;
 
         return;

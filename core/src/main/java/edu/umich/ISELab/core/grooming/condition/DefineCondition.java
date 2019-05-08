@@ -1,11 +1,12 @@
 package edu.umich.ISELab.core.grooming.condition;
 
+
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
 
 public class DefineCondition extends Condition {
 
-    private WorkItem  workItem;
+    private WorkItem workItem;
     private Person person;
 
 

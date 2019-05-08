@@ -1,5 +1,6 @@
 package edu.umich.ISELab.core.util;
 
+
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
@@ -24,7 +25,7 @@ public class ProjectObjectUtils {
     }
 
     public static Map<WorkItem, Person> findAll(Project project) {
-        Map<WorkItem, Person>  workPair = new HashMap<>();
+        Map<WorkItem, Person> workPair = new HashMap<>();
         List<Person> personList= project.getPersonList();
         List<WorkItem> workItem= project.getWorkItemList();
         for(Person person:personList){

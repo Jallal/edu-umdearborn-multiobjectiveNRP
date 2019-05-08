@@ -1,15 +1,15 @@
 package edu.umich.ISELab.optimization.problem;
 
-import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.core.util.RandomUtils;
-import edu.umich.ISELab.core.util.UUIDUtils;
-import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
 import org.apache.commons.io.FilenameUtils;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
+import edu.umich.ISELab.core.backlog.Project;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.util.RandomUtils;
+import edu.umich.ISELab.core.util.UUIDUtils;
+import edu.umich.ISELab.evaluation.Objective;
 
 import java.io.File;
 import java.util.List;
@@ -32,7 +32,19 @@ public class NrpProblem extends Problem {
     protected List<NrpBase> selectedRefactorings;
     protected File file;
 
-    public NrpProblem(File file, Project project, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
+
+    public NrpProblem(Project project, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
+        super(objectives);
+
+        //Verify the arguments
+        checkNotNull(project, "The project cannot be null");
+        this.selectedRefactorings = selectedRefactorings;
+        this.project = project;
+        // JMetal's Settings
+        setNumberOfVariables(1);
+    }
+
+    public NrpProblem(File file,Project project, List<Objective> objectives, List<NrpBase> selectedRefactorings) {
         super(objectives);
 
         //Verify the arguments

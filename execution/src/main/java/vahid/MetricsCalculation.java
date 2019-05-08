@@ -1,19 +1,14 @@
-/*
- * Copyright (c) 2019.
- * Author: Vahid Alizadeh
- * Email: alizadeh@umich.edu
- */
-
 package vahid;
 
-import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
+
 import edu.umich.ISELab.optimization.problem.NrpProblem;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import edu.umich.ISELab.core.factory.NrpFactory;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
 
 import java.io.File;
 import java.util.ArrayList;

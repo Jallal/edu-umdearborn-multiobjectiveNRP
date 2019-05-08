@@ -1,5 +1,6 @@
 package edu.umich.ISELab.core.grooming.condition;
 
+
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
 
@@ -7,7 +8,7 @@ public abstract class Condition {
 
     protected boolean isNegate = false;
 
-    public boolean validate(WorkItem item, Person person ) {
+    public boolean validate(WorkItem item,Person person ) {
 
         if (isNegate()) {
             return !verify(item, person);

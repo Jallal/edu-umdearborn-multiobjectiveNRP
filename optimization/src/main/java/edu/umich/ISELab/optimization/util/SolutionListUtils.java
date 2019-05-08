@@ -1,5 +1,6 @@
 package edu.umich.ISELab.optimization.util;
 
+
 import edu.umich.ISELab.optimization.solution.Solution;
 
 import java.util.ArrayList;

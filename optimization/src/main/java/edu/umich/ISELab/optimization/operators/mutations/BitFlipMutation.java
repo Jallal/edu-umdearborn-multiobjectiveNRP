@@ -1,12 +1,13 @@
 package edu.umich.ISELab.optimization.operators.mutations;
 
+
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.variables.NrpVariable;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.core.util.RandomUtils;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
-import edu.umich.ISELab.optimization.solution.Solution;
-import edu.umich.ISELab.optimization.variables.NrpVariable;
 
 import java.util.List;
 

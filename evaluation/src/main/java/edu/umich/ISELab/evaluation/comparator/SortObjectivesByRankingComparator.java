@@ -1,7 +1,8 @@
 package edu.umich.ISELab.evaluation.comparator;
 
-import edu.umich.ISELab.evaluation.util.constants.ObjectiveConstants;
+
 import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.util.constants.ObjectiveConstants;
 
 import java.util.Comparator;
 

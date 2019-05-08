@@ -1,10 +1,5 @@
-/*
- * Copyright (c) 2019.
- * Author: Vahid Alizadeh
- * Email: alizadeh@umich.edu
- */
+package src.main.java.vahid.util;
 
-package vahid.util;
 
 import org.uma.jmetal.solution.Solution;
 import org.uma.jmetal.util.JMetalException;

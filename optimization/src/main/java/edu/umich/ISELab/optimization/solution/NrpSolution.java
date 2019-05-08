@@ -1,12 +1,12 @@
 package edu.umich.ISELab.optimization.solution;
 
-import edu.umich.ISELab.core.grooming.NrpBase;
 import edu.umich.ISELab.optimization.problem.Problem;
 import edu.umich.ISELab.optimization.variables.NrpVariable;
+import edu.umich.ISELab.core.grooming.NrpBase;
 
 import java.util.List;
 
-public class NrpSolution extends Solution{
+public class NrpSolution extends Solution {
     private static final long serialVersionUID = -146503776791357509L;
 
     /**

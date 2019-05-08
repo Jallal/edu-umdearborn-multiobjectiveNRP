@@ -1,4 +1,4 @@
-package  vahid.util;
+package src.main.java.vahid.util;
 
 import java.util.Collections;
 import java.util.Comparator;

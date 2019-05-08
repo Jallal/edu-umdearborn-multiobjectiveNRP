@@ -1,10 +1,11 @@
 package edu.umich.ISELab.optimization.algorithm;
 
+
+import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.solution.NrpSolution;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
-import edu.umich.ISELab.optimization.solution.NrpSolution;
 
 import java.util.List;
 

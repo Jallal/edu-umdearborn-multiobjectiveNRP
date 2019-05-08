@@ -1,5 +1,6 @@
 package edu.umich.ISELab.optimization.algorithm;
 
+import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII;
 import org.uma.jmetal.operator.CrossoverOperator;
@@ -7,7 +8,6 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.problem.Problem;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
-import edu.umich.ISELab.optimization.solution.NrpSolution;
 
 import java.util.List;
 

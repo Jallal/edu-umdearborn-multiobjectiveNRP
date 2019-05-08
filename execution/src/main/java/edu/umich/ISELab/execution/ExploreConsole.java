@@ -1,11 +1,13 @@
 package edu.umich.ISELab.execution;
 
 import edu.umich.ISELab.core.backlog.Project;
+import edu.umich.ISELab.core.backlog.Task;
+import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.NrpFactory;
 import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.projectResources.Person;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
-import edu.umich.ISELab.execution.util.CommandLineValues;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
@@ -15,154 +17,89 @@ import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelect
 import edu.umich.ISELab.optimization.problem.NrpProblem;
 import edu.umich.ISELab.optimization.solution.NrpSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
-import edu.umich.ISELab.optimization.variables.NrpVariable;
-import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.LogManager;
-import org.kohsuke.args4j.CmdLineException;
-import org.kohsuke.args4j.CmdLineParser;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
-import org.uma.jmetal.util.fileoutput.SolutionListOutput;
-import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
+import src.main.java.edu.umich.ISELab.execution.util.CommandLineValues;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * This class is responsible for executing the NSGA-II algorithm
- *
- * @author Thiago N. Ferreira
- * @version 1.0.0
- * @since 2017-06-09
- */
 public class ExploreConsole {
 
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
+		// The list of objectives used to optimize the problem
+		CommandLineValues command = new CommandLineValues();
+		List<Objective> objectives = new ArrayList<>();
+		objectives.add(new NumberOfNRPOptimization());
+		List<NrpBase> selectedRefactorings = new ArrayList<>();
+		selectedRefactorings.add(NrpFactory.getNrpOptimization("Assign Task"));
 
-        CommandLineValues values = new CommandLineValues(args);
-        CmdLineParser parser = new CmdLineParser(values);
+		//personList
+		List<Person> personList = new ArrayList<>();
+		Person person1 = new Person();
+		person1.setAssigned(false);
+		person1.setOccupation("Developer");
+		person1.setName("Jallal");
+		personList.add(person1);
 
-        try {
-            parser.parseArgument(args);
-        } catch (CmdLineException e) {
-            System.exit(1);
-        }
+		//WorkItemList
 
+		List<WorkItem> workItemList = new ArrayList<>();
+		Task workItem1 = new Task();
+		workItem1.setAssigned(false);
+		workItem1.setReadyForImplementation(true);
 
-        LogManager.getRootLogger().setLevel(Level.INFO);
+		workItemList.add(workItem1);
 
-        //if (LOGGER.isInfoEnabled()) LOGGER.info("Running " + values.algorithm);
+		//project
+		Project project = new Project();
+		project.setPersonList(personList);
+		project.setWorkItemList(workItemList);
+		//problem
+		NrpProblem problem = new NrpProblem(project, objectives, selectedRefactorings);
+		problem.setMinSolutionSize(5);
+		problem.setMaxSolutionSize(10);
 
-        // The name of the instance file
-//		String instanceFile = "src/main/projectResources/ganttproject.blocks";
-//		String instanceFile = "src/main/projectResources/argouml-v0.26/argouml.blocks";
+		// Initiate the algorithm
+		Builder builder_NSGA2 = new BuilderCustomNSGAII();
+		Builder builder_NSGA3 = new BuilderCustomNSGAIII();
 
-        File file = new File(values.instanceFile);
+		// Define its parameters
+		builder_NSGA2.setProblem(problem);
+		builder_NSGA2.setPopulationSize(6);
+		builder_NSGA2.setMaxEvalutions(10);
+		builder_NSGA2.setCrossover(new SinglePointCrossover(command.getCrossoverProbability()));
+		builder_NSGA2.setMutation(new BitFlipMutation(command.getMutationProbability()));
+		builder_NSGA2.setSelection(new BinaryTournamentSelection());
+		AbstractEvolutionaryAlgorithm<Solution, List<Solution>> algorithm = builder_NSGA2.build();
+		AlgorithmRunner algorithmRunner = new AlgorithmRunner.Executor(algorithm).execute();
 
-        // The list of objectives used to optimize the problem
-        List<Objective> objectives = new ArrayList<>();
+		long computingTime = algorithmRunner.getComputingTime();
+		List<Solution> paretoFront = algorithm.getResult();
 
-        /*objectives.add(new QMOODEffectiveness());
-        objectives.add(new QMOODExtendibility());
-        objectives.add(new QMOODFlexibility());
-        objectives.add(new QMOODFunctionality());
-        objectives.add(new QMOODReusability());
-        objectives.add(new QMOODUnderstandability());*/
-        /*objectives.add(new Coupling());
-        objectives.add(new Cohesion());
-        objectives.add(new Complexity());*/
-        objectives.add(new NumberOfNRPOptimization());
+	}
 
-        List<NrpBase> selectedRefactorings = new ArrayList<>();
+	public static void printResults(NrpProblem problem, Project originalProject,
+									List<NrpSolution> paretoFront) throws IOException {
 
-        selectedRefactorings.add(NrpFactory.getNrpOptimization("Move Method"));
-        /*selectedRefactorings.add(NrpFactory.getRefactoring("Move Field"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Extract Class"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Push Down Field"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Push Down Method"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Extract Sub Class"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Pull Up Field"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Pull Up Method"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Extract Super Class"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Encapsulate Field"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Increase Field Security"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Decrease Field Security"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Increase Method Security"));
-        selectedRefactorings.add(NrpFactory.getRefactoring("Decrease Method Security"));*/
+		for (int i = 0; i < paretoFront.size(); i++) {
 
-        // Initiate the problem
-        NrpProblem problem = new NrpProblem(file, objectives, selectedRefactorings);
+			NrpSolution solution = paretoFront.get(i);
 
-        problem.setMinSolutionSize(values.minRefatorings);
-        problem.setMaxSolutionSize(values.maxRefatorings);
+			System.out.println(solution);
 
-        // Initiate the algorithm
-        Builder builder = null;
-
-        if (values.algorithm.equalsIgnoreCase("NSGA2")) {
-            builder = new BuilderCustomNSGAII();
-        } else if (values.algorithm.equalsIgnoreCase("NSGA3")) {
-            builder = new BuilderCustomNSGAIII();
-        }
-
-        // Define its parameters
-        builder.setProblem(problem);
-        builder.setPopulationSize(values.populationSize);
-        builder.setMaxEvalutions(values.maxEvaluations);
-        builder.setCrossover(new SinglePointCrossover(values.crossoverProbability));
-        builder.setMutation(new BitFlipMutation(values.mutationProbability));
-        builder.setSelection(new BinaryTournamentSelection());
-
-        AbstractEvolutionaryAlgorithm<Solution, List<Solution>> algorithm = builder.build();
-
-        AlgorithmRunner algorithmRunner = new AlgorithmRunner.Executor(algorithm).execute();
-
-        @SuppressWarnings("unused")
-        long computingTime = algorithmRunner.getComputingTime();
-
-        List<Solution> paretoFront = algorithm.getResult();
-
-
-        File outputFolder = new File("output");
-
-        if (!outputFolder.exists()) {
-            outputFolder.mkdirs();
-        }
-
-        String filename = FilenameUtils.getBaseName(values.instanceFile);
-
-        new SolutionListOutput(paretoFront)
-                .setSeparator("\t")
-                .setVarFileOutputContext(new DefaultFileOutputContext("output" + "-" + filename + "-var.txt"))
-                .setFunFileOutputContext(new DefaultFileOutputContext("output" + "-" + filename + "-fun.txt"))
-                //.setFunFileOutputContext(new DefaultFileOutputContext("output"+File.separator+filename+"-fun.txt"))
-                .print();
-
-       // if (LOGGER.isInfoEnabled()) LOGGER.info("Done");
-    }
-
-    public static void printResults(NrpProblem problem, Project originalProject,
-                                    List<NrpSolution> paretoFront) throws IOException {
-
-        for (int i = 0; i < paretoFront.size(); i++) {
-
-            NrpSolution solution = paretoFront.get(i);
-
-            System.out.println(solution);
-
-            List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
+			//List<NrpBase> refactorings = ((NrpVariable) solution.getVariableValue(0)).getRefactorings();
+			List<NrpBase> refactorings = null;
 
 //			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
 //			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
 
 //			problem.calculateFitnessFunction(solution, refactored);
 
-            System.out.println(solution);
-            System.out.println("==================");
-        }
-    }
+			System.out.println(solution);
+			System.out.println("==================");
+		}
+	}
 }

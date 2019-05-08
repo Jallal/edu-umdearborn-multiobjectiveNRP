@@ -1,14 +1,10 @@
-/*
+package src.main.java.vahid;/*
  * Copyright (c) 2019.
  * Author: Vahid Alizadeh
  * Email: alizadeh@umich.edu
  */
 
-package vahid;
 
-import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.core.sys.LOGGER;
-import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
@@ -20,8 +16,11 @@ import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import vahid.util.ParetoObjectCRUD;
-import vahid.util.SolutionListOutputVahid;
+import edu.umich.ISELab.core.grooming.NrpBase;
+import edu.umich.ISELab.core.sys.LOGGER;
+import edu.umich.ISELab.evaluation.Objective;
+import src.main.java.vahid.util.ParetoObjectCRUD;
+import src.main.java.vahid.util.SolutionListOutputVahid;
 
 import java.io.File;
 import java.io.IOException;

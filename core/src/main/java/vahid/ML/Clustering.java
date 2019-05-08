@@ -1,5 +1,4 @@
-package vahid.ML;
-
+package src.main.java.vahid.ML;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
@@ -19,6 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import static src.main.java.vahid.util.HashUtil.sortByValue;
 
 public class Clustering {
 
@@ -185,7 +186,7 @@ public class Clustering {
         }
         totalProbHash.forEach((k, v) -> averageProbHash.put(k, v / numClustersSelected));
 
-        Map<String, Double> sortedAverageProbHash = vahid.util.HashUtil.sortByValue(averageProbHash);
+        Map<String, Double> sortedAverageProbHash = sortByValue(averageProbHash);
 
         this.operationsProbHash = sortedAverageProbHash;
 

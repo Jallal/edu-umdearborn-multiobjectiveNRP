@@ -1,6 +1,4 @@
-package vahid.util;
-
-
+package src.main.java.vahid.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

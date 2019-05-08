@@ -6,9 +6,20 @@
         <artifactId>sbse-nrp</artifactId>
         <version>1.0.0</version>
     </parent>
+    <groupId>edu-umich-ISELab-nrp</groupId>
     <artifactId>execution</artifactId>
     <name>edu-umich-ISELab-monrp::execution</name>
     <dependencies>
+        <dependency>
+            <groupId>edu-umich-ISELab-nrp</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>edu-umich-ISELab-nrp</groupId>
+            <artifactId>evaluation</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>edu-umich-ISELab-nrp</groupId>
             <artifactId>optimization</artifactId>
@@ -30,12 +41,27 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>thiagodnf.doupr</groupId>
-            <artifactId>nprInterface</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
+            <groupId>args4j</groupId>
+            <artifactId>args4j</artifactId>
+            <version>2.33</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.8.0-beta4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-dev -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-dev</artifactId>
+            <version>3.9.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>3.8.3</version>
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>

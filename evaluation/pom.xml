@@ -6,6 +6,7 @@
         <artifactId>sbse-nrp</artifactId>
         <version>1.0.0</version>
     </parent>
+    <groupId>edu-umich-ISELab-nrp</groupId>
     <artifactId>evaluation</artifactId>
     <name>edu-umich-ISELab-monrp::evaluation</name>
     <dependencies>

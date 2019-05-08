@@ -1,8 +1,8 @@
-package test.java.test.thiagodnf.doupr.optimization.utils;
+package test.thiagodnf.doupr.optimization.utils;
 
-import org.junit.Test;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.util.SolutionListUtils;
+import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
@@ -11,10 +11,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

@@ -1,8 +1,10 @@
-package vahid.ML;
+package src.main.java.vahid.ML;
 
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
+
+import static src.main.java.vahid.ML.Config.PYTHONPATH;
 
 class test2 {
 
@@ -18,7 +20,7 @@ class test2 {
             //int number2 = 32;
             //ProcessBuilder pb = new ProcessBuilder("py",Config.PYTHONPATH+"Legacy\\tempExecArg.py",""+number1,""+number2);
 
-            ProcessBuilder pb = new ProcessBuilder("py", main.java.vahid.ML.Config.PYTHONPATH + "Java_Link\\Clustering.py", OUTPUT_DIR, "39dc1a14", "1", "9");
+            ProcessBuilder pb = new ProcessBuilder("py", PYTHONPATH + "Java_Link\\Clustering.py", OUTPUT_DIR, "39dc1a14", "1", "9");
 
             //System.out.println(Config.PYTHONPATH+"Java_Link\\Clustering.py");
 
