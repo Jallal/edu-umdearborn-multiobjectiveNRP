@@ -1,7 +1,6 @@
 package edu.umich.ISELab.optimization.variables;
 
 import edu.umich.ISELab.core.grooming.NrpBase;
-import edu.umich.ISELab.core.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,18 +29,6 @@ public class NrpVariable extends Variable {
     public void setRefatorings(List<NrpBase> nrpBases) {
 
         this.nrpBases = nrpBases;
-    }
-
-    @Override
-    public String toString() {
-
-        List<String> lines = new ArrayList<String>();
-
-        for (int i = 0; i < nrpBases.size(); i++) {
-            lines.add(nrpBases.get(i).toString());
-        }
-
-        return StringUtils.join(lines, ",");
     }
 
     public NrpVariable copy() {

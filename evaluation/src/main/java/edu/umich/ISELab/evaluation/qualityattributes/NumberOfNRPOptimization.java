@@ -7,7 +7,7 @@ import edu.umich.ISELab.evaluation.Objective;
 
 import java.util.List;
 
-public class NumberOfNRPOptimization extends Objective {
+public class NumberOfNRPOptimization extends AbstractQualityAttribute {
 
     public NumberOfNRPOptimization() {
 
@@ -48,6 +48,6 @@ public class NumberOfNRPOptimization extends Objective {
 
     @Override
     public Objective copy() {
-        return new NumberOfNRPOptimization(this);
+        return new NumberOfNRPOptimization (this);
     }
 }

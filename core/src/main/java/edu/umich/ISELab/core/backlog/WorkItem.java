@@ -6,6 +6,7 @@ import edu.umich.ISELab.core.projectResources.Person;
 public abstract class WorkItem {
 
 	private int weight;
+	private String workItemID;
 	private boolean isAssigned = false;
 	private boolean isReadyForImplementation = false;
 	private Priority priority;
@@ -59,6 +60,13 @@ public abstract class WorkItem {
 
 	public void setReadyForImplementation(boolean readyForImplementation) {
 		isReadyForImplementation = readyForImplementation;
+	}
+	public String getWorkItemID() {
+		return workItemID;
+	}
+
+	public void setWorkItemID(String workItemID) {
+		this.workItemID = workItemID;
 	}
 
 

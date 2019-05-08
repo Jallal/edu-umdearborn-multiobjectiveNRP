@@ -1,13 +1,13 @@
 package edu.umich.ISELab.core.util;
 
 
-import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.NrpFactory;
 import edu.umich.ISELab.core.grooming.NrpBase;
+import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import src.main.java.vahid.ML.Clustering;
-import src.main.java.vahid.util.HashUtil;
+import vahid.util.HashUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,9 +78,8 @@ public class RandomUtils {
 	public static NrpBase getRandomRefactoring(List<NrpBase> possibleRefactorings) {
 
 		if (Clustering.instanceCL == null) {
-
 			//return getRandomElement(possibleRefactorings).copy();
-			return null;
+			return ((NrpBase)getRandomElement(possibleRefactorings)).copy();
 
 		} else {
 

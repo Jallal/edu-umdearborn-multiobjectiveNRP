@@ -19,9 +19,11 @@ public class ProjectObjectUtils {
        Optional<WorkItem> item = workItem.stream().filter(availableItem-> !availableItem.isAssigned()).findFirst();
        Optional<Person> person = personList.stream().filter(availablePerson-> !availablePerson.isAssigned()).findFirst();
        if(item.isPresent()&&person.isPresent()){
-           return (Map<WorkItem, Person>) workPair.put(item.get(),person.get());
+           workPair.put(item.get(),person.get());
+           return  workPair;
+       }else {
+           return null;
        }
-        return null;
     }
 
     public static Map<WorkItem, Person> findAll(Project project) {

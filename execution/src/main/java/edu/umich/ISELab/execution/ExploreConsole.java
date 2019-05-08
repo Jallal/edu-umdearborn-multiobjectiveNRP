@@ -36,15 +36,26 @@ public class ExploreConsole {
 		person1.setAssigned(false);
 		person1.setOccupation("Developer");
 		person1.setName("Jallal");
+		Person person2 = new Person();
+		person2.setAssigned(false);
+		person2.setOccupation("Developer");
+		person2.setName("Bill");
 		personList.add(person1);
+		personList.add(person2);
 
 		//WorkItemList
 		List<WorkItem> workItemList = new ArrayList<>();
 		Task workItem1 = new Task();
 		workItem1.setAssigned(false);
 		workItem1.setReadyForImplementation(true);
+		workItem1.setWorkItemID("TASK2");
+		Task workItem2 = new Task();
+		workItem2.setAssigned(false);
+		workItem2.setWorkItemID("TASK2");
+		workItem2.setReadyForImplementation(true);
 
 		workItemList.add(workItem1);
+		workItemList.add(workItem2);
 
 		//project
 		Project project = new Project();
@@ -54,16 +65,18 @@ public class ExploreConsole {
 		// The list of objectives used to optimize the problem
 		CommandLineValues command = new CommandLineValues();
 		List<Objective> objectives = new ArrayList<>();
-		objectives.add(new NumberOfNRPOptimization());
+		NumberOfNRPOptimization optimization=new NumberOfNRPOptimization();
+		objectives.add(optimization);
 		List<NrpBase> selectedRefactorings = new ArrayList<>();
 		AssignTask assign_task = NrpFactory.getNrpOptimization("Assign Task");
 		assign_task.loadActors(project);
 		selectedRefactorings.add(assign_task);
 
 
+
 		//problem
 		NrpProblem problem = new NrpProblem(project, objectives, selectedRefactorings);
-		problem.setMinSolutionSize(5);
+		problem.setMinSolutionSize(1);
 		problem.setMaxSolutionSize(10);
 
 		// Initiate the algorithm
@@ -72,7 +85,7 @@ public class ExploreConsole {
 
 		// Define its parameters
 		builder_NSGA2.setProblem(problem);
-		builder_NSGA2.setPopulationSize(6);
+		builder_NSGA2.setPopulationSize(2);
 		builder_NSGA2.setMaxEvalutions(10);
 		builder_NSGA2.setCrossover(new SinglePointCrossover(command.getCrossoverProbability()));
 		builder_NSGA2.setMutation(new BitFlipMutation(command.getMutationProbability()));
@@ -82,6 +95,10 @@ public class ExploreConsole {
 
 		long computingTime = algorithmRunner.getComputingTime();
 		List<Solution> paretoFront = algorithm.getResult();
+		for(Solution solution:paretoFront){
+			System.out.println(solution.toString());
+
+		}
 
 	}
 

@@ -19,7 +19,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static src.main.java.vahid.util.HashUtil.sortByValue;
+import static vahid.util.HashUtil.sortByValue;
+
 
 public class Clustering {
 
@@ -234,4 +235,4 @@ public class Clustering {
 
     }
 
-} 
+}

@@ -35,31 +35,6 @@ public class NrpSolution extends Solution {
         return new NrpSolution(this);
     }
 
-    @Override
-    public String toString() {
-
-        StringBuilder builder = new StringBuilder();
-
-        for (int i = 0; i < getNumberOfVariables(); i++) {
-            builder.append(getVariableValueString(i));
-        }
-
-        builder.append("\n");
-        builder.append("Objectives: (");
-
-        for (int i = 0; i < getNumberOfObjectives(); i++) {
-
-            builder.append(getObjective(i));
-
-            if (i + 1 != getNumberOfObjectives()) {
-                builder.append(",");
-            }
-        }
-
-        builder.append(")");
-
-        return builder.toString();
-    }
 
     @Override
     public double getUserFeedback() {
@@ -72,9 +47,9 @@ public class NrpSolution extends Solution {
 
         double userFeedback = 0.0;
 
-        for (NrpBase nrpBase : refactorings) {
+        /*for (NrpBase nrpBase : refactorings) {
             userFeedback += nrpBase.getUserFeedback();
-        }
+        }*/
 
         return userFeedback / (double) refactorings.size();
     }
@@ -86,7 +61,7 @@ public class NrpSolution extends Solution {
         List<NrpBase> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
 
         for (NrpBase nrpBase : refactorings) {
-            nrpBase.getProperties().clear();
+           // nrpBase.reset();
         }
     }
 }

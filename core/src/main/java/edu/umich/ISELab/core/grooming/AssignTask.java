@@ -69,6 +69,11 @@ public class AssignTask extends NrpBase {
     public void loadActors(Project project) {
 
         this.projectActors = ProjectObjectUtils.findPair(project);
+        if(this.projectActors!=null) {
+            Map.Entry<WorkItem, Person> onlyEntry = this.projectActors.entrySet().iterator().next();
+            this.activeItem = onlyEntry.getKey();
+            this.activePerson = onlyEntry.getValue();
+        }
     }
 
     @Override
@@ -125,7 +130,7 @@ public class AssignTask extends NrpBase {
 
     @Override
     public NrpBase copy() {
-        return this.copy();
+        return new AssignTask(this);
     }
 
     @Override
