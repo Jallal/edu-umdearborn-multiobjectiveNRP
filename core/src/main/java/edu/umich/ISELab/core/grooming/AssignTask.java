@@ -100,7 +100,7 @@ public class AssignTask extends grooming {
 
     @Override
     public void execute(Project project) {
-
+System.out.println("**************************************************** EXECUTING*************");
         this.loadActors(project);
         Set< Map.Entry<WorkItem, Person>> st = this.projectActors.entrySet();
         for (Map.Entry<WorkItem, Person> me:st){

@@ -17,6 +17,10 @@ public abstract class Condition {
         return verify(item,person);
     }
 
+    public void assignTask(WorkItem item,Person person ){
+
+    }
+
     public boolean isNegate() {
         return isNegate;
     }

@@ -32,7 +32,6 @@ public abstract class grooming implements Serializable {
     public grooming(grooming nrp) {
         this.workItem = nrp.getWorkItem();
         this.person = nrp.getPerson();
-
     }
 
     public static Condition NOT(Condition condition) {
