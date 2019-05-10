@@ -2,14 +2,14 @@ package edu.umich.ISELab.evaluation.factory;
 
 
 import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
+import edu.umich.ISELab.evaluation.qualityattributes.Optimization;
 
 public class ObjectiveFactory {
 
     public static Objective getObjective(String name) {
 
         if (name.equalsIgnoreCase("Number Of Refactorings")) {
-            return new NumberOfNRPOptimization();
+            return new Optimization();
         }
         /*if (name.equalsIgnoreCase("Coupling")) {
             return new Coupling();

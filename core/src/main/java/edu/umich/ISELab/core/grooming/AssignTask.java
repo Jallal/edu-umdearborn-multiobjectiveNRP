@@ -6,18 +6,18 @@ import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.condition.Condition;
 import edu.umich.ISELab.core.grooming.condition.DefineCondition;
 import edu.umich.ISELab.core.grooming.condition.ExistCondition;
+import edu.umich.ISELab.core.grooming.defineActor.Actor;
 import edu.umich.ISELab.core.grooming.defineActor.DefineActors;
+import edu.umich.ISELab.core.grooming.util.Candidate;
 import edu.umich.ISELab.core.projectResources.Person;
-import edu.umich.ISELab.core.util.ProjectObjectUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import static java.lang.Boolean.TRUE;
 
-public class AssignTask extends grooming {
+public class AssignTask extends Grooming {
     protected WorkItem activeItem;
     protected Person activePerson;
     private  Map<WorkItem, Person> projectActors;
@@ -68,12 +68,13 @@ public class AssignTask extends grooming {
     @Override
     public void loadActors(Project project) {
 
-        this.projectActors = ProjectObjectUtils.findPair(project);
-        if(this.projectActors!=null) {
-            Map.Entry<WorkItem, Person> onlyEntry = this.projectActors.entrySet().iterator().next();
-            this.activeItem = onlyEntry.getKey();
-            this.activePerson = onlyEntry.getValue();
-        }
+            Candidate execute = this.getDefineActors().execute(project);
+            if(execute.getWorkItem()!=null&&execute.getPerson()!=null) {
+                this.activeItem = execute.getWorkItem();
+                this.activePerson = execute.getPerson();
+                this.assignedTasks(execute.getWorkItem(), execute.getPerson());
+            }
+
     }
 
     @Override
@@ -91,7 +92,7 @@ public class AssignTask extends grooming {
         List<Condition> conditions = new ArrayList<>();
         conditions.add(new ExistCondition(item, person));
         conditions.add(new DefineCondition(item, person));
-        //conditions.add(new thiagodnf.doupr.core.grooming.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
+        //conditions.add(new thiagodnf.doupr.core.Grooming.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
 
         return conditions;
     }
@@ -100,18 +101,19 @@ public class AssignTask extends grooming {
 
     @Override
     public void execute(Project project) {
-System.out.println("**************************************************** EXECUTING*************");
+        //while (ProjectObjectUtils.findPair(project)!=null) {
         this.loadActors(project);
-        Set< Map.Entry<WorkItem, Person>> st = this.projectActors.entrySet();
-        for (Map.Entry<WorkItem, Person> me:st){
-               this.assignedTasks(me.getKey(),me.getValue());
-        }
+        //Set<Map.Entry<WorkItem, Person>> st = this.projectActors.entrySet();
+       // for (Map.Entry<WorkItem, Person> me : st) {
+            //this.assignedTasks(me.getKey(), me.getValue());
+       // }
+   // }
 
     }
 
     @Override
     public DefineActors getDefineActors() {
-        return null;
+        return new Actor();
     }
 
 
@@ -129,7 +131,7 @@ System.out.println("**************************************************** EXECUTI
     }
 
     @Override
-    public grooming copy() {
+    public Grooming copy() {
         return new AssignTask(this);
     }
 

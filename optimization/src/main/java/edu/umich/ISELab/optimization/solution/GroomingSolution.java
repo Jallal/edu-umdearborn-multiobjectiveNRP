@@ -1,12 +1,12 @@
 package edu.umich.ISELab.optimization.solution;
 
+import edu.umich.ISELab.core.grooming.Grooming;
 import edu.umich.ISELab.optimization.problem.Problem;
-import edu.umich.ISELab.optimization.variables.NrpVariable;
-import edu.umich.ISELab.core.grooming.grooming;
+import edu.umich.ISELab.optimization.variables.GroomingVariable;
 
 import java.util.List;
 
-public class NrpSolution extends Solution {
+public class GroomingSolution extends Solution {
     private static final long serialVersionUID = -146503776791357509L;
 
     /**
@@ -14,7 +14,7 @@ public class NrpSolution extends Solution {
      *
      * @param problem the problem that this solution is part of
      */
-    public NrpSolution(Problem problem) {
+    public GroomingSolution(Problem problem) {
         super(problem);
     }
 
@@ -23,7 +23,7 @@ public class NrpSolution extends Solution {
      *
      * @param solution The solution to be cloned
      */
-    public NrpSolution(NrpSolution solution) {
+    public GroomingSolution(GroomingSolution solution) {
         super(solution);
     }
 
@@ -31,15 +31,15 @@ public class NrpSolution extends Solution {
         return getVariableValue(index).toString();
     }
 
-    public NrpSolution copy() {
-        return new NrpSolution(this);
+    public GroomingSolution copy() {
+        return new GroomingSolution(this);
     }
 
 
     /*@Override
     public double getUserFeedback() {
 
-        List<grooming> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
+        List<Grooming> refactorings = ((GroomingVariable) getVariableValue(0)).getRefactorings();
 
         if (refactorings.isEmpty()) {
             return 0.0;
@@ -47,7 +47,7 @@ public class NrpSolution extends Solution {
 
         double userFeedback = 0.0;
 
-        for (grooming nrpBase : refactorings) {
+        for (Grooming nrpBase : refactorings) {
             userFeedback += nrpBase.getUserFeedback();
         }
 
@@ -58,9 +58,9 @@ public class NrpSolution extends Solution {
     public void clearAttributes() {
         super.clearAttributes();
 
-        List<grooming> refactorings = ((NrpVariable) getVariableValue(0)).getRefactorings();
+        List<Grooming> groomings = ((GroomingVariable) getVariableValue(0)).getRefactorings();
 
-        for (grooming grooming : refactorings) {
+        for (Grooming grooming : groomings) {
            grooming.reset();
         }
     }

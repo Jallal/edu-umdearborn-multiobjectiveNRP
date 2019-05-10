@@ -3,7 +3,7 @@ package edu.umich.ISELab.optimization.algorithm.builder;
 import edu.umich.ISELab.optimization.operators.crossovers.SinglePointCrossover;
 import edu.umich.ISELab.optimization.operators.mutations.BitFlipMutation;
 import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelection;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.problem.GroomingProblem;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.operator.CrossoverOperator;
@@ -26,7 +26,7 @@ public abstract class Builder {
 
     protected SelectionOperator<List<Solution>, Solution> selection;
 
-    protected NrpProblem problem;
+    protected GroomingProblem problem;
 
     protected List<Solution> initialPopulation;
 
@@ -62,11 +62,11 @@ public abstract class Builder {
         this.selection = selection;
     }
 
-    public NrpProblem getProblem() {
+    public GroomingProblem getProblem() {
         return problem;
     }
 
-    public void setProblem(NrpProblem problem) {
+    public void setProblem(GroomingProblem problem) {
         this.problem = problem;
     }
 

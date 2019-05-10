@@ -1,14 +1,14 @@
 package vahid;
 
 
-import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.optimization.problem.GroomingProblem;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.grooming;
+import edu.umich.ISELab.core.factory.GroomingFactory;
 import edu.umich.ISELab.evaluation.Objective;
-import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
+import edu.umich.ISELab.evaluation.qualityattributes.Optimization;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class MetricsCalculation {
 
 	public String instanceFile;
 
-	public NrpProblem problem;
+	public GroomingProblem problem;
 
 	public MetricsCalculation(String BlockFile) {
 		this.instanceFile = BlockFile;
@@ -60,10 +60,10 @@ public class MetricsCalculation {
 		//objectives.add(new Coupling());
 		//objectives.add(new Cohesion());
 		//objectives.add(new Complexity());
-		objectives.add(new NumberOfNRPOptimization());
+		objectives.add(new Optimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<grooming> selectedRefactorings = new ArrayList<>();
+		List<Grooming> selectedRefactorings = new ArrayList<>();
 
 		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
@@ -80,12 +80,12 @@ public class MetricsCalculation {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Increase Method Security"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
 
-		selectedRefactorings.add(NrpFactory.getNrpOptimization("Optimizing the NRP"));
+		selectedRefactorings.add(GroomingFactory.getNrpOptimization("Optimizing the NRP"));
 
 
 		LOGGER.info("calculating the metrics....");
 		// Initiate the problem
-		this.problem = new NrpProblem(file, objectives, selectedRefactorings);
+		this.problem = new GroomingProblem(file, objectives, selectedRefactorings);
 
 	}
 

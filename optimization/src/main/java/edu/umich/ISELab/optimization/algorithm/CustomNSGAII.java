@@ -1,6 +1,6 @@
 package edu.umich.ISELab.optimization.algorithm;
 
-import edu.umich.ISELab.optimization.solution.NrpSolution;
+import edu.umich.ISELab.optimization.solution.GroomingSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII;
 import org.uma.jmetal.operator.CrossoverOperator;
@@ -41,7 +41,7 @@ public class CustomNSGAII extends NSGAII<Solution> {
         } else {
             int needToFill = getMaxPopulationSize() - initialPopulation.size();
             for (int i = 0; i < needToFill; i++) {
-                NrpSolution newIndividual = (NrpSolution) getProblem().createSolution();
+                GroomingSolution newIndividual = (GroomingSolution) getProblem().createSolution();
                 initialPopulation.add(newIndividual);
             }
 

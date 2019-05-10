@@ -11,7 +11,7 @@ import edu.umich.ISELab.core.projectResources.Person;
 import java.io.Serializable;
 import java.util.List;
 
-public abstract class grooming implements Serializable {
+public abstract class Grooming implements Serializable {
 
 
     protected WorkItem workItem;
@@ -19,17 +19,17 @@ public abstract class grooming implements Serializable {
 
 
 
-    public grooming() {
+    public Grooming() {
 
     }
 
 
-    public grooming(WorkItem item , Person person) {
+    public Grooming(WorkItem item , Person person) {
         this.workItem = item;
         this.person = person;
     }
 
-    public grooming(grooming nrp) {
+    public Grooming(Grooming nrp) {
         this.workItem = nrp.getWorkItem();
         this.person = nrp.getPerson();
     }
@@ -39,6 +39,7 @@ public abstract class grooming implements Serializable {
         condition.setNegate(true);
         return condition;
     }
+
 
     public boolean verifyPreConditions(WorkItem activeItem, Person activePerson) throws Exception {
 
@@ -112,7 +113,7 @@ public abstract class grooming implements Serializable {
     public abstract void execute(Project project) throws Exception;
     public abstract DefineActors getDefineActors();
     public abstract String getName();
-    public abstract grooming copy();
+    public abstract Grooming copy();
     public abstract Person getPerson();
     public abstract WorkItem getWorkItem();
 

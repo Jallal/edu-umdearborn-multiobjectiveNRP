@@ -4,7 +4,7 @@ package edu.umich.ISELab.evaluation.util;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.designmetrics.AbstractDesignMetric;
 import edu.umich.ISELab.evaluation.designmetrics.groomingDesignMetric;
-import edu.umich.ISELab.evaluation.qualityattributes.NumberOfNRPOptimization;
+import edu.umich.ISELab.evaluation.qualityattributes.Optimization;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +20,6 @@ public class EvaluationUtils {
     }
 
     static {
-        OBJECTIVES.add(new NumberOfNRPOptimization());
+        OBJECTIVES.add(new Optimization());
     }
 }

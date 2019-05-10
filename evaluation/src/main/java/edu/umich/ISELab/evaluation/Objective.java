@@ -2,7 +2,7 @@ package edu.umich.ISELab.evaluation;
 
 
 import edu.umich.ISELab.core.backlog.Project;
-import edu.umich.ISELab.core.grooming.grooming;
+import edu.umich.ISELab.core.grooming.Grooming;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -33,11 +33,13 @@ public abstract class Objective implements Serializable {
 
     public abstract double getDiff(Project original, Project refactored);
 
-    public abstract double calculate(Project original, Project refactored, List<grooming> appliedRefactorings);
+    public abstract double calculate(Project original, Project refactored, List<Grooming> appliedRefactorings);
 
     public abstract boolean isMinimize();
 
     public abstract String toString();
 
     public abstract Objective copy();
+
+    public abstract List<Objective> getObjectives();
 }

@@ -1,26 +1,19 @@
-package src.main.java.vahid;/*
- * Copyright (c) 2019.
- * Author: Vahid Alizadeh
- * Email: alizadeh@umich.edu
- */
+package vahid;
 
-
-import edu.umich.ISELab.core.grooming.grooming;
+import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.core.sys.LOGGER;
+import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAIII;
 import edu.umich.ISELab.optimization.operators.crossovers.SinglePointCrossover;
 import edu.umich.ISELab.optimization.operators.mutations.BitFlipMutation;
 import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelection;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.optimization.problem.GroomingProblem;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import edu.umich.ISELab.core.sys.LOGGER;
-import edu.umich.ISELab.evaluation.Objective;
-import src.main.java.vahid.util.ParetoObjectCRUD;
-import src.main.java.vahid.util.SolutionListOutputVahid;
 
 import java.io.File;
 import java.io.IOException;
@@ -67,7 +60,7 @@ public class RefactoringExecution {
 
 	public List<Solution> run() throws IOException {
 
-		LOGGER.info("Starting the grooming process...");
+		LOGGER.info("Starting the Grooming process...");
 		LOGGER.info("Setting up the parameters...");
 		File file = new File(instanceFile);
 
@@ -83,10 +76,10 @@ public class RefactoringExecution {
 //        objectives.add(new Coupling());
 //        objectives.add(new Cohesion());
 //        objectives.add(new Complexity());
-//        objectives.add(new NumberOfNRPOptimization());
+//        objectives.add(new Optimization());
 
 		// The list of Refactorings used to optimize the problem
-		List<grooming> selectedRefactorings = new ArrayList<>();
+		List<Grooming> selectedRefactorings = new ArrayList<>();
 
 		/*selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Method"));
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Move Field"));
@@ -104,7 +97,7 @@ public class RefactoringExecution {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
 
 		// Initiate the problem
-		NrpProblem problem = new NrpProblem(file, objectives, selectedRefactorings);
+		GroomingProblem problem = new GroomingProblem(file, objectives, selectedRefactorings);
 
 		problem.setMinSolutionSize(minRefatorings);
 		problem.setMaxSolutionSize(maxRefatorings);
@@ -148,7 +141,7 @@ public class RefactoringExecution {
 
 		//Writing pareto front object to a file
 		if (saveResult) {
-			ParetoObjectCRUD paretoObjectCRUD = new ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
+			src.main.java.vahid.util.ParetoObjectCRUD paretoObjectCRUD = new src.main.java.vahid.util.ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
 			objectPath = paretoObjectCRUD.saveParetoObject(paretoFront);
 		}
 		LOGGER.info("Refactoring process is Done");
@@ -169,7 +162,7 @@ public class RefactoringExecution {
 			DefaultFileOutputContext outputContext = new DefaultFileOutputContext(outputObjCSV.getAbsolutePath());
 			outputContext.setSeparator(",");
 
-			new SolutionListOutputVahid(paretoFront)
+			new src.main.java.vahid.util.SolutionListOutputVahid(paretoFront)
 					.printObjectivesToFile(outputContext, paretoFront, isMinimizeList);
 
 //            new SolutionListOutputVahid(paretoFront)

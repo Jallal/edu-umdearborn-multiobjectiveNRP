@@ -3,8 +3,8 @@ package edu.umich.ISELab.core.util;
 
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
-import edu.umich.ISELab.core.factory.NrpFactory;
-import edu.umich.ISELab.core.grooming.grooming;
+import edu.umich.ISELab.core.factory.GroomingFactory;
+import edu.umich.ISELab.core.grooming.Grooming;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import src.main.java.vahid.ML.Clustering;
 import vahid.util.HashUtil;
@@ -75,16 +75,16 @@ public class RandomUtils {
 		return pkgSource;
 	}
 
-	public static grooming getRandomRefactoring(List<grooming> possibleRefactorings) {
+	public static Grooming getRandomRefactoring(List<Grooming> possibleRefactorings) {
 
 		if (Clustering.instanceCL == null) {
 			//return getRandomElement(possibleRefactorings).copy();
-			return ((grooming)getRandomElement(possibleRefactorings)).copy();
+			return ((Grooming)getRandomElement(possibleRefactorings)).copy();
 
 		} else {
 
 			String randomRefactoringName = HashUtil.getRandomElementFromDist(Clustering.instanceCL.operationsProbHash);
-			return NrpFactory.getNrpOptimization(randomRefactoringName);
+			return GroomingFactory.getNrpOptimization(randomRefactoringName);
 
 		}
 	}

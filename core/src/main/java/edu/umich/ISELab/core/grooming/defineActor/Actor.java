@@ -15,6 +15,7 @@ public class Actor extends DefineActors {
     private WorkItem activeItem;
     private Person activePerson;
 
+    @Override
     public Candidate execute(Project project) {
         int trials = 0;
         Map<WorkItem, Person> pair = ProjectObjectUtils.findPair(project);

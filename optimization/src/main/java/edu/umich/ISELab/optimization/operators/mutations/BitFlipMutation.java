@@ -1,10 +1,10 @@
 package edu.umich.ISELab.optimization.operators.mutations;
 
 
-import edu.umich.ISELab.core.grooming.grooming;
-import edu.umich.ISELab.optimization.problem.NrpProblem;
+import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.optimization.problem.GroomingProblem;
 import edu.umich.ISELab.optimization.solution.Solution;
-import edu.umich.ISELab.optimization.variables.NrpVariable;
+import edu.umich.ISELab.optimization.variables.GroomingVariable;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import edu.umich.ISELab.core.util.RandomUtils;
@@ -67,16 +67,16 @@ public class BitFlipMutation implements MutationOperator<Solution> {
      */
     public void doMutation(Solution solution) {
 
-        // Create a grooming variable for saving the list of refactorings
-        NrpVariable variable = (NrpVariable) solution.getVariableValue(0);
+        // Create a Grooming variable for saving the list of refactorings
+        GroomingVariable variable = (GroomingVariable) solution.getVariableValue(0);
 
-        List<grooming> refactorings = variable.getRefactorings();
+        List<Grooming> refactorings = variable.getRefactorings();
 
         if (refactorings.isEmpty()) {
             return;
         }
 
-        NrpProblem problem = (NrpProblem) solution.getProblem();
+        GroomingProblem problem = (GroomingProblem) solution.getProblem();
 
         int numberOfChanges = 1;
 
@@ -88,10 +88,10 @@ public class BitFlipMutation implements MutationOperator<Solution> {
 
             int position = RandomUtils.getRandomInteger(0, refactorings.size() - 1);
 
-            // Instantiate the grooming operation
-            grooming refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
+            // Instantiate the Grooming operation
+            Grooming refactoring = RandomUtils.getRandomRefactoring(problem.getSelectedRefactorings());
 
-            // Add the grooming in the variable
+            // Add the Grooming in the variable
             refactorings.set(position, refactoring);
         }
     }

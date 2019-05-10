@@ -1,8 +1,8 @@
 package edu.umich.ISELab.optimization.algorithm;
 
 
-import edu.umich.ISELab.optimization.problem.NrpProblem;
-import edu.umich.ISELab.optimization.solution.NrpSolution;
+import edu.umich.ISELab.optimization.problem.GroomingProblem;
+import edu.umich.ISELab.optimization.solution.GroomingSolution;
 import org.uma.jmetal.operator.CrossoverOperator;
 import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
@@ -15,43 +15,43 @@ public abstract class AbstractAlgorithm {
 
     protected int populationSize;
 
-    protected CrossoverOperator<NrpSolution> crossover;
+    protected CrossoverOperator<GroomingSolution> crossover;
 
-    protected MutationOperator<NrpSolution> mutation;
+    protected MutationOperator<GroomingSolution> mutation;
 
-    protected SelectionOperator<List<NrpSolution>, NrpSolution> selection;
+    protected SelectionOperator<List<GroomingSolution>, GroomingSolution> selection;
 
-    protected NrpProblem problem;
+    protected GroomingProblem problem;
 
-    public CrossoverOperator<NrpSolution> getCrossover() {
+    public CrossoverOperator<GroomingSolution> getCrossover() {
         return crossover;
     }
 
-    public void setCrossover(CrossoverOperator<NrpSolution> crossover) {
+    public void setCrossover(CrossoverOperator<GroomingSolution> crossover) {
         this.crossover = crossover;
     }
 
-    public MutationOperator<NrpSolution> getMutation() {
+    public MutationOperator<GroomingSolution> getMutation() {
         return mutation;
     }
 
-    public void setMutation(MutationOperator<NrpSolution> mutation) {
+    public void setMutation(MutationOperator<GroomingSolution> mutation) {
         this.mutation = mutation;
     }
 
-    public SelectionOperator<List<NrpSolution>, NrpSolution> getSelection() {
+    public SelectionOperator<List<GroomingSolution>, GroomingSolution> getSelection() {
         return selection;
     }
 
-    public void setSelection(SelectionOperator<List<NrpSolution>, NrpSolution> selection) {
+    public void setSelection(SelectionOperator<List<GroomingSolution>, GroomingSolution> selection) {
         this.selection = selection;
     }
 
-    public NrpProblem getProblem() {
+    public GroomingProblem getProblem() {
         return problem;
     }
 
-    public void setProblem(NrpProblem problem) {
+    public void setProblem(GroomingProblem problem) {
         this.problem = problem;
     }
 
@@ -71,5 +71,5 @@ public abstract class AbstractAlgorithm {
         this.populationSize = populationSize;
     }
 
-    public abstract List<NrpSolution> execute();
+    public abstract List<GroomingSolution> execute();
 }

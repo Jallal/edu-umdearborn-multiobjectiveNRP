@@ -1,4 +1,4 @@
-package src.main.java.edu.umich.ISELab.execution.util;
+package edu.umich.ISELab.execution.util;
 
 public class CommandLineValues {
 
