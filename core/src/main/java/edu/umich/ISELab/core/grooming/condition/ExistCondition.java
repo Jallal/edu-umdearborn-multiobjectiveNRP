@@ -1,30 +1,27 @@
 package edu.umich.ISELab.core.grooming.condition;
 
 
-import edu.umich.ISELab.core.backlog.WorkItem;
-import edu.umich.ISELab.core.projectResources.Person;
+import edu.umich.ISELab.core.backlog.Project;
 
 public class ExistCondition extends Condition {
 
-    protected WorkItem item;
-    protected Person person;
+    protected Object object;
 
+    protected String element;
 
-    public ExistCondition(WorkItem item, Person person) {
-        this.item = item;
-        this.person = person;
+    public ExistCondition(Object object) {
+        this(object, "undefined");
+    }
+
+    public ExistCondition(Object object, String element) {
+        this.object = object;
+        this.element = element;
     }
 
     @Override
-    public boolean verify(WorkItem item, Person person ) {
+    public boolean verify(Project project) {
 
-        if (item == null || person ==null) {
-            return false;
-        }
-        if(!item.getPerson().equals(person)){
-            return false;
-        }
-        if(!item.isAssigned()||!person.isAssigned()){
+        if(object == null){
             return false;
         }
 
@@ -33,6 +30,6 @@ public class ExistCondition extends Condition {
 
     @Override
     protected String getErrorMessage() {
-        return "The " + this.item + "%IS%required";
+        return "The "+element + "%IS%required";
     }
 }

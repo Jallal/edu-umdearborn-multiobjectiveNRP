@@ -1,8 +1,8 @@
 package edu.umich.ISELab.core.grooming.condition;
 
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
-import edu.umich.ISELab.core.projectResources.Person;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class EmptyCondition extends Condition {
         this.list = list;
     }
 
-    public boolean verify(WorkItem item, Person person ) {
+    public boolean verify(Project project) {
         return list.isEmpty();
     }
 

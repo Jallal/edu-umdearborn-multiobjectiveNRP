@@ -1,36 +1,38 @@
 package edu.umich.ISELab.core.grooming.condition;
 
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
 
 public class DefineCondition extends Condition {
 
-    private WorkItem workItem;
-    private Person person;
+    Project project;
 
 
-    public DefineCondition(WorkItem item, Person person) {
-
-        this.workItem = item;
-        this.person = person;
+    public DefineCondition(Project project) {
+        this.project=project;
     }
 
     @Override
-    public boolean verify(WorkItem item, Person person ) {
+    public boolean verify(Project project) {
 
-        if ((item instanceof WorkItem) && (person instanceof  Person)) {
-            return verifyItemIsAvailable(item, person);
+        if (verifyItemIsAvailable(project)) {
+            return  true;
         }
 
         return false;
     }
 
-    protected boolean verifyItemIsAvailable(WorkItem item, Person person) {
-        if (!item.isAssigned()&&(!person.isAssigned())) {
-                return true;
-        }
+    protected boolean verifyItemIsAvailable(Project project) {
 
+        for(WorkItem item: project.getWorkItemList()) {
+            for (Person person : project.getPersonList()) {
+                if (!item.isAssigned() && (!person.isAssigned())) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 

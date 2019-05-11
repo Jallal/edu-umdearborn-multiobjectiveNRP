@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 public class ProjectObjectUtils {
 
     public static Map<WorkItem, Person> findPair(Project project) {
@@ -38,5 +40,11 @@ public class ProjectObjectUtils {
             }
         }
         return (Map<WorkItem, Person>) workPair;
+    }
+    public static Project copy(Project project) {
+
+        checkNotNull(project, "The 'project' instance cannot be null");
+
+        return new Project(project);
     }
 }

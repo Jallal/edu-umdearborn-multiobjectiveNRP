@@ -41,18 +41,20 @@ public abstract class Grooming implements Serializable {
     }
 
 
-    public boolean verifyPreConditions(WorkItem activeItem, Person activePerson) throws Exception {
+    public boolean verifyPreConditions(Project project) throws Exception {
 
 
-        List<Condition> conditions = getPreConditions(activeItem, activePerson);
+
+        List<Condition> conditions = getPreConditions(project);
 
         for (Condition condition : conditions) {
 
-            boolean isValid = condition.validate(activeItem, activePerson);
+            boolean isValid = condition.validate(project);
 
 
             if (!isValid) {
-                throw new Exception(getName() + ": " + condition.getError());
+                //throw new Exception(getName() + ": " + condition.getError());
+                return false;
             }
         }
 
@@ -60,21 +62,18 @@ public abstract class Grooming implements Serializable {
         return true;
     }
 
-    public boolean verifyPostCondition(WorkItem item, Person person) throws Exception {
+    public boolean verifyPostCondition(Project project) throws Exception {
 
-
-        List<Condition> conditions = getPostConditions(item,person);
+        List<Condition> conditions = getPostConditions(project);
 
         for (Condition condition : conditions) {
 
-            boolean isValid = condition.validate(item, person);
-
+            boolean isValid = condition.validate(project);
 
             if (!isValid) {
-                throw new Exception(getName() + ": " + condition.getError());
+               throw new Exception(getName()+": "+condition.getError());
             }
         }
-
 
         return true;
     }
@@ -108,8 +107,8 @@ public abstract class Grooming implements Serializable {
     }
 
     public abstract void loadActors(Project project);
-    public abstract List<Condition> getPreConditions(WorkItem item, Person person);
-    public abstract List<Condition> getPostConditions(WorkItem item, Person person);
+    public abstract List<Condition> getPreConditions(Project project);
+    public abstract List<Condition> getPostConditions(Project project);
     public abstract void execute(Project project) throws Exception;
     public abstract DefineActors getDefineActors();
     public abstract String getName();

@@ -1,6 +1,7 @@
 package edu.umich.ISELab.core.grooming.condition;
 
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
 
@@ -8,13 +9,13 @@ public abstract class Condition {
 
     protected boolean isNegate = false;
 
-    public boolean validate(WorkItem item,Person person ) {
+    public boolean validate(Project project) {
 
         if (isNegate()) {
-            return !verify(item, person);
+            return !verify(project);
         }
 
-        return verify(item,person);
+        return verify(project);
     }
 
     public void assignTask(WorkItem item,Person person ){
@@ -48,7 +49,7 @@ public abstract class Condition {
         return msg;
     }
 
-    public abstract boolean verify(WorkItem item, Person person );
+    public abstract boolean verify(Project project);
 
     protected abstract String getErrorMessage();
 }

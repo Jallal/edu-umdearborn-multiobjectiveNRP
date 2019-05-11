@@ -7,8 +7,10 @@ import edu.umich.ISELab.core.factory.GroomingFactory;
 import edu.umich.ISELab.core.grooming.AssignTask;
 import edu.umich.ISELab.core.grooming.Grooming;
 import edu.umich.ISELab.core.projectResources.Person;
+import edu.umich.ISELab.core.util.GroomingUtils;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.Optimization;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import edu.umich.ISELab.execution.util.CommandLineValues;
 import edu.umich.ISELab.optimization.algorithm.builder.Builder;
 import edu.umich.ISELab.optimization.algorithm.builder.BuilderCustomNSGAII;
@@ -17,19 +19,18 @@ import edu.umich.ISELab.optimization.operators.crossovers.SinglePointCrossover;
 import edu.umich.ISELab.optimization.operators.mutations.BitFlipMutation;
 import edu.umich.ISELab.optimization.operators.selections.BinaryTournamentSelection;
 import edu.umich.ISELab.optimization.problem.GroomingProblem;
-import edu.umich.ISELab.optimization.solution.GroomingSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
+import edu.umich.ISELab.optimization.variables.GroomingVariable;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExploreConsole {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //personList
         List<Person> personList = new ArrayList<>();
         Person person1 = new Person();
@@ -83,7 +84,7 @@ public class ExploreConsole {
             AssignTask assign_task = GroomingFactory.getNrpOptimization("Assign Task");
             // assign_task.loadActors(project);
             //added not sure if it need to be here
-            assign_task.execute(project);
+            //assign_task.execute(project);
             selectedRefactorings.add(assign_task);
         }
 
@@ -99,7 +100,7 @@ public class ExploreConsole {
 
         // Define its parameters
         builder_NSGA2.setProblem(problem);
-        builder_NSGA2.setPopulationSize(3);
+        builder_NSGA2.setPopulationSize(2);
         builder_NSGA2.setMaxEvalutions(10);
         builder_NSGA2.setCrossover(new SinglePointCrossover(command.getCrossoverProbability()));
         builder_NSGA2.setMutation(new BitFlipMutation(command.getMutationProbability()));
@@ -109,28 +110,23 @@ public class ExploreConsole {
 
         long computingTime = algorithmRunner.getComputingTime();
         List<Solution> paretoFront = algorithm.getResult();
-        for (Solution solution : paretoFront) {
-            System.out.println(solution.toString());
-        }
+        printResults(problem,project,paretoFront);
 
     }
 
     public static void printResults(GroomingProblem problem, Project originalProject,
-                                    List<GroomingSolution> paretoFront) throws IOException {
+                                    List<Solution> paretoFront) throws Exception {
 
         for (int i = 0; i < paretoFront.size(); i++) {
 
-            GroomingSolution solution = paretoFront.get(i);
+            Solution solution = paretoFront.get(i);
 
             System.out.println(solution);
 
-            //List<Grooming> refactorings = ((GroomingVariable) solution.getVariableValue(0)).getRefactorings();
-            List<Grooming> refactorings = null;
-
-//			ProjectObject refactored = NrpUtils.applyRefactorings(originalProject, refactorings);
-//			refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
-
-//			problem.calculateFitnessFunction(solution, refactored);
+            List<Grooming> refactorings = ((GroomingVariable) solution.getVariableValue(0)).getRefactorings();
+            Project  refactored = GroomingUtils.apply(originalProject, refactorings);
+            refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
+            problem.calculateFitnessFunction(solution, refactored);
 
             System.out.println(solution);
             System.out.println("==================");

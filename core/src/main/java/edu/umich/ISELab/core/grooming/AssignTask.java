@@ -69,30 +69,32 @@ public class AssignTask extends Grooming {
     public void loadActors(Project project) {
 
             Candidate execute = this.getDefineActors().execute(project);
-            if(execute.getWorkItem()!=null&&execute.getPerson()!=null) {
-                this.activeItem = execute.getWorkItem();
-                this.activePerson = execute.getPerson();
-                this.assignedTasks(execute.getWorkItem(), execute.getPerson());
+            if(execute!=null) {
+                if (execute.getWorkItem() != null && execute.getPerson() != null) {
+                    this.activeItem = execute.getWorkItem();
+                    this.activePerson = execute.getPerson();
+                    this.assignedTasks(execute.getWorkItem(), execute.getPerson());
+                }
             }
 
     }
 
     @Override
-    public List<Condition> getPreConditions(WorkItem item, Person person) {
+    public List<Condition> getPreConditions(Project project) {
 
         List<Condition> conditions = new ArrayList<>();
-        conditions.add(new ExistCondition(item, person));
-        conditions.add(new DefineCondition(item, person));
+        conditions.add(new ExistCondition(project));
+        conditions.add(new DefineCondition(project));
 
         return conditions;
     }
 
     @Override
-    public List<Condition> getPostConditions(WorkItem item, Person person) {
+    public List<Condition> getPostConditions(Project project) {
         List<Condition> conditions = new ArrayList<>();
-        conditions.add(new ExistCondition(item, person));
-        conditions.add(new DefineCondition(item, person));
-        //conditions.add(new thiagodnf.doupr.core.Grooming.condition.HasVisibilityCondition(attr, Visibility.PRIVATE));
+        conditions.add(new ExistCondition(project));
+        conditions.add(new DefineCondition(project));
+        //conditions.add(new isAvailableCondition(attr, Visibility.PRIVATE));
 
         return conditions;
     }
@@ -101,14 +103,7 @@ public class AssignTask extends Grooming {
 
     @Override
     public void execute(Project project) {
-        //while (ProjectObjectUtils.findPair(project)!=null) {
         this.loadActors(project);
-        //Set<Map.Entry<WorkItem, Person>> st = this.projectActors.entrySet();
-       // for (Map.Entry<WorkItem, Person> me : st) {
-            //this.assignedTasks(me.getKey(), me.getValue());
-       // }
-   // }
-
     }
 
     @Override
