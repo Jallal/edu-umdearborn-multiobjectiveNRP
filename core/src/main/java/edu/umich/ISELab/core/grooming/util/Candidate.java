@@ -4,32 +4,33 @@ package edu.umich.ISELab.core.grooming.util;
 import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.projectResources.Person;
 
+import java.util.List;
+
 public class Candidate {
 
-    protected WorkItem workItem;
-    protected Person person;
+    protected List<WorkItem> workItems;
+    protected List<Person> resources;
 
-    public Person getPerson() {
-        return person;
+    public Candidate(List<WorkItem> item, List<Person> person) {
+        this.workItems = item;
+        this.resources = person;
+    }
+    public List<WorkItem> getWorkItems() {
+        return workItems;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setWorkItems(List<WorkItem> workItems) {
+        this.workItems = workItems;
+    }
+
+    public List<Person> getResources() {
+        return resources;
+    }
+
+    public void setResources(List<Person> resources) {
+        this.resources = resources;
     }
 
 
-
-    public Candidate(WorkItem item, Person person) {
-        this.workItem = item;
-        this.person = person;
-    }
-
-    public WorkItem getWorkItem() {
-        return workItem;
-    }
-
-    public void setWorkItem(WorkItem workItem) {
-        this.workItem = workItem;
-    }
 
 }

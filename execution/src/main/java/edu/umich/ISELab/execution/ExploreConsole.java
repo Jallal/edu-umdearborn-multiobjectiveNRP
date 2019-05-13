@@ -6,8 +6,10 @@ import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.factory.GroomingFactory;
 import edu.umich.ISELab.core.grooming.AssignTask;
 import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.core.grooming.util.Candidate;
 import edu.umich.ISELab.core.projectResources.Person;
 import edu.umich.ISELab.core.util.GroomingUtils;
+import edu.umich.ISELab.core.util.ProjectObjectUtils;
 import edu.umich.ISELab.evaluation.Objective;
 import edu.umich.ISELab.evaluation.qualityattributes.Optimization;
 import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
@@ -51,7 +53,7 @@ public class ExploreConsole {
         personList.add(person3);
 
         //WorkItemList
-       List<WorkItem> workItemList = new ArrayList<>();
+        List<WorkItem> workItemList = new ArrayList<>();
         Task workItem1 = new Task();
         workItem1.setAssigned(false);
         workItem1.setReadyForImplementation(true);
@@ -80,13 +82,19 @@ public class ExploreConsole {
         Optimization optimization = new Optimization();
         objectives.add(optimization);
         List<Grooming> selectedRefactorings = new ArrayList<>();
-        for(int i=0;i<3;i++) {
-            AssignTask assign_task = GroomingFactory.getNrpOptimization("Assign Task");
-            // assign_task.loadActors(project);
-            //added not sure if it need to be here
-            //assign_task.execute(project);
-            selectedRefactorings.add(assign_task);
-        }
+        //for(int i=0;i<3;i++) {
+        AssignTask assign_task = GroomingFactory.getNrpOptimization("Assign Task");
+        ProjectObjectUtils.cleanTheProject(project);
+        Candidate candidate = assign_task.loadActors(project);
+        assign_task.setProject(project);
+        assign_task.setCandidate(candidate);
+        assign_task.setResources(candidate.getResources());
+        assign_task.setWorkItems(candidate.getWorkItems());
+        // assign_task.loadActors(project);
+        //added not sure if it need to be here
+        //assign_task.execute(project);
+        selectedRefactorings.add(new AssignTask(assign_task));
+        //}
 
 
         //problem
@@ -110,7 +118,7 @@ public class ExploreConsole {
 
         long computingTime = algorithmRunner.getComputingTime();
         List<Solution> paretoFront = algorithm.getResult();
-        printResults(problem,project,paretoFront);
+        printResults(problem, project, paretoFront);
 
     }
 
@@ -124,12 +132,25 @@ public class ExploreConsole {
             System.out.println(solution);
 
             List<Grooming> refactorings = ((GroomingVariable) solution.getVariableValue(0)).getRefactorings();
-            Project  refactored = GroomingUtils.apply(originalProject, refactorings);
+
+            Project refactored = GroomingUtils.apply(originalProject, refactorings);
             refactored.setDesignMetrics(DesignMetricsUtil.calculate(refactored));
             problem.calculateFitnessFunction(solution, refactored);
-
             System.out.println(solution);
-            System.out.println("==================");
+
+
+            for (Grooming grooming : refactorings) {
+                System.out.println("==================");
+                if (grooming != null && grooming.getWorkItems() != null) {
+                    for (WorkItem item : grooming.getWorkItems()) {
+                        if (item != null) {
+                            System.out.println(item.getWorkItemID() + " is assigned to " + item.getPerson().getName());
+                        }
+                    }
+                }
+                System.out.println("==================");
+            }
+
         }
     }
 }

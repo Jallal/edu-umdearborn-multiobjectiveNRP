@@ -13,25 +13,24 @@ import java.util.List;
 
 public abstract class Grooming implements Serializable {
 
+    protected List<WorkItem> workItems;
+    protected List<Person>   resources;
+    protected  Project project;
+    private Candidate candidate;
 
-    protected WorkItem workItem;
-    protected Person person;
+    public Grooming() {}
 
-
-
-    public Grooming() {
-
-    }
-
-
-    public Grooming(WorkItem item , Person person) {
-        this.workItem = item;
-        this.person = person;
+    public Grooming(List<WorkItem> item , List<Person> person, Project project) {
+        this.workItems = item;
+        this.resources = person;
+        this.project=project;
     }
 
     public Grooming(Grooming nrp) {
-        this.workItem = nrp.getWorkItem();
-        this.person = nrp.getPerson();
+        this.workItems = nrp.getWorkItems();
+        this.resources = nrp.getResources();
+        this.project=nrp.getProject();
+        this.candidate=nrp.getCandidate();
     }
 
     public static Condition NOT(Condition condition) {
@@ -71,7 +70,8 @@ public abstract class Grooming implements Serializable {
             boolean isValid = condition.validate(project);
 
             if (!isValid) {
-               throw new Exception(getName()+": "+condition.getError());
+               //throw new Exception(getName()+": "+condition.getError());
+                return false;
             }
         }
 
@@ -80,8 +80,9 @@ public abstract class Grooming implements Serializable {
 
 
     public void reset() {
-        this.workItem = null;
-        this.person = null;
+        this.workItems = null;
+        this.resources = null;
+        this.project=null;
     }
 
 
@@ -90,31 +91,27 @@ public abstract class Grooming implements Serializable {
         reset();
         Candidate candidate = defineActors.execute(project);
         if (candidate == null) {
-            throw new Exception("Cannot define the actors for " + getName());
+            //throw new Exception("Cannot define the actors for " + getName());
+            return;
         }
-        this.workItem = candidate.getWorkItem() != null ? candidate.getWorkItem() : null;
-        this.person = candidate.getPerson() != null ? candidate.getPerson() : null;
+        this.workItems = candidate.getWorkItems() != null ? candidate.getWorkItems() : null;
+        this.resources = candidate.getResources() != null ? candidate.getResources() : null;
         return;
     }
 
-
-    public void setWorkItem(WorkItem workItem) {
-        this.workItem = workItem;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-
-    public abstract void loadActors(Project project);
+    public abstract  List<WorkItem> getWorkItems();
+    public abstract void setWorkItems(List<WorkItem> workItems);
+    public abstract List<Person> getResources();
+    public abstract void setResources(List<Person> resources);
+    public abstract Candidate loadActors(Project project);
     public abstract List<Condition> getPreConditions(Project project);
     public abstract List<Condition> getPostConditions(Project project);
     public abstract void execute(Project project) throws Exception;
     public abstract DefineActors getDefineActors();
     public abstract String getName();
     public abstract Grooming copy();
-    public abstract Person getPerson();
-    public abstract WorkItem getWorkItem();
-
-
+    public abstract Project getProject();
+    public abstract void setProject(Project project);
+    public abstract Candidate getCandidate();
+    public abstract void setCandidate(Candidate candidate);
 }

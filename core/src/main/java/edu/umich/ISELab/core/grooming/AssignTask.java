@@ -13,14 +13,36 @@ import edu.umich.ISELab.core.projectResources.Person;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import static java.lang.Boolean.TRUE;
 
 public class AssignTask extends Grooming {
-    protected WorkItem activeItem;
-    protected Person activePerson;
-    private  Map<WorkItem, Person> projectActors;
+    protected List<WorkItem> workItems;
+    protected List<Person> resources;
+    protected Project project;
+    protected Candidate candidate;
+
+
+   public AssignTask() {
+        super();
+    }
+
+    public AssignTask(AssignTask assignTask) {
+
+        super(assignTask);
+        this.workItems = assignTask.getWorkItems();
+        this.resources = assignTask.getResources();
+        this.project = assignTask.getProject();
+        this.candidate=assignTask.getCandidate();
+    }
+
+
+    public AssignTask(List<WorkItem> items, List<Person> resources, Project project) {
+        super(items, resources, project);
+        this.workItems = items;
+        this.resources = resources;
+        this.project = project;
+    }
 
     public Project getProject() {
         return project;
@@ -28,55 +50,6 @@ public class AssignTask extends Grooming {
 
     public void setProject(Project project) {
         this.project = project;
-    }
-
-    private Project project;
-
-
-    public WorkItem getActiveItem() {
-        return activeItem;
-    }
-
-    public void setActiveItem(WorkItem activeItem) {
-        this.activeItem = activeItem;
-    }
-
-    public Person getActivePerson() {
-        return activePerson;
-    }
-
-    public void setActivePerson(Person activePerson) {
-        this.activePerson = activePerson;
-    }
-
-
-
-    public AssignTask() {
-        super();
-    }
-
-    public AssignTask(AssignTask assignTask) {
-        super(assignTask);
-    }
-
-    public AssignTask(WorkItem item , Person person) {
-        super(item,person);
-        this.activePerson=person;
-        this.activeItem=item;
-    }
-
-    @Override
-    public void loadActors(Project project) {
-
-            Candidate execute = this.getDefineActors().execute(project);
-            if(execute!=null) {
-                if (execute.getWorkItem() != null && execute.getPerson() != null) {
-                    this.activeItem = execute.getWorkItem();
-                    this.activePerson = execute.getPerson();
-                    this.assignedTasks(execute.getWorkItem(), execute.getPerson());
-                }
-            }
-
     }
 
     @Override
@@ -100,10 +73,25 @@ public class AssignTask extends Grooming {
     }
 
 
-
     @Override
     public void execute(Project project) {
-        this.loadActors(project);
+
+        this.candidate.getWorkItems();
+        this.candidate.getResources();
+        for (WorkItem item : this.candidate.getWorkItems()) {
+            for (Person person : this.candidate.getResources()) {
+                if (!item.isAssigned() && !person.isAssigned()) {
+                    item.setPerson(person);
+                    person.setItem(item);
+                    item.setAssigned(TRUE);
+                    person.setAssigned(TRUE);
+                } else {
+                    //do nothing
+                }
+
+            }
+
+        }
     }
 
     @Override
@@ -112,17 +100,9 @@ public class AssignTask extends Grooming {
     }
 
 
-    public void assignedTasks(WorkItem item , Person person){
-        this.activeItem.setPerson(person);
-        this.activePerson.setItem(item);
-        this.activeItem.setAssigned(TRUE);
-        this.activePerson.setAssigned(TRUE);
-    }
-
-
     @Override
     public String getName() {
-        return "Encapsulate Field";
+        return "Assigned tasks";
     }
 
     @Override
@@ -131,13 +111,43 @@ public class AssignTask extends Grooming {
     }
 
     @Override
-    public Person getPerson() {
-        return this.activePerson;
+    public List<WorkItem> getWorkItems() {
+        return this.workItems;
     }
 
     @Override
-    public WorkItem getWorkItem() {
-        return this.activeItem;
+    public void setWorkItems(List<WorkItem> workItems) {
+        this.workItems = workItems;
+
     }
+
+    @Override
+    public List<Person> getResources() {
+        return this.resources;
+    }
+
+    @Override
+    public void setResources(List<Person> resources) {
+        this.resources = resources;
+
+    }
+
+    @Override
+    public Candidate loadActors(Project project) {
+        this.candidate = this.getDefineActors().execute(project);
+        return this.candidate;
+    }
+
+    @Override
+    public Candidate getCandidate() {
+        return this.candidate;
+    }
+
+    @Override
+    public void setCandidate(Candidate candidate) {
+        this.candidate = candidate;
+
+    }
+
 
 }
