@@ -1,5 +1,6 @@
 package vahid;
 
+import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.Grooming;
 import edu.umich.ISELab.core.sys.LOGGER;
 import edu.umich.ISELab.evaluation.Objective;
@@ -14,6 +15,8 @@ import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.AlgorithmRunner;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
+import vahid.util.ParetoObjectCRUD;
+import vahid.util.SolutionListOutputVahid;
 
 import java.io.File;
 import java.io.IOException;
@@ -97,7 +100,7 @@ public class RefactoringExecution {
 		selectedRefactorings.add(RefactoringFactory.getRefactoring("Decrease Method Security"));*/
 
 		// Initiate the problem
-		GroomingProblem problem = new GroomingProblem(file, objectives, selectedRefactorings);
+		GroomingProblem problem = new GroomingProblem(new Project(),objectives, selectedRefactorings);
 
 		problem.setMinSolutionSize(minRefatorings);
 		problem.setMaxSolutionSize(maxRefatorings);
@@ -141,7 +144,7 @@ public class RefactoringExecution {
 
 		//Writing pareto front object to a file
 		if (saveResult) {
-			src.main.java.vahid.util.ParetoObjectCRUD paretoObjectCRUD = new src.main.java.vahid.util.ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
+			ParetoObjectCRUD paretoObjectCRUD = new ParetoObjectCRUD(outputPath, project_id, execution_id, iteration_id);
 			objectPath = paretoObjectCRUD.saveParetoObject(paretoFront);
 		}
 		LOGGER.info("Refactoring process is Done");
@@ -162,7 +165,7 @@ public class RefactoringExecution {
 			DefaultFileOutputContext outputContext = new DefaultFileOutputContext(outputObjCSV.getAbsolutePath());
 			outputContext.setSeparator(",");
 
-			new src.main.java.vahid.util.SolutionListOutputVahid(paretoFront)
+			new SolutionListOutputVahid(paretoFront)
 					.printObjectivesToFile(outputContext, paretoFront, isMinimizeList);
 
 //            new SolutionListOutputVahid(paretoFront)

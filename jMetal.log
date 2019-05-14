@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-05-13T22:06:50</date>
+  <millis>1557799610911</millis>
+  <sequence>0</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.util.JMetalLogger</class>
+  <method>configureLoggers</method>
+  <thread>11</thread>
+  <message>Loggers configured with null</message>
+</record>
+<record>
+  <date>2019-05-13T22:06:50</date>
+  <millis>1557799610957</millis>
+  <sequence>1</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>SEVERE</level>
+  <class>org.uma.jmetal.util.JMetalException</class>
+  <method>&lt;init&gt;</method>
+  <thread>11</thread>
+  <message>Exception when calling method getFileWriter()</message>
+  <exception>
+    <message>java.io.FileNotFoundException: /test/FUN_1.tsv (No such file or directory)</message>
+    <frame>
+      <class>java.io.FileOutputStream</class>
+      <method>open0</method>
+    </frame>
+    <frame>
+      <class>java.io.FileOutputStream</class>
+      <method>open</method>
+      <line>270</line>
+    </frame>
+    <frame>
+      <class>java.io.FileOutputStream</class>
+      <method>&lt;init&gt;</method>
+      <line>213</line>
+    </frame>
+    <frame>
+      <class>java.io.FileOutputStream</class>
+      <method>&lt;init&gt;</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext</class>
+      <method>getFileWriter</method>
+      <line>32</line>
+    </frame>
+    <frame>
+      <class>org.uma.jmetal.util.fileoutput.SolutionListOutput</class>
+      <method>printObjectivesToFile</method>
+      <line>89</line>
+    </frame>
+    <frame>
+      <class>org.uma.jmetal.util.fileoutput.SolutionListOutput</class>
+      <method>print</method>
+      <line>60</line>
+    </frame>
+    <frame>
+      <class>edu.umich.ISELab.optimization.algorithm.CustomNSGAII</class>
+      <method>updateProgress</method>
+      <line>68</line>
+    </frame>
+    <frame>
+      <class>org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm</class>
+      <method>run</method>
+      <line>64</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>748</line>
+    </frame>
+  </exception>
+</record>
+</log>

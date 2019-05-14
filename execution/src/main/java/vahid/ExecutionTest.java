@@ -98,7 +98,7 @@ public class ExecutionTest {
 
 
 		// Initiate the problem
-		GroomingProblem problem = new GroomingProblem(file, objectives, selectedRefactorings);
+		GroomingProblem problem = new GroomingProblem(new Project(), objectives, selectedRefactorings);
 
 		problem.setMinSolutionSize(minRefatorings);
 		problem.setMaxSolutionSize(maxRefatorings);

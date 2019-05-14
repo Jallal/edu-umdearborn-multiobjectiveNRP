@@ -83,6 +83,7 @@ public abstract class Grooming implements Serializable {
         this.workItems = null;
         this.resources = null;
         this.project=null;
+        this.candidate=null;
     }
 
 

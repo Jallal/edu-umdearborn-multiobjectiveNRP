@@ -1,5 +1,4 @@
-package src.main.java.vahid.util;
-
+package vahid.util;
 
 import org.uma.jmetal.solution.Solution;
 import org.uma.jmetal.util.JMetalException;

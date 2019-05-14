@@ -8,7 +8,10 @@ import org.uma.jmetal.operator.MutationOperator;
 import org.uma.jmetal.operator.SelectionOperator;
 import org.uma.jmetal.problem.Problem;
 import org.uma.jmetal.util.evaluator.SolutionListEvaluator;
+import org.uma.jmetal.util.fileoutput.SolutionListOutput;
+import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class CustomNSGAII extends NSGAII<Solution> {
@@ -53,19 +56,17 @@ public class CustomNSGAII extends NSGAII<Solution> {
     protected void updateProgress() {
         super.updateProgress();
 
-        //		List<Integer> save = Arrays.asList(1, 5, 10, 50, 100, 500);
-        //
-        //		if(save.contains(i)){
-        //			System.out.println("Saving at "+i);
-        //			List<RefactoringSolution> population = getNonDominatedSolutions(getPopulation());
-        //
-        //			new SolutionListOutput(population)
-        //	        .setSeparator("\t")
-        //	        .setVarFileOutputContext(new DefaultFileOutputContext("test/VAR_"+i+".tsv"))
-        //	        .setFunFileOutputContext(new DefaultFileOutputContext("test/FUN_"+i+".tsv"))
-        //	        .print();
-        //		}
+        		List<Integer> save = Arrays.asList(1, 5, 10, 50, 100, 500);
 
+        		if(save.contains(i)){
+        			System.out.println("Saving at "+i);
+        			List<Solution> population = getNonDominatedSolutions(getPopulation());
+        			new SolutionListOutput(population)
+        	        .setSeparator("\t")
+        	        .setVarFileOutputContext(new DefaultFileOutputContext("optimization/test/VAR_"+i+".tsv"))
+        	        .setFunFileOutputContext(new DefaultFileOutputContext("optimization/test/FUN_"+i+".tsv"))
+        	        .print();
+        		}
         i++;
     }
 }

@@ -1,6 +1,8 @@
 package edu.umich.ISELab.optimization.variables;
 
+import edu.umich.ISELab.core.backlog.WorkItem;
 import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.core.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,5 +35,21 @@ public class GroomingVariable extends Variable {
 
     public GroomingVariable copy() {
         return new GroomingVariable(this);
+    }
+
+    @Override
+    public String toString() {
+
+        List<String> lines = new ArrayList<String>();
+
+        for (int i = 0; i < Groomings.size(); i++) {
+            lines.add("\n ************************************\n");
+            for(WorkItem workItem: Groomings.get(i).getWorkItems()) {
+               lines.add(workItem.toString());
+            }
+            lines.add("\n ************************************\n");
+        }
+
+        return StringUtils.join(lines, " ");
     }
 }

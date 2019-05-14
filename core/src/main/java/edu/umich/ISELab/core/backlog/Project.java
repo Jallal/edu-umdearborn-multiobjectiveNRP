@@ -1,5 +1,6 @@
 package edu.umich.ISELab.core.backlog;
 
+import edu.umich.ISELab.core.grooming.util.Candidate;
 import edu.umich.ISELab.core.projectResources.Person;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ public class Project {
     protected Map<String, Double> designMetrics;
     List<WorkItem> workItemList = new ArrayList<>();
     List<Person> personList = new ArrayList<>();
+    Candidate candidate = null;
 
     public Project() {
 
@@ -18,6 +20,7 @@ public class Project {
     public Project(Project project) {
         this.workItemList = project.getWorkItemList();
         this.personList = project.getPersonList();
+        this.candidate= new Candidate(this.workItemList,this.personList);
     }
 
 
@@ -43,5 +46,11 @@ public class Project {
 
     public void setDesignMetrics(Map<String, Double> designMetrics) {
         this.designMetrics = designMetrics;
+    }
+    public Candidate getCandidate() {
+        return candidate;
+    }
+    public void setCandidate(Candidate candidate) {
+        this.candidate = candidate;
     }
 }

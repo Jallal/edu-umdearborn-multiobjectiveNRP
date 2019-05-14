@@ -85,7 +85,7 @@ public class MetricsCalculation {
 
 		LOGGER.info("calculating the metrics....");
 		// Initiate the problem
-		this.problem = new GroomingProblem(file, objectives, selectedRefactorings);
+		//this.problem = new GroomingProblem(objectives, selectedRefactorings);
 
 	}
 

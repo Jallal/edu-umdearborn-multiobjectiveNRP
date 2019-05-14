@@ -31,9 +31,9 @@ public abstract class Objective implements Serializable {
 
     public abstract double getValue(Project project);
 
-    public abstract double getDiff(Project original, Project refactored);
+    public abstract double getDiff(Project original, Project groomed);
 
-    public abstract double calculate(Project original, Project refactored, List<Grooming> appliedRefactorings);
+    public abstract double calculate(Project original, Project groomed, List<Grooming> appliedgrooming);
 
     public abstract boolean isMinimize();
 

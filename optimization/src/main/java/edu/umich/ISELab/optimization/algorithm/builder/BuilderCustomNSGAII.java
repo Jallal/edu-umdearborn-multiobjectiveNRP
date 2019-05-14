@@ -4,7 +4,6 @@ import edu.umich.ISELab.optimization.algorithm.CustomNSGAII;
 import edu.umich.ISELab.optimization.solution.Solution;
 import org.uma.jmetal.algorithm.impl.AbstractEvolutionaryAlgorithm;
 import org.uma.jmetal.util.evaluator.impl.SequentialSolutionListEvaluator;
-
 import java.util.List;
 
 public class BuilderCustomNSGAII extends Builder {

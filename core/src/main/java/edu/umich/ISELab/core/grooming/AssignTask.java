@@ -76,15 +76,14 @@ public class AssignTask extends Grooming {
     @Override
     public void execute(Project project) {
 
-        this.candidate.getWorkItems();
-        this.candidate.getResources();
-        for (WorkItem item : this.candidate.getWorkItems()) {
-            for (Person person : this.candidate.getResources()) {
+
+        for (WorkItem item : project.getWorkItemList()) {
+            for (Person person : project.getPersonList()) {
                 if (!item.isAssigned() && !person.isAssigned()) {
                     item.setPerson(person);
-                    person.setItem(item);
                     item.setAssigned(TRUE);
                     person.setAssigned(TRUE);
+                    person.setItem(item);
                 } else {
                     //do nothing
                 }

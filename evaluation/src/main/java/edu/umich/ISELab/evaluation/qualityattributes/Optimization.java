@@ -3,7 +3,6 @@ package edu.umich.ISELab.evaluation.qualityattributes;
 
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.evaluation.Objective;
-
 import java.util.ArrayList;
 import java.util.List;
 

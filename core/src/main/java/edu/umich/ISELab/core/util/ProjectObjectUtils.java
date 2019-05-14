@@ -24,7 +24,7 @@ public class ProjectObjectUtils {
         //Work item
         List<WorkItem> workItems = project.getWorkItemList();
         Random randPerson = new Random(System.currentTimeMillis());
-        Random randItem = new Random(System.currentTimeMillis()+1);
+        Random randItem = new Random(System.currentTimeMillis());
 
         int count = 0;
         while (count < 3000) {
@@ -71,7 +71,6 @@ public class ProjectObjectUtils {
                 }
             }
         }
-
     }
 
 

@@ -2,124 +2,164 @@ package edu.umich.ISELab.optimization.problem;
 
 import edu.umich.ISELab.core.backlog.Project;
 import edu.umich.ISELab.core.grooming.Grooming;
+import edu.umich.ISELab.core.grooming.util.Candidate;
+import edu.umich.ISELab.core.util.GroomingUtils;
+import edu.umich.ISELab.core.util.ProjectObjectUtils;
 import edu.umich.ISELab.core.util.RandomUtils;
 import edu.umich.ISELab.core.util.UUIDUtils;
 import edu.umich.ISELab.evaluation.Objective;
+import edu.umich.ISELab.evaluation.util.DesignMetricsUtil;
 import edu.umich.ISELab.optimization.solution.GroomingSolution;
 import edu.umich.ISELab.optimization.solution.Solution;
 import edu.umich.ISELab.optimization.variables.GroomingVariable;
-import org.apache.commons.io.FilenameUtils;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import java.io.File;
+
 import java.util.List;
+
 import static com.google.common.base.Preconditions.checkNotNull;
 
 
 public class GroomingProblem extends Problem {
 
     private static final long serialVersionUID = 8592620571577924372L;
-    /**
-     * Define the minimum number of Grooming in a solution
-     */
-    protected int minSolutionSize = 5;
-    /**
-     * Define the maximum number of Grooming in a solution
-     */
-    protected int maxSolutionSize = 10;
-    protected EvolutionListener listener;
-    protected Project project;
-    protected List<Grooming> selectedRefactorings;
-    protected File file;
-
-
-    public GroomingProblem(Project project, List<Objective> objectives, List<Grooming> selectedRefactorings) {
-        super(objectives);
-
-        //Verify the arguments
-        checkNotNull(project, "The project cannot be null");
-        this.selectedRefactorings = selectedRefactorings;
-        this.project = project;
-        // JMetal's Settings
-        setNumberOfVariables(1);
-    }
-
-    public GroomingProblem(File file, Project project, List<Objective> objectives, List<Grooming> selectedRefactorings) {
-        super(objectives);
-
-        //Verify the arguments
-        checkNotNull(project, "The project cannot be null");
-
-        this.selectedRefactorings = selectedRefactorings;
-        this.project = project;
-        this.file = file;
-
-        // JMetal's Settings
-        setNumberOfVariables(1);
-    }
-
-    public GroomingProblem(File file, List<Objective> objectives, List<Grooming> selectedRefactorings) {
-        super(objectives);
-
-        checkNotNull(file, "The 'filename' cannot be null");
-
-        this.selectedRefactorings = selectedRefactorings;
-        this.file = file;
-
-        /*try {
-            this.project = FileReaderUtils.read(file);
-            this.project.setDesignMetrics(DesignMetricsUtil.calculate(this.project));
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }*/
-
-        // JMetal's Settings
-        setNumberOfVariables(1);
-    }
 
     @Override
+    public String getName() {
+        return "GroomingProblem";
+    }
+
+
+    public interface EvolutionListener{
+        public void evaluated();
+    }
+
+    /**
+     * Define the minimum number of refactoring in a solution
+     */
+    protected int minSolutionSize = 5;
+
+    /**
+     * Define the maximum number of refactoring in a solution
+     */
+    protected int maxSolutionSize = 10;
+
+    protected EvolutionListener listener;
+
+    protected Project project;
+
+    protected List<Grooming> selectedGroomings;
+
+
+    //HashMap<String, ArrayList<String>> criticalAttributes;
+
+
+
+    /*public GroomingProblem(Project project, List<Objective> objectives, List<Grooming> selectedGroomings)  {
+        super(objectives);
+
+        //Verify the arguments
+        checkNotNull(project, "The project cannot be null");
+
+        this.selectedGroomings = selectedGroomings;
+        this.project = project;
+        //this.criticalAttributes=criticalAttributes;
+
+        // JMetal's Settings
+        setNumberOfVariables(1);
+    }*/
+
+
+
+    public GroomingProblem(Project project, List<Objective> objectives, List<Grooming> selectedGroomings)
+    {
+        super(objectives);
+
+        checkNotNull("The 'filename' cannot be null");
+
+
+        this.selectedGroomings = selectedGroomings;
+        this.project=project;
+
+        //this.project.setDesignMetrics(DesignMetricsUtil.calculate(this.project));
+        // this.project.setSecurityMetrics(SecurityMetricsUtil.calculate(this.project));
+
+        // JMetal's Settings
+        setNumberOfVariables(1);
+    }
+
+
+
+
+    /*public GroomingProblem(List<Objective> objectives, List<Grooming> selectedGroomings,  HashMap<String, ArrayList<String>> criticalAttributes )
+    {
+        super(objectives);
+
+        checkNotNull("The 'filename' cannot be null");
+
+
+
+        this.selectedGroomings = selectedGroomings;
+
+
+        //this.project.setCriticalAttributes(criticalAttributes);
+        // this.project.updateCriticalMethods();
+        this.project.setDesignMetrics(DesignMetricsUtil.calculate(this.project));
+        // this.project.setSecurityMetrics(SecurityMetricsUtil.calculate(this.project));
+
+        // JMetal's Settings
+        setNumberOfVariables(1);
+    }*/
+
+
+    public GroomingProblem(Project project, List<Objective> objectives, List<Grooming> selectedGroomings, Candidate targetClasses) {
+        this(project, objectives, selectedGroomings);
+        this.project.setCandidate(targetClasses);
+    }
+
     public void evaluate(Solution solution) {
 
         UUIDUtils.restart();
 
-        //Project copy = ProjectObjectUtils.copy(project);
+        Project copy = ProjectObjectUtils.copy(project);
 
-        List<Grooming> refactorings = ((GroomingVariable) solution.getVariableValue(0)).getRefactorings();
+        List<Grooming> groomings = ((GroomingVariable) solution.getVariableValue(0)).getRefactorings();
 
-        //List<Grooming> valids = NrpUtils.getValids(copy, refactorings);
+        List<Grooming> valids = GroomingUtils.getValids(copy, groomings);
 
-        /*while (valids.size() > maxSolutionSize) {
+        while (valids.size() > maxSolutionSize) {
             valids.remove(valids.size() - 1);
         }
 
-        while (valids.size() < minSolutionSize) {
+        while(valids.size() < minSolutionSize){
 
-            Grooming nrpBase = RandomUtils.getRandomRefactoring(selectedRefactorings);
+            Grooming grooming = RandomUtils.getRandomRefactoring(selectedGroomings);
 
             try {
-                NrpUtils.apply(copy, nrpBase);
-                valids.add(nrpBase);
-            } catch (Exception ex) {  }
-        }*/
+                GroomingUtils.apply(copy, grooming);
+                valids.add(grooming);
+            } catch (Exception ex) { /*If the exception was thrown, we have to ignore it*/ }
+        }
 
-        /*((GroomingVariable) solution.getVariableValue(0)).setRefatorings(valids);
+        ((GroomingVariable) solution.getVariableValue(0)).setRefatorings(valids);
 
         // ===============================
         // Calculate the Fitness Function
         // ===============================
         try {
             copy.setDesignMetrics(DesignMetricsUtil.calculate(copy));
+          //  copy.setSecurityMetrics(SecurityMetricsUtil.calculate(copy));
+
             calculateFitnessFunction(solution, copy);
-        } catch (Exception ex) {
+        }catch(Exception ex) {
             for (int i = 0; i < objectives.size(); i++) {
                 solution.setObjective(i, Double.MAX_VALUE);
             }
         }
 
-        if (listener != null) listener.evaluated();
-    }*/
+        if(listener != null) listener.evaluated();
     }
 
-    public void calculateFitnessFunction(Solution solution, Project refactored) {
+    public void calculateFitnessFunction(Solution solution, Project refactored){
 
         for (int i = 0; i < objectives.size(); i++) {
             solution.setObjective(i, objectives.get(i).calculate(project, refactored, ((GroomingVariable) solution.getVariableValue(0)).getRefactorings()));
@@ -133,14 +173,14 @@ public class GroomingProblem extends Problem {
      */
     public GroomingSolution createSolution() {
 
-        // Generating the amount of Grooming that this solution will have
+        // Generating the amount of refactoring that this solution will have
         int numberOfRefactorings = JMetalRandom.getInstance().nextInt(minSolutionSize, maxSolutionSize);
 
-        // Create a Grooming variable for saving the list of refactorings
+        // Create a refactoring variable for saving the list of refactorings
         GroomingVariable variable = new GroomingVariable();
 
         for (int i = 0; i < numberOfRefactorings; i++) {
-            variable.getRefactorings().add(RandomUtils.getRandomRefactoring(selectedRefactorings));
+            variable.getRefactorings().add(RandomUtils.getRandomRefactoring(selectedGroomings));
         }
 
         // Generate a solution
@@ -176,32 +216,16 @@ public class GroomingProblem extends Problem {
         this.project = project;
     }
 
-    public void addEvolutionListener(GroomingProblem.EvolutionListener listener) {
+    public void addEvolutionListener(EvolutionListener listener) {
         this.listener = listener;
     }
 
     public List<Grooming> getSelectedRefactorings() {
-        return selectedRefactorings;
+        return selectedGroomings;
     }
 
-    public void setSelectedRefactorings(List<Grooming> selectedRefactorings) {
-        this.selectedRefactorings = selectedRefactorings;
+    public void setSelectedRefactorings(List<Grooming> selectedGroomings) {
+        this.selectedGroomings = selectedGroomings;
     }
 
-    @Override
-    public String getName() {
-        return "Refactoring Problem";
-    }
-
-    public String getFileName() {
-        return FilenameUtils.getBaseName(file.getAbsolutePath());
-    }
-
-    public File getFile() {
-        return file;
-    }
-
-    public interface EvolutionListener {
-        void evaluated();
-    }
 }
