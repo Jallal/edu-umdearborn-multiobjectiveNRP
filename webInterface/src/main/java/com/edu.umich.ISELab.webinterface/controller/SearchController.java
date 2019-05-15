@@ -1,9 +1,10 @@
-package com.mkyong.controller;
 
-import com.mkyong.model.AjaxResponseBody;
-import com.mkyong.model.SearchCriteria;
-import com.mkyong.model.User;
-import com.mkyong.services.UserService;
+package com.edu.umich.ISELab.webinterface.controller;
+
+import com.edu.umich.ISELab.webinterface.model.AjaxResponseBody;
+import com.edu.umich.ISELab.webinterface.model.SearchCriteria;
+import com.edu.umich.ISELab.webinterface.model.User;
+import com.edu.umich.ISELab.webinterface.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;

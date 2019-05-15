@@ -1,5 +1,4 @@
-package com.mkyong.model;
-
+package com.edu.umich.ISELab.webinterface.model;
 public class User {
 
     String username;

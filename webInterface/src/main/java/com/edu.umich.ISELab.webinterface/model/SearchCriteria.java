@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.edu.umich.ISELab.webinterface.model;
 
 import org.hibernate.validator.constraints.NotBlank;
 

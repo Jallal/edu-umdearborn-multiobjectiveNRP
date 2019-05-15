@@ -26,6 +26,7 @@
         <module>evaluation</module>
         <module>execution</module>
         <module>optimization</module>
+        <module>webInterface</module>
     </modules>
     <dependencies>
         <!--Google GUAVA-->

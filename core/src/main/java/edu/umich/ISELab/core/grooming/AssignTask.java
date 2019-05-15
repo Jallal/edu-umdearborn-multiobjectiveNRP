@@ -77,6 +77,7 @@ public class AssignTask extends Grooming {
     public void execute(Project project) {
 
 
+
         for (WorkItem item : project.getWorkItemList()) {
             for (Person person : project.getPersonList()) {
                 if (!item.isAssigned() && !person.isAssigned()) {

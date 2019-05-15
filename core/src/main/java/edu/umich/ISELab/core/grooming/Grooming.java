@@ -24,6 +24,7 @@ public abstract class Grooming implements Serializable {
         this.workItems = item;
         this.resources = person;
         this.project=project;
+        this.candidate= new Candidate(this.workItems,this.resources);
     }
 
     public Grooming(Grooming nrp) {
@@ -97,6 +98,7 @@ public abstract class Grooming implements Serializable {
         }
         this.workItems = candidate.getWorkItems() != null ? candidate.getWorkItems() : null;
         this.resources = candidate.getResources() != null ? candidate.getResources() : null;
+        this.project=project;
         return;
     }
 

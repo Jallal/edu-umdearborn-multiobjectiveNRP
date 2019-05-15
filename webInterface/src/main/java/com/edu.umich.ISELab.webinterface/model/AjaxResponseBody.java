@@ -1,5 +1,5 @@
-package com.mkyong.model;
 
+package com.edu.umich.ISELab.webinterface.model;
 import java.util.List;
 
 public class AjaxResponseBody {

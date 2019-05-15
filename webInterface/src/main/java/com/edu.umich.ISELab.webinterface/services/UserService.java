@@ -1,6 +1,6 @@
-package com.mkyong.services;
+package com.edu.umich.ISELab.webinterface.services;
 
-import com.mkyong.model.User;
+import com.edu.umich.ISELab.webinterface.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
