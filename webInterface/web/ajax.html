@@ -46,18 +46,30 @@
 
 </div>
 
-<div class="container">
-    <footer>
-        <p>
-            © <a href="http://www.mkyong.com">Mkyong.com</a> 2017
-        </p>
-    </footer>
-</div>
+
+<canvas id="bubble-chart" width="500" height="300"></canvas>
+<script  type="text/javascript" src="js/sprintChart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 
 <script type="text/javascript"
         src="webjars/jquery/2.2.4/jquery.min.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>
+
+
+<div class="container">
+    <footer>
+        <p>
+            © <a href="http://www.umich.com">ISELab</a> 2019
+        </p>
+    </footer>
+</div>
+<script>
+    jQuery(document).ready(function() {
+        $( window ).on( "load", activityChartLoading()  );
+    });
+</script>
 
 </body>
 </html>
