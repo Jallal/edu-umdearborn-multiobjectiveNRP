@@ -1,17 +1,16 @@
-function activityChartLoading() {
-    new Chart(document.getElementById("bubble-chart"), {
-        "type": "horizontalBar",
-        "data": {
-            "labels": ["January", "February", "March", "April", "May", "June", "July"],
-            "datasets": [{
-                "label": "My First Dataset",
-                "data": [65, 59, 80, 81, 56, 55, 40],
-                "fill": false,
-                "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-                "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-                "borderWidth": 1
-            }]
-        },
-        "options": {"scales": {"xAxes": [{"ticks": {"beginAtZero": true}}]}}
-    });
-}
+
+    function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+            [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+            [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+            [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
+
+        chart.draw(dataTable);
+    }
