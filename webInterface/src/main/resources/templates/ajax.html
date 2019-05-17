@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Spring Boot ajax example</title>
+    <title>Multi-Objectibe Next Release Problem</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link rel="stylesheet" type="text/css"
@@ -13,43 +13,47 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Mkyong.com</a>
+            <a class="navbar-brand" href="#">ISELab</a>
         </div>
     </div>
 </nav>
 
 <div class="container" style="min-height: 500px">
-
     <div class="starter-template">
-        <h1>Spring Boot AJAX Example</h1>
+        <h1>Release 13</h1>
 
-        <div id="feedback"></div>
+    <!--div class="starter-template"-->
+        <div class="starter-template">
+                <div id="feedback"></div>
 
-        <form class="form-horizontal" id="search-form">
-            <div class="form-group form-group-lg">
-                <label class="col-sm-2 control-label">Username</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="username"/>
-                </div>
+                <form class="form-horizontal" id="search-form">
+                    <div class="form-group form-group-lg">
+                        <label class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="username"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" id="bth-search"
+                                    class="btn btn-primary btn-lg">Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" id="bth-search"
-                            class="btn btn-primary btn-lg">Search
-                    </button>
-                </div>
-            </div>
-        </form>
-
+        <div id="timeline" style="height: 900px; width:900px;"></div>
     </div>
-
 </div>
 
 
-<canvas id="bubble-chart" width="500" height="300"></canvas>
-<script  src="js/sprintChart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/sprintChart.js"></script>
+
+
+<!--script  src="js/sprintChart.js"></script-->
 
 
 <script type="text/javascript"
@@ -65,11 +69,11 @@
         </p>
     </footer>
 </div>
-<script>
+<!--script>
 jQuery(document).ready(function() {
-$( window ).on( "load", activityChartLoading()  );
+$( window ).on( "load", drawChart() );
 });
-</script>
+</script-->
 
 </body>
 </html>
