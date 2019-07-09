@@ -1,0 +1,7 @@
+id,name,description
+1,Unclassified,"Not assigned to any classification"
+2,"Client Software","End User Products developed by mozilla.org contributors"
+3,Components,"Standalone components that can be used by other products. Core, Directory, NSPR, NSS and Toolkit are used by Gecko (which is in turn used by Firefox, Thunderbird, SeaMonkey, Fennec, and others)"
+4,"Server Software","Web Server software developed by mozilla.org contributors to aid the development of mozilla.org products"
+5,Other,"Everything else - websites, Labs, important things which aren't code"
+6,Graveyard,"Old, retired products"

@@ -1,0 +1,173 @@
+name,description,id,classification_id
+Core,"Shared components used by Firefox and other Mozilla software, including handling of Web content; Gecko, HTML, CSS, layout, DOM, scripts, images, networking, etc. Issues with web page layout probably go here, while Firefox user interface issues belong in the <a href=""https://bugzilla.mozilla.org/editproducts.cgi?action=edit&product=Firefox"">Firefox</a> product. (<a href=""https://wiki.mozilla.org/Modules/All#Core"">More info</a>)",1,3
+Calendar,"The Mozilla Calendar project (<a
+href=""http://www.mozilla.org/projects/calendar/help.html"">more info</a>)",2,2
+CCK,"The Client Customization Kit, for corporate/organization
+rollouts (<a href=""http://www.mozilla.org/projects/cck/"">more info</a>)",3,6
+Directory,"The Lightweight Directory Access Protocol (LDAP)
+project (<a href=""http://www.mozilla.org/directory/"">more info</a>)",4,3
+Grendel,"The Grendel Java-based mail/news reader (<a
+ href=""http://www.mozilla.org/projects/grendel/"">more info</a>)",5,6
+MozillaClassic,"For bugs about the Mozilla web browser before M3. <b>You cannot file bugs in this component</b>.",7,6
+Webtools,"For bugs in the tools that mozilla.org uses.",8,4
+NSPR,"The Netscape Portable Runtime - Mozilla's cross-platform
+portability layer (<a
+ href=""http://www.mozilla.org/projects/nspr/reference/html/"">more info</a>)",9,3
+mozilla.org,"The administration of the <a href=""https://wiki.mozilla.org/Modules/All#Governance_Sub_Modules"">Mozilla Project</a> and its servers (Website content bugs will belong in the www.mozilla.org product)",10,5
+Rhino,"An implementation of JavaScript in Java (<a
+ href=""http://www.mozilla.org/rhino/"">more info</a>)",11,3
+Derivatives,"Sometimes bugs are reported to Bugzilla which are really bugs in a product that is derived from Mozilla and should be reported elsewhere.  When you find such bugs assign them to this product to nominate them for transfer to the proper bug database.  <b>You cannot file bugs in this component</b>.
+
+Examples:  AIM or Net2Phone bugs in Netscape 6.",12,6
+Documentation,"Documentation for Mozilla users, developers
+and web developers.",13,6
+"Tech Evangelism","For reporting web pages that need to be upgraded to support web standards and Gecko-based browsers. And for reporting add-ons that exhibit common problems that make Firefox run sub-optimally. (<a href=""http://www.mozilla.org/projects/tech-evangelism/"">more info</a>)",15,5
+NSS,"Network Security Services - a cross-platform
+security library (<a
+ href=""http://www.mozilla.org/projects/security/pki/nss/"">more info</a>)",16,3
+"Mozilla Localizations","Translation, spelling and other errors in language
+packs and localized builds (<a href=""https://wiki.mozilla.org/L10n:Home_Page"">more info</a>)",17,2
+JSS,"Network Security Services for Java - a Java
+interface to NSS (<a
+ href=""http://mozilla.org/projects/security/pki/jss/"">more info</a>)",18,3
+Bugzilla,"The <a
+href=""http://www.bugzilla.org"">Bugzilla</a> bug-tracking system.<br>
+<b>Note:</b> This is <b>not</b> the place to request configuration, permission, or account changes to this installation of Bugzilla (bugzilla.mozilla.org). File such changes under the appropriate component in the <a
+href=""enter_bug.cgi?product=bugzilla.mozilla.org""><b>bugzilla.mozilla.org</b></a> product.",19,4
+"Camino Graveyard","Camino is a native Mac OS X browser-only project (<a href=""http://www.caminobrowser.org/"">more info</a>)",20,6
+Firefox,"For bugs in  Firefox Desktop, the Mozilla Foundation's web browser. For Firefox user interface issues in menus, bookmarks, location bar, and preferences. Many Firefox bugs will either be filed here or in the <a href=""https://bugzilla.mozilla.org/describecomponents.cgi?product=Core"">Core</a> product. Bugs for developer tools (F12) should be filed in the <a href=""https://bugzilla.mozilla.org/describecomponents.cgi?product=DevTools"">DevTools</a> product.  (<a href=""https://wiki.mozilla.org/Modules/All#Firefox"">more info</a>)",21,2
+Marketing,"Marketing and business-related ideas and projects (<a href=""http://www.mozilla.org/projects/marketing/"">more info</a>)",22,5
+Thunderbird,"Email client originally developed by the Mozilla Foundation and now maintained by its community. (<a href=""https://wiki.mozilla.org/Thunderbird"">more info</a>)",23,2
+Minimo,"Browser for limited resource devices (<a href=""http://www.mozilla.org/projects/minimo/"">more info</a>)",24,6
+SeaMonkey,"An all-in-one internet application suite, including web browser, e-mail and newsgroup client, and HTML composer. (<a href=""http://www.seamonkey-project.org/"">more info</a>)",25,2
+Composer,"Next-generation gecko-based standalone HTML/XHTML authoring tool",27,2
+"Other Applications","For bugs in CCK, Chatzilla, DOM Inspector, Venkman, and other applications which aren't large enough to warrant an entire Bugzilla product.",28,2
+Toolkit,"The Mozilla Toolkit is a set of APIs, built on top of Gecko, which provide advanced services to XUL applications. These services include Profile Management, Chrome Registration, Browsing History, Extension and Theme Management, Application Update Service, and Safe Mode. (<a href=""https://wiki.mozilla.org/Modules/Toolkit"">More info</a>)",30,3
+addons.mozilla.org,"For security bugs ONLY for addons.mozilla.org. All other issues should be filed on github at https://github.com/mozilla/addons.",31,4
+"AUS Graveyard","The <a href=""https://wiki.mozilla.org/Software_Update"">Application Update Service</a> is used by client software to check for updates to application software.",34,6
+Websites,"For issues with content of Websites managed by Mozilla that do not have their own Bugzilla products.",36,5
+developer.mozilla.org,"For bugs and requests related to management of <a href=""https://developer.mozilla.org"">MDN Web Docs</a>, and for bugs and requests related to the Kuma platform that drives the <a href=""https://developer.mozilla.org"">MDN</a> wiki. Report issues about the MDN content under 'Developer Documentation'.",37,5
+Testopia,"<a href=""https://wiki.mozilla.org/Testopia"">Testopia</a> is a test case management system that sits
+on top of Bugzilla.",38,4
+Penelope,"Eudora meets Thunderbird (<a href=""http://wiki.mozilla.org/penelope"">more info</a>)",39,2
+"Mozilla Labs","For bugs and requests related to management of <a href=""https://wiki.mozilla.org/Labs"">Mozilla
+Labs</a> and related projects.",40,5
+"Mozilla Metrics","Internal Mozilla Corp. database to house statistical/market data",41,5
+support.mozilla.org,"For bugs and requests related to management of <a href=""https://wiki.mozilla.org/Sumo"">SUMO</a>,
+sometimes known as <a href=""https://support.mozilla.org"">support.mozilla.org</a>.",42,5
+Tamarin,"Next-generation JavaScript 2 virtual machine (<a href=""http://www.mozilla.org/projects/tamarin/"">more info</a>)",43,3
+"Extend Firefox Graveyard","For issues related to the <a href=""http://extendfirefox.com/"">Extend Firefox</a> contest, web site, etc.",44,6
+"Firefox for Android Graveyard","Old, retired Fennec bugs. Fennec is the code name of the effort to build a mobile version of Firefox (<a href=""http://wiki.mozilla.org/Mobile/FennecVision"">more info</a>)",46,6
+Testing,"For bugs related to automated testing of Mozilla client code (Firefox, Thunderbird, Fennec, Gecko, etc) (<a href=""https://wiki.mozilla.org/EngineeringProductivity"">More info</a>)",47,3
+"Mozilla Messaging","The administration of Mozilla Messaging and its servers (Website content bugs will belong in the Websites product)",48,5
+"Core Graveyard","Old, retired Core components",49,6
+"MailNews Core","Mail and news components common to Thunderbird and SeaMonkey",50,3
+quality.mozilla.org,"For issues relating to the <a href=""https://quality.mozilla.org/"">quality.mozilla.org</a> website, also known as <a href=""https://wiki.mozilla.org/QA"">QMO</a>.",51,5
+Skywriter,"Mozilla Skywriter is a product, designed in Mozilla Labs, that proposes an open, extensible, web-based framework for code editing that aims to increase developer productivity, enable compelling user experiences, and promote the use of open standards.",53,6
+"MailNews Core Graveyard","Old, retired MailNews Core components",54,6
+"Cloud Services","For bugs in Firefox Sync, Firefox Home, metrics, Server, Share, and other services. (<a href=""https://wiki.mozilla.org/Services"">more info</a>)",55,2
+"support.mozillamessaging.com Graveyard","For bugs and requests related to management of the <a href=""https://wiki.mozilla.org/Thunderbird/Support"">Mozilla Messaging</a> ""Knowledge Base (KB)""- known as ""SuMoMo."" Thunderbird support forum.",56,6
+"Community Building","For bugs about Community Building Working Groups, Partnerships and local communities.",57,5
+Servo,"Servo Project",58,6
+"Webtools Graveyard","Old, retired Webtools",59,6
+"External Software Affecting Firefox","For problems with third-party software which affect Firefox users. Plugin problems should be in Core:Plug-Ins instead of this product.",60,3
+"Websites Graveyard","Old, retired Websites",62,6
+"Add-on SDK","The software development kit for building Firefox add-ons.
+More info at: <a href=""https://wiki.mozilla.org/Jetpack"">Jetpack project documentation</a>.",63,2
+"Mozilla QA","For bugs and requests related to management of <a href=""http://quality.mozilla.org/"">Mozilla QA</a> related projects.",64,5
+"Toolkit Graveyard","Old, retired Toolkit components",65,6
+"Mozilla Labs Graveyard","Old, retired Mozilla Labs projects. Some products may have graduated to other places.",66,6
+"Mozilla Grants","Grants from the Mozilla Foundation.",67,5
+"Mozilla Reps","The <a href=""http://wiki.mozilla.org/ReMo"">Mozilla Reps, or ReMo</a>, program provides a simple framework and specific tools to help volunteer Mozillians become official representatives of Mozilla in their region.",68,5
+"Web Apps","Web Apps are applications that run on any device, and can be distributed through any store or directly by the developer.",69,5
+bugzilla.mozilla.org,"For issues relating to the bugzilla.mozilla.org website, also known as <a href=""https://wiki.mozilla.org/BMO"">BMO</a>.",70,5
+Input,"<a href=""https://wiki.mozilla.org/Firefox/Input"">Input</a> is the feedback tool for Firefox.",71,4
+Pancake,"<a href=""https://wiki.mozilla.org/Pancake"">Pancake</a> is a Mozilla Labs project using search and navigation history.",72,5
+Snippets,"The <a href=""https://wiki.mozilla.org/Websites/Snippets"">about:home snippet</a> service is a simple, highly-cached content management service. It is intended to assemble and deliver content snippets to the about:home page in Firefox. The content delivered is determined by details about the installation of Firefox requesting content - including mainly details about the browser's build, locale, platform, and distribution channel, but not the person using the browser.",73,5
+"Firefox for Android","Firefox for Android is a mobile version of Firefox for Android devices. (<a href=""http://wiki.mozilla.org/Mobile/FennecVision"">more info</a>)",74,2
+"Participation Infrastructure","Suite of tools that helps make it easier for people to get involved in the Mozilla Project.",75,5
+Socorro,"For issues with the <a href=""https://wiki.mozilla.org/Socorro"">Socorro</a> server which accepts and processes Breakpad crash reports.",76,4
+"Firefox OS","FirefoxOS, or Boot2Gecko (B2G) is Mozilla's operating system built on web standards. (<a href=""https://wiki.mozilla.org/B2G"">more info</a>)",77,2
+"Air Mozilla","The Air Mozilla site (<a href=""http://air.mozilla.com"">http://air.mozilla.com</a>) and supporting infrastructure, including video conferencing. More info: <a href=""https://wiki.mozilla.org/Air_Mozilla"">Air Mozilla wiki page</a>",78,5
+"Data Compliance","Tracking issues regarding handling of user data for maximal user benefit, in accordance with our privacy principles. (<a href=""https://wiki.mozilla.org/Data_Safety"">More info</a>)",79,5
+"Untriaged Bugs","For newly filed bugs that need some help finding the right place to go. <a href=""https://wiki.mozilla.org/Bugmasters"">Help the bugmasters triage these!</a>",80,5
+Tracking,"For tracking bugs that cross multiple products and services",81,5
+Petri,"<a href=""http://wiki.mozilla.org/Petri"">Petri</a> is a Mozilla PaaS/IaaS experimental project.",82,5
+"Mozilla QA Graveyard","Old, retired Mozilla QA components",83,6
+"Other Applications Graveyard","Old, retired Other Applications components",84,6
+Marketplace,"Mozilla's website (<a href=""https://marketplace.firefox.com"">marketplace.firefox.com</a>) to bring personalized discovery, worldwide distribution, and easy payments to the largest platform for app development: the Web. (<a href=
+""https://wiki.mozilla.org/Marketplace"">more info</a>)",87,4
+mozillaignite,"<a href=""https://wiki.mozilla.org/Ignite"">Mozilla Ignite</a> is joint project with the National Science Foundation (NSF) to help people make apps that improve people's lives.",88,5
+Webmaker,"The Mozilla Foundation's project to build a generation of web makers (<a href=""https://wiki.mozilla.org/Webmaker/Product"">More info</a>)",89,5
+Privacy,"<a href=""https://wiki.mozilla.org/Privacy"">Privacy</a> and policy, including privacy reviews, data data release proposals, and modifications to privacy policies. Not for bugs and feature requests in software.",91,6
+www.mozilla.org,"For issues with content on www.mozilla.org http servers (but not the functioning of the servers) (<a href=""https://wiki.mozilla.org/Websites/Mozilla.org"">more info</a>)",93,5
+"Firefox Graveyard","Old, retired Firefox components",94,6
+"Firefox for Metro","Firefox for Windows 8 Touch (formerly Metro) is Mozilla's version of Firefox for the Windows 8 touch interface included in Firefox Desktop on Windows 8 and higher. (<a href=""https://wiki.mozilla.org/Firefox/Windows_8_Integration"">more info</a>)",95,2
+L20n,"Next-generation localization architecture (<a href=""https://wiki.mozilla.org/L20n"">more info</a>)",96,5
+Datazilla,"Datazilla is a system for managing and visualizing application performance data.  The project includes a database, web service, and several user interfaces.  The source code repository, https://github.com/mozilla/datazilla/, and documentation, http://datazilla.readthedocs.org, can be found at these locations.  The primary project data managed by datazilla includes Talos performance data.  Datazilla web services for individual projects are deployed at specific uri paths: https://datazilla.mozilla.org/stoneridge/ (stoneridge project) and https://datazilla.mozilla.org/talos/ (talos project).",97,5
+"Developer Documentation","Requests for new developer documentation or for corrections to existing developer documentation on the <a href=""https://developer.mozilla.org"">MDN Web Docs</a> wiki. Report issues about the MDN wiki platform under 'developer.mozilla.org'.",98,5
+"support.mozilla.org Graveyard","Old, retired suppport.mozilla.org components",99,6
+"Hello (Loop)","Firefox Hello, formerly called <a href=""https://wiki.mozilla.org/Loop"">Loop</a>, uses WebRTC to add real-time communications to the user's web browsing experience.",101,6
+"Android Background Services","Native Android services, including those bundled with Fennec. (<a href=""https://wiki.mozilla.org/Android/Services"">More info</a>)",102,2
+"Internet Public Policy","The Mozilla <a href=""https://wiki.mozilla.org/Netpolicy"">Internet Public Policy</a> group works to build products that make the Web more robust and take action when the web’s DNA is threatened.",103,5
+"Firefox Health Report","For all bugs involving collection, submission, analysis and user-facing features (about:healthreport) as part of the Firefox Health Report product. (<a href=""https://wiki.mozilla.org/QA/Desktop_Firefox/Firefox_Health_Report"">More info</a>)",104,2
+"Developer Ecosystem","The products, tools, services, and resources used to equip and support our <a href=""https://wiki.mozilla.org/Apps/Ecosystem"">Mozilla Developer Ecosystem</a>.",105,5
+"Boot2Gecko Graveyard","For bugs in old components that aren't active anymore.",106,6
+"Infrastructure & Operations","Server and networking infrastructure, including web properties, CDN, DNS (<a href=""https://mana.mozilla.org/wiki/display/IT/Home"">more info</a>)",107,5
+"Mozilla Foundation Communications","<a href=""http://www.mozilla.org/foundation/"">The Mozilla Foundation</a> runs programs like Mozilla Webmaker, Open Badges, Open News and more.",108,5
+"Release Engineering","For bugs related to all aspects of Mozilla's Release Engineering pipeline, including branded releases, continuous automation, release automation, tools, repos and hooks, machine issues, loaner machines, buildbot.",110,5
+"Developer Engagement","For requests related to Mozilla's Technology Evangelism group within Developer Engagement. Includes requests for events, outreach and demos (<a href=""https://wiki.mozilla.org/Engagement/Developer_Engagement/Technical_Evangelism"">more info</a>).",111,5
+"Mozilla Localizations Graveyard","Old, retired ""Mozilla Localizations"" components.",112,6
+"Data & BI Services Team","Data & BI Services Team provides data ingestion, processing and storage services, as well as BI consulting, dashboarding, reporting and custom visualization services for consumers of Mozilla product, people and business data.",113,5
+Instantbird,"This is the user interface of Instantbird. http://www.instantbird.com/",114,2
+"Chat Core","This is the core/back-end of Instantbird and Thunderbird chat (all code in the chat/ directory). This includes the JavaScript protocol implementations, our custom protocols that are not part of libpurple, and the purplexpcom library which allows the use of libpurple from scriptable  XPCOM (XUL/JS).",115,3
+"Instantbird Servers","*.instantbird.org and *.instantbird.com websites.",116,5
+Powertool,"Powertool is a set of software and hardware tools to allow developers to measure power consumption on Firefox OS phones.
+(<a href=""https://developer.mozilla.org/en-US/Firefox_OS/Performance/Power"">more info</a>)",117,2
+Intellego,"A machine translation project for the benefit of Mozilla and the Open Web (<a href=""https://wiki.mozilla.org/Intellego"">more info</a>).",119,5
+"Mozilla Foundation","Bugs specific to the Mozilla Foundation.",121,5
+"Tree Management","Dashboards & tools to help manage commits to Firefox & Gecko related version control repositories and monitor the effect they have on code & test health.",122,5
+"Plugin Check","Plugin Check is a service that allows users to determine whether their plugins are up to date, out of date or vulnerable, and is accessible via http://mozilla.org/plugincheck",123,5
+"Invalid Bugs","For bugs reports that we are marking INVALID and don't belong in legitimate products and components. Moving bugs to this product will allow them to stop showing up in a valid product's search results and statistics.",124,6
+"addons.mozilla.org Graveyard","Old, retired addons.mozilla.org components",125,6
+"mozilla.org Graveyard","Old, retired mozilla.org components",126,6
+"Developer Services","For issues related to the services and infrastructure that support developer productivity: hg.mozilla.org, git.mozilla.org ([https://wiki.mozilla.org/DeveloperServices more info])",127,5
+"Localization Infrastructure and Tools","Tools, libraries and automation involved in Mozilla's localization processes",128,5
+"Content Services Graveyard","For bugs in Classification Engine, Interest Dashboard, Recommendations, Subscribe 2 Web, Tiles, and other services. (<a href=""https://blog.mozilla.org/advancingcontent""
+>more info</a>)",129,6
+"Firefox for iOS","Firefox for iOS is the Firefox mobile experience developed for the iOS platform.",130,2
+"FSA Graveyard","Firefox Student Ambassadors is a volunteer program for university students who are passionate about Mozilla, the open web, and the many benefits of Firefox and its products.",132,6
+"Tree Management Graveyard","Old, retired Tree Management components",133,6
+"Tech Evangelism Graveyard","Old, retired ""Tech Evangelism"" components",134,6
+"Testing Graveyard","Old, retired ""Testing"" components",135,6
+"Firefox Friends","Firefox Friends is a word of mouth marketing program that amplifies our marketing efforts by arming our broad community with the tools to become Firefox Friends.",136,5
+Taskcluster,"Taskcluster is a platform that Mozilla has developed for running tasks.  This product is for bugs with the Taskcluster platform itself, not for issues with the configuration of the Mozilla Taskcluster instance.",137,5
+"Enterprise Information Security","For Security incidents, investigation, risk analysis requests, reviews. The team formerly known as OpSec and currently known as EIS or infosec",138,5
+"Infrastructure & Operations Graveyard","Old, retired Infrastructure & Operations components.",139,6
+"B2GDroid Graveyard","B2GDroid is a project that let us run b2g on android devices as a homescreen. It uses code from both android and b2g, along with additional custom code.",140,6
+"Data & BI Services Team Graveyard","Data & BI Services Team provides data ingestion, processing and storage services, as well as BI consulting, dashboarding, reporting and custom visualization services for consumers of Mozilla product, people and business data.",141,6
+"Firefox Affiliates Graveyard","Old, retired Firefox Affiliates components",142,6
+Focus-iOS,"Focus by Firefox is a browser and content blocker for Safari that improves the privacy and performance of your mobile browsing experience by blocking analytics, social and advertising trackers (<a href=""https://github.com/mozilla/focus"">more info</a>).",143,2
+"Enterprise Information Security Graveyard","For Security incidents, investigation, risk analysis requests, reviews. The team formerly known as OpSec and currently known as EIS or infosec",144,6
+MozReview,"Mozilla's installation of Review Board and related systems for tracking and managing code review.",145,5
+"Connected Devices","Connected Devices is Mozilla's effort to extend the Open Web to the Internet of Things (<a href=""https://wiki.mozilla.org/Connected_Devices"">more info</a>).",146,2
+"Plugins Graveyard","For problems with third party plugins (<a href=""https://developer.mozilla.org/en/Gecko_Plugin_API_Reference"">NPAPI</a>), AntiVirus applications and Firewalls.  This product is for enabling collaboration between mozilla.org and third party software vendors. Vendors will be recognized, and able to mark bugs as fixed with references to their software versions.",147,6
+Shield,"System to execute experiments, self-repair, and surveys in Firefox",148,5
+"Cloud Services Graveyard","Old, retired components for Cloud Services.",149,6
+"Firefox Health Report Graveyard","Old, retired Firefox Health Report components",150,6
+"Socorro Graveyard","Graveyarded components for <a href=""https://wiki.mozilla.org/Socorro"">Socorro</a> server which accepts and processes Breakpad crash reports.",151,6
+"Web Compatibility Tools","A place to file bugs as they relate to software that deals with web compatibility (<a href=""https://wiki.mozilla.org/Compatibility/"">more info</a>). Note: site and outreach bugs should be filed in <a href=""https://bugzilla.mozilla.org/enter_bug.cgi?product=Tech%20Evangelism"">Tech Evangelism</a>.",152,2
+"Participation Infrastructure Graveyard","Suite of tools that helps make it easier for people to get involved in the Mozilla Project.",153,6
+"Input Graveyard","<a href=""https://wiki.mozilla.org/Firefox/Input"">Input</a> is the feedback tool for Firefox.",154,6
+Conduit,"Project Conduit.",155,5
+"Data Platform and Tools","Bugs for Telemetry Components",156,2
+"support.mozilla.org - Lithium","For issues support.mozilla.org on the lithium platform",157,5
+"Context Graph","Context Graph is a recommender system for the Web. The goal for Context Graph features is to help people find new stuff based on their current context. This project includes several ongoing research projects related to the Web's morphology, client interactions with the Web, and Web content.
+https://wiki.mozilla.org/Context_Graph",158,5
+Pocket,"Pocket and the Pocket API",159,2
+"Firefox Build System","All the stuff related to the build system and associated automation",160,3
+Focus,"Security bugs in the Focus mobile clients. All other bugs should be filed in github (<a href=""https://github.com/mozilla-mobile/"">more info</a>).",161,2
+"Emerging Markets","For security bugs ONLY for Emerging Market Group projects. All other issues should be filed on github at <a href=""https://github.com/mozilla-tw"">https://github.com/mozilla-tw</a>",162,2
+DevTools,"For bugs in Firefox DevTools, the developer tools within the Firefox web browser. This includes issues about the user interface of the toolbox, special pages such as about:debugging and about:devtools, and developer-related APIs.",163,3
+"www.mozilla.org Graveyard","For issues with content on www.mozilla.org http servers (but not the functioning of the servers) (<a href=""https://wiki.mozilla.org/Websites/Mozilla.org"">more info</a>)",164,6
+WebExtensions,"File feature requests and bugs related to the WebExtension add-on API.",165,3
