@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     $("#search-form").submit(function (event) {
@@ -13,6 +15,8 @@ $(document).ready(function () {
 
 function fire_ajax_submit() {
 
+
+
     var search = {}
     search["username"] = $("#username").val();
     //search["email"] = $("#email").val();
@@ -27,14 +31,45 @@ function fire_ajax_submit() {
         dataType: 'json',
         cache: false,
         timeout: 600000,
+
         success: function (data) {
+            var dataItems = "";
+            jQuery.each(data, function(index, value){
+                  if(index==0) {
+                      var json = "<h4>Ajax Response 1</h4><pre>" + JSON.stringify(value, null, 4) + "</pre>";
+                      $('#feedback_1').html(
+                          jQuery.getScript("js/drowChartWithInput_1.js")
+                              .done(function() {
+                                  console.log("yay, all good, do something *");
+                                  drawFirstChart(value);
+                              })
+                              .fail(function() {
+                                  console.log("boo first chart failed , fall back to something else");
+                              })
+                      );
 
-            var json = "<h4>Ajax Response</h4><pre>"
-                + JSON.stringify(data, null, 4) + "</pre>";
-            $('#feedback').html(json);
+                      //$('#feedback_1').html(json);
+                      $("#btn-search").prop("disabled", false);
+                 }
+                 if(index==1){
+                      var json = "<h4>Ajax Response 2</h4><pre>" + JSON.stringify(value, null, 4) + "</pre>";
+                      //$.getScript("js/drowChartWithInput_1.js",function() {drawChart(value) });
+                      $('#feedback_2').html(
+                          jQuery.getScript("js/drowChartWithInput_2.js")
+                              .done(function() {
+                                  console.log("yay, all good, do something *");
+                                  drawSecondChart(value);
+                              })
+                              .fail(function() {
+                                  console.log("boo second chart failed, fall back to something else");
+                              })
+                      );
 
-            console.log("SUCCESS : ", data);
-            $("#btn-search").prop("disabled", false);
+                     // $.getScript("drowChartWithInput_1.js");
+                      $("#btn-search").prop("disabled", false);
+                  }
+
+            });
 
         },
         error: function (e) {

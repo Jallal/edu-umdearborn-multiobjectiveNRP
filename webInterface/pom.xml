@@ -4,17 +4,17 @@
 	http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu-umich-ISELab-nrp</groupId>
-    <artifactId>interface</artifactId>
-    <name>edu-umich-ISELab-monrp::interface</name>
-    <packaging>jar</packaging>
-    <version>1.0</version>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.1.RELEASE</version>
     </parent>
+
+    <groupId>edu-umich-ISELab-nrp</groupId>
+    <artifactId>interface</artifactId>
+    <name>edu-umich-ISELab-monrp::interface</name>
+    <packaging>jar</packaging>
+    <version>1.0</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -43,6 +43,12 @@
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>edu-umich-ISELab-nrp</groupId>
+            <artifactId>execution</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

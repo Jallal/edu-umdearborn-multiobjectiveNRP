@@ -7,43 +7,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GroomingUtils {
-    public static Project apply(Project project, List<Grooming> refactorings) throws Exception {
+    public static Project apply(Project project, List<Grooming> groomingList) throws Exception {
 
         UUIDUtils.restart();
 
         Project copy = ProjectObjectUtils.copy(project);
 
-        for (Grooming refactoring : refactorings) {
-            apply(copy, refactoring);
+        for (Grooming grooming : groomingList) {
+            apply(copy, grooming);
         }
 
         return copy;
     }
 
-    public static void apply(Project project, Grooming refactoring) throws Exception {
+    public static void apply(Project project, Grooming grooming) throws Exception {
 
-        refactoring.defineActors(project);
+        grooming.defineActors(project);
 
-        refactoring.loadActors(project);
+        grooming.loadActors(project);
 
-        refactoring.verifyPreConditions(project);
+        grooming.verifyPreConditions(project);
 
-        refactoring.execute(project);
+        grooming.execute(project);
 
-        refactoring.verifyPostCondition(project);
+        grooming.verifyPostCondition(project);
     }
 
-    public static List<Grooming> getValids(Project project, List<Grooming> refactorings) {
+    public static List<Grooming> getValids(Project project, List<Grooming> groomingList) {
 
         List<Grooming> valids = new ArrayList<>();
 
-        for (Grooming refactoring : refactorings) {
+        for (Grooming grooming : groomingList) {
 
-            Grooming copyRefactoring = refactoring.copy();
+            Grooming copyGrooming = grooming.copy();
 
             try {
-                GroomingUtils.apply(project, copyRefactoring);
-                valids.add(copyRefactoring);
+                GroomingUtils.apply(project, copyGrooming);
+                valids.add(copyGrooming);
             } catch (Exception ex) { /*If the exception was thrown, we have to ignore it*/ }
         }
 

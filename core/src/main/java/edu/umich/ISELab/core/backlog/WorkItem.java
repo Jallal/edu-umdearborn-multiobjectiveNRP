@@ -2,6 +2,11 @@ package edu.umich.ISELab.core.backlog;
 
 
 import edu.umich.ISELab.core.projectResources.Person;
+import edu.umich.ISELab.core.util.Priority;
+import edu.umich.ISELab.core.util.Skills;
+import edu.umich.ISELab.core.util.WorkItemDefinition;
+
+import java.util.List;
 
 public abstract class WorkItem {
 
@@ -12,6 +17,7 @@ public abstract class WorkItem {
     private Priority priority;
     private WorkItemDefinition workItemDefinition;
     private Person person;
+    private List<Skills> skillsRequired;
 
     public Person getPerson() {
         return person;
